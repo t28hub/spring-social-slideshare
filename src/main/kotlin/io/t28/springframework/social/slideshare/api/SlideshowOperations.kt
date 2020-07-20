@@ -20,7 +20,7 @@ interface SlideshowOperations {
      * - [getSlideshowByUrl]
      */
     @Throws(ApiException::class)
-    fun getSlideshow(id: String, url: String, options: GetSlideshowOptions? = null): Slideshow
+    fun getSlideshow(id: String?, url: String?, options: GetSlideshowOptions? = null): Slideshow
 
     /**
      * Retrieve slideshow information for a specified ID.
