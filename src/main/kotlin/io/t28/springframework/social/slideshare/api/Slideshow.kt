@@ -55,7 +55,7 @@ data class Slideshow(
     }
 
     /**
-     * Slidewho format
+     * Slideshow format
      */
     enum class Format {
         PPTX,
