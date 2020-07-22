@@ -1,6 +1,5 @@
 package io.t28.springframework.social.slideshare.api.impl.xml
 
-import com.fasterxml.jackson.databind.Module.SetupContext
 import com.fasterxml.jackson.databind.module.SimpleModule
 import io.t28.springframework.social.slideshare.api.Slideshow
 
