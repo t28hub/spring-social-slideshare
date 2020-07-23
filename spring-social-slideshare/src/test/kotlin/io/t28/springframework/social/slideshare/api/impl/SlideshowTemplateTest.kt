@@ -1,6 +1,7 @@
 package io.t28.springframework.social.slideshare.api.impl
 
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
+import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
 import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.SlideshowOperations
 import org.hamcrest.Matchers.matchesPattern
@@ -109,6 +110,44 @@ internal class SlideshowTemplateTest {
         // Assert
         assertEquals(slideshow.url, "https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019")
         assertEquals(slideshow.title, "Be A Great Product Leader (Amplify, Oct 2019)")
+    }
+
+    @Test
+    fun `getSlideshowsByTag should return collection of slideshows for a specified tag`() {
+        // Arrange
+        mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshows_by_tag?.+")))
+            .andExpect(method(GET))
+            .andRespond(withSuccess()
+                .contentType(APPLICATION_XML)
+                .body(ClassPathResource("get_slideshows_by_tag.xml", SlideShare::class.java)))
+
+        // Act
+        val options = GetSlideshowsOptions(offset = 0, limit = 10, detailed = true)
+        val slideshows = slideshowOperations.getSlideshowsByTag("kotlin", options)
+
+        // Assert
+        assertEquals(slideshows.name, "kotlin")
+        assertEquals(slideshows.count, 2408)
+        assertEquals(slideshows.slideshows.size, 10)
+    }
+
+    @Test
+    fun `getSlideshowsByUser should return collection of slideshows for a specified user`() {
+        // Arrange
+        mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshows_by_user?.+")))
+            .andExpect(method(GET))
+            .andRespond(withSuccess()
+                .contentType(APPLICATION_XML)
+                .body(ClassPathResource("get_slideshows_by_user.xml", SlideShare::class.java)))
+
+        // Act
+        val options = GetSlideshowsOptions(offset = 0, limit = 10, detailed = true)
+        val slideshows = slideshowOperations.getSlideshowsByUser("GoogleCloudPlatformJP", options)
+
+        // Assert
+        assertEquals(slideshows.name, "GoogleCloudPlatformJP")
+        assertEquals(slideshows.count, 162)
+        assertEquals(slideshows.slideshows.size, 10)
     }
 
     companion object {

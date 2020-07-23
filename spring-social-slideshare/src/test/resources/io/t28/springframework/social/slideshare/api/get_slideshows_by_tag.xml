@@ -1,0 +1,748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tag>
+  <Name>kotlin</Name>
+  <Count>2408</Count>
+  <Slideshow>
+    <ID>237062843</ID>
+    <Title>Selenium Automation with Kotlin</Title>
+    <Description>Nowadays, automation testing has proved to be an important component within the cycle of software
+      development and even more for the agile development of software. There are various tools to achieve this we are
+      looking at Selenium automation with Kotlin in this paper. Kotlin is a open source, statically typed, general
+      purpose programming language that runs on JVM. While, Selenium is set of tools that helps testers to automate
+      web-based applications more efficiently. When we combine the features of selenium and kotlin it gets more power
+      than any language used with selenium. So this selenium kotlin tutorial covers all the topics required for
+      automation testing step by step. For more details, visit: www.rapidvaluesolutions.com
+    </Description>
+    <Status>2</Status>
+    <Username>Rapidvaluesolutions</Username>
+    <URL>https://www.slideshare.net/Rapidvaluesolutions/selenium-automation-with-kotlin</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/seleniumautomationwithkotlinrapidvalue-200720062708-thumbnail.jpg?cb=1595227357
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/seleniumautomationwithkotlinrapidvalue-200720062708-thumbnail-2.jpg?cb=1595227357
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/seleniumautomationwithkotlinrapidvalue-200720062708-thumbnail-3.jpg?cb=1595227357
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/seleniumautomationwithkotlinrapidvalue-200720062708-thumbnail-4.jpg?cb=1595227357
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/1N4utj7St19TQ2" width="479" height="511"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/Rapidvaluesolutions/selenium-automation-with-kotlin"
+      title="Selenium Automation with Kotlin" target="_blank"&gt;Selenium Automation with Kotlin&lt;/a&gt; &lt;/strong&gt;
+      from &lt;strong&gt;&lt;a href="https://www.slideshare.net/Rapidvaluesolutions" target="_blank"&gt;RapidValue&lt;/a&gt;&lt;/strong&gt;
+      &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-07-20 06:27:08 UTC</Created>
+    <Updated>2020-07-20 06:42:37 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/seleniumautomationwithkotlinrapidvalue-200720062708.pdf?response-content-disposition=attachment&amp;Signature=lj%2Bdo52otW6P7Onx0Uj4iBUtb84%3D&amp;Expires=1595479637&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>1N4utj7St19TQ2</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/1N4utj7St19TQ2</SlideshowEmbedUrl>
+    <SlideshowType>1</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>44912752</UserID>
+    <PPTLocation>seleniumautomationwithkotlinrapidvalue-200720062708</PPTLocation>
+    <StrippedTitle>selenium-automation-with-kotlin</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">selenium</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">test automation with selenium and kotlin</Tag>
+      <Tag Count="1" Owner="1">test automation with kotlin and selenium</Tag>
+    </Tags>
+    <NumDownloads>0</NumDownloads>
+    <NumViews>7</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>8</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>236851982</ID>
+    <Title>Latest resume</Title>
+    <Description>Roshan with 3 plus years of experience</Description>
+    <Status>2</Status>
+    <Username>RoshanK15</Username>
+    <URL>https://www.slideshare.net/RoshanK15/latest-resume-236851982</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/roshanresume-200713092459-thumbnail.jpg?cb=1594632403
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/roshanresume-200713092459-thumbnail-2.jpg?cb=1594632403
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/roshanresume-200713092459-thumbnail-3.jpg?cb=1594632403
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/roshanresume-200713092459-thumbnail-4.jpg?cb=1594632403
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/7ToLv81HO7glQE" width="479" height="511"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/RoshanK15/latest-resume-236851982" title="Latest resume"
+      target="_blank"&gt;Latest resume&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/RoshanK15" target="_blank"&gt;RoshanK15&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-07-13 09:24:59 UTC</Created>
+    <Updated>2020-07-13 09:26:43 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/roshanresume-200713092459.pdf?response-content-disposition=attachment&amp;Signature=IDU888Hg%2FBm3orefjERJE3K4nE8%3D&amp;Expires=1595479637&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>7ToLv81HO7glQE</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/7ToLv81HO7glQE</SlideshowEmbedUrl>
+    <SlideshowType>1</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>171008833</UserID>
+    <PPTLocation>roshanresume-200713092459</PPTLocation>
+    <StrippedTitle>latest-resume-236851982</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">xml</Tag>
+      <Tag Count="1" Owner="1">java</Tag>
+      <Tag Count="1" Owner="1">mvp</Tag>
+      <Tag Count="1" Owner="1">json</Tag>
+      <Tag Count="1" Owner="1">mvvm</Tag>
+      <Tag Count="1" Owner="1">flutter</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">dagger2</Tag>
+    </Tags>
+    <NumDownloads>0</NumDownloads>
+    <NumViews>22</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>3</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>236800967</ID>
+    <Title>Porque e Como Utilizar Vetores no Android</Title>
+    <Description>➙ Conteúdo completo, texto e vídeo, em:
+      https://www.thiengo.com.br/porque-e-como-utilizar-vetores-no-android
+
+      Primeiro, pegue um café ☕ 泌. Pois o conteúdo é muito importante para desenvolvedores Android e está bem completo.
+
+      Neste conjunto de slides vamos passo a passo destrinchar, com um olhar de desenvolvedor, a API de drawables
+      vetoriais estáticos no Android.
+
+      API que se utilizada de maneira consciente vai somente trazer ganhos a todo o projeto de aplicativo, independente
+      do domínio de problema.
+
+      ➙ Para receber o conteúdo do blog em primeira mão e a versão em PDF de cada novo artigo, assine a lista de emails
+      em: https://www.thiengo.com.br
+
+      Abraço.
+
+
+      ▶ Treinamento oficial:
+
+      ➙ Prototipagem Profissional de Aplicativos Android: 
+      ↳ https://www.udemy.com/android-prototipagem-profissional-de-aplicativos/persist_locale&amp;amp;locale=pt_BR
+
+
+      ▶ Livros oficiais: 
+
+      ➙ Desenvolvedor Kotlin Android - Bibliotecas para o dia a dia: 
+      ↳ https://www.thiengo.com.br/livro-desenvolvedor-kotlin-android
+
+      ➙ Receitas Para Desenvolvedores Android: 
+      ↳ https://www.thiengo.com.br/livro-receitas-para-desenvolvedores-android 
+
+      ➙ Refatorando Para Programas Limpos: 
+      ↳ https://www.thiengo.com.br/livro-refatorando-para-programas-limpos 
+
+
+      ▶ Redes: 
+
+      ➙ GitHub: https://github.com/viniciusthiengo
+      ➙ Udemy: https://www.udemy.com/user/vinicius-thiengo/?persist_locale&amp;amp;locale=pt_BR
+      ➙ LinkedIn: https://www.linkedin.com/in/vin%C3%ADcius-thiengo-5179b180/ 
+      ➙ YouTube: https://www.youtube.com/user/thiengoCalopsita
+      ➙ Facebook: https://www.facebook.com/thiengoCalopsita 
+      ➙ Twitter: https://twitter.com/thiengoCalops 
+
+
+      ▶ Blog App: 
+
+      ➙ https://play.google.com/store/apps/details?id=br.thiengocalopsita&amp;amp;hl=pt_BR
+    </Description>
+    <Status>2</Status>
+    <Username>VinciusThiengo</Username>
+    <URL>https://www.slideshare.net/VinciusThiengo/porque-e-como-utilizar-vetores-no-android</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/porque-e-como-utilizar-vetores-no-android-200711000933-thumbnail.jpg?cb=1594426706
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/porque-e-como-utilizar-vetores-no-android-200711000933-thumbnail-2.jpg?cb=1594426706
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/porque-e-como-utilizar-vetores-no-android-200711000933-thumbnail-3.jpg?cb=1594426706
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/porque-e-como-utilizar-vetores-no-android-200711000933-thumbnail-4.jpg?cb=1594426706
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/J9TZ2HzBQsDxR" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/VinciusThiengo/porque-e-como-utilizar-vetores-no-android"
+      title="Porque e Como Utilizar Vetores no Android" target="_blank"&gt;Porque e Como Utilizar Vetores no Android&lt;/a&gt;
+      &lt;/strong&gt; from &lt;strong&gt;&lt;a href="https://www.slideshare.net/VinciusThiengo" target="_blank"&gt;Vinícius
+      Thiengo&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-07-11 00:09:33 UTC</Created>
+    <Updated>2020-07-11 00:18:26 UTC</Updated>
+    <Language>pt</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/porque-e-como-utilizar-vetores-no-android-200711000933.pdf?response-content-disposition=attachment&amp;Signature=KQAMAcSnJmft8x8TC3g7QewAzSE%3D&amp;Expires=1595479637&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>J9TZ2HzBQsDxR</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/J9TZ2HzBQsDxR</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>91895333</UserID>
+    <PPTLocation>porque-e-como-utilizar-vetores-no-android-200711000933</PPTLocation>
+    <StrippedTitle>porque-e-como-utilizar-vetores-no-android</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">vector</Tag>
+      <Tag Count="1" Owner="1">psd</Tag>
+      <Tag Count="1" Owner="1">android</Tag>
+      <Tag Count="1" Owner="1">svg</Tag>
+      <Tag Count="1" Owner="1">vetor</Tag>
+      <Tag Count="1" Owner="1">desenvolvedor</Tag>
+      <Tag Count="1" Owner="1">imagem vetorial</Tag>
+      <Tag Count="1" Owner="1">drawable</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">desenvolvimento mobile</Tag>
+      <Tag Count="1" Owner="1">vectordrawable</Tag>
+      <Tag Count="1" Owner="1">thiengo</Tag>
+      <Tag Count="1" Owner="1">blog thiengo</Tag>
+      <Tag Count="1" Owner="1">vinícius thiengo</Tag>
+      <Tag Count="1" Owner="1">thiengo calopsita</Tag>
+      <Tag Count="1" Owner="1">aula de desenvolvimento</Tag>
+      <Tag Count="1" Owner="1">imagem rasterizada</Tag>
+      <Tag Count="1" Owner="1">apk leve</Tag>
+      <Tag Count="1" Owner="1">fácil manutenção</Tag>
+    </Tags>
+    <NumDownloads>1</NumDownloads>
+    <NumViews>890</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>79</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>236738900</ID>
+    <Title>Dts x dicoding #1 memulai pemrograman kotlin</Title>
+    <Description>https://youtu.be/cx2QaWkeD-Y</Description>
+    <Status>2</Status>
+    <Username>wonkwise</Username>
+    <URL>https://www.slideshare.net/wonkwise/dts-x-dicoding-1-memulai-pemrograman-kotlin</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/dtsxdicoding1memulaipemrogramankotlin-200709043903-thumbnail.jpg?cb=1594269704
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/dtsxdicoding1memulaipemrogramankotlin-200709043903-thumbnail-2.jpg?cb=1594269704
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/dtsxdicoding1memulaipemrogramankotlin-200709043903-thumbnail-3.jpg?cb=1594269704
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/dtsxdicoding1memulaipemrogramankotlin-200709043903-thumbnail-4.jpg?cb=1594269704
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/7g1EKbGs0ifQGa" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/wonkwise/dts-x-dicoding-1-memulai-pemrograman-kotlin"
+      title="Dts x dicoding #1 memulai pemrograman kotlin" target="_blank"&gt;Dts x dicoding #1 memulai pemrograman
+      kotlin&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="https://www.slideshare.net/wonkwise"
+      target="_blank"&gt;Ahmad Arif Faizin&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-07-09 04:39:03 UTC</Created>
+    <Updated>2020-07-09 04:41:44 UTC</Updated>
+    <Language>en</Language>
+    <Format>pptx</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/dtsxdicoding1memulaipemrogramankotlin-200709043903.pdf?response-content-disposition=attachment&amp;Signature=UWjT6gfSB9KIPAOYI0OdJzPRX%2F0%3D&amp;Expires=1595479637&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>7g1EKbGs0ifQGa</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/7g1EKbGs0ifQGa</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>32457518</UserID>
+    <PPTLocation>dtsxdicoding1memulaipemrogramankotlin-200709043903</PPTLocation>
+    <StrippedTitle>dts-x-dicoding-1-memulai-pemrograman-kotlin</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">digitalent</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">dicoding</Tag>
+      <Tag Count="1" Owner="1">memulai pemrograman dengan kotlin</Tag>
+    </Tags>
+    <NumDownloads>0</NumDownloads>
+    <NumViews>41</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>27</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>236718025</ID>
+    <Title>Rx java workshop</Title>
+    <Description>A presentation on Reactive Programming with RxJava that focuses on how to create observables,
+      principles of multi threading in RxJava and error handling. This slides has a code playground available on github:
+      https://github.com/mayowa-egbewunmi/RxJavaTraining
+    </Description>
+    <Status>2</Status>
+    <Username>mayowaegbewunmi</Username>
+    <URL>https://www.slideshare.net/mayowaegbewunmi/rx-java-workshop</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/rxjavaworkshop-200708144709-thumbnail.jpg?cb=1594219847
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/rxjavaworkshop-200708144709-thumbnail-2.jpg?cb=1594219847
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/rxjavaworkshop-200708144709-thumbnail-3.jpg?cb=1594219847
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/rxjavaworkshop-200708144709-thumbnail-4.jpg?cb=1594219847
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/AmBYPNXsvVqdF7" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/mayowaegbewunmi/rx-java-workshop" title="Rx java workshop "
+      target="_blank"&gt;Rx java workshop &lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/mayowaegbewunmi" target="_blank"&gt;Mayowa Egbewunmi&lt;/a&gt;&lt;/strong&gt;
+      &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-07-08 14:47:09 UTC</Created>
+    <Updated>2020-07-08 14:50:47 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/rxjavaworkshop-200708144709.pdf?response-content-disposition=attachment&amp;Signature=QmFLAdIYYk37SRP5oDVdKX23Na8%3D&amp;Expires=1595479637&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>AmBYPNXsvVqdF7</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/AmBYPNXsvVqdF7</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>66563988</UserID>
+    <PPTLocation>rxjavaworkshop-200708144709</PPTLocation>
+    <StrippedTitle>rx-java-workshop</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">android</Tag>
+      <Tag Count="1" Owner="1">reactive programming</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">rxjava</Tag>
+    </Tags>
+    <NumDownloads>0</NumDownloads>
+    <NumViews>38</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>9</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>236714755</ID>
+    <Title>Rapid Web API development with Kotlin and Ktor</Title>
+    <Description>Introduction to Kotlin and Ktor with flow, async and channel examples. Ktor is an async web framework
+      with minimal ceremony that leverages the advantages of Kotlin like coroutines and extensible functional DSLs..
+    </Description>
+    <Status>2</Status>
+    <Username>Trayan_Iliev</Username>
+    <URL>https://www.slideshare.net/Trayan_Iliev/rapid-web-api-development-with-kotlin-and-ktor</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/ktor-200708130934-thumbnail.jpg?cb=1594214054</ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/ktor-200708130934-thumbnail-2.jpg?cb=1594214054
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/ktor-200708130934-thumbnail-3.jpg?cb=1594214054
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/ktor-200708130934-thumbnail-4.jpg?cb=1594214054
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/2v1O1zSvqt6Zae" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/Trayan_Iliev/rapid-web-api-development-with-kotlin-and-ktor"
+      title="Rapid Web API development with Kotlin and Ktor" target="_blank"&gt;Rapid Web API development with Kotlin
+      and Ktor&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="https://www.slideshare.net/Trayan_Iliev"
+      target="_blank"&gt;Trayan Iliev&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-07-08 13:09:34 UTC</Created>
+    <Updated>2020-07-08 13:14:14 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>https://s3.amazonaws.com/ppt-download/ktor-200708130934.pdf?response-content-disposition=attachment&amp;Signature=xsIUwNGvbK5U6qu2nrlTXZwtT%2FA%3D&amp;Expires=1595479637&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ</DownloadUrl>
+    <SecretKey>2v1O1zSvqt6Zae</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/2v1O1zSvqt6Zae</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69281280</UserID>
+    <PPTLocation>ktor-200708130934</PPTLocation>
+    <StrippedTitle>rapid-web-api-development-with-kotlin-and-ktor</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">web</Tag>
+      <Tag Count="1" Owner="1">framework</Tag>
+      <Tag Count="1" Owner="1">channel</Tag>
+      <Tag Count="1" Owner="1">rest</Tag>
+      <Tag Count="1" Owner="1">flow</Tag>
+      <Tag Count="1" Owner="1">web service</Tag>
+      <Tag Count="1" Owner="1">io</Tag>
+      <Tag Count="1" Owner="1">async</Tag>
+      <Tag Count="1" Owner="1">websocket</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">ktor</Tag>
+    </Tags>
+    <NumDownloads>2</NumDownloads>
+    <NumViews>133</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>55</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>236523067</ID>
+    <Title>Moving away from null and exceptions: An alternative way of error handling</Title>
+    <Description>Handling error conditions is a core part of the software we write. However, we often treat it as a
+      second class citizen, obscuring our intent through abuse of null values and exceptions that make our code hard to
+      understand and maintain. In the functional programming community, it is common to use datatypes such as Option,
+      Either or Validated to make our intentions explicit when dealing with errors. We can leverage the compiler to
+      verify that we are handling them instead of hoping for the best at runtime. This results in code that is clearer,
+      without hidden path flows. We’ll show how we have been doing this in Kotlin, with the help of the Arrow library.
+    </Description>
+    <Status>2</Status>
+    <Username>ThoughtWorks</Username>
+    <URL>
+      https://www.slideshare.net/ThoughtWorks/moving-away-from-null-and-exceptions-an-alternative-way-of-error-handling
+    </URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/xconf-movingawayfromnullandexceptionsanalternativewayoferrorhandling-200702133404-thumbnail.jpg?cb=1593697287
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/xconf-movingawayfromnullandexceptionsanalternativewayoferrorhandling-200702133404-thumbnail-2.jpg?cb=1593697287
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/xconf-movingawayfromnullandexceptionsanalternativewayoferrorhandling-200702133404-thumbnail-3.jpg?cb=1593697287
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/xconf-movingawayfromnullandexceptionsanalternativewayoferrorhandling-200702133404-thumbnail-4.jpg?cb=1593697287
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/71b66vBYll9oMC" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a
+      href="https://www.slideshare.net/ThoughtWorks/moving-away-from-null-and-exceptions-an-alternative-way-of-error-handling"
+      title="Moving away from null and exceptions: An alternative way of error handling" target="_blank"&gt;Moving away
+      from null and exceptions: An alternative way of error handling&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/ThoughtWorks" target="_blank"&gt;ThoughtWorks&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-07-02 13:34:04 UTC</Created>
+    <Updated>2020-07-02 13:41:27 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/xconf-movingawayfromnullandexceptionsanalternativewayoferrorhandling-200702133404.pdf?response-content-disposition=attachment&amp;Signature=gLBvh%2Bz8yEw%2BxG2xlg4fsVcSiSw%3D&amp;Expires=1595479637&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>71b66vBYll9oMC</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/71b66vBYll9oMC</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>19848505</UserID>
+    <PPTLocation>xconf-movingawayfromnullandexceptionsanalternativewayoferrorhandling-200702133404</PPTLocation>
+    <StrippedTitle>moving-away-from-null-and-exceptions-an-alternative-way-of-error-handling</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">exceptions</Tag>
+      <Tag Count="1" Owner="1">null</Tag>
+      <Tag Count="1" Owner="1">option</Tag>
+      <Tag Count="1" Owner="1">containers</Tag>
+      <Tag Count="1" Owner="1">error handling</Tag>
+      <Tag Count="1" Owner="1">either</Tag>
+      <Tag Count="1" Owner="1">type system</Tag>
+      <Tag Count="1" Owner="1">data types</Tag>
+      <Tag Count="1" Owner="1">flow control</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">nullable types</Tag>
+      <Tag Count="1" Owner="1">checked exceptions</Tag>
+      <Tag Count="1" Owner="1">sealed classes</Tag>
+      <Tag Count="1" Owner="1">anemic domain</Tag>
+      <Tag Count="1" Owner="1">xconfonline20</Tag>
+      <Tag Count="1" Owner="1">runtime vs compile time</Tag>
+      <Tag Count="1" Owner="1">absent value</Tag>
+      <Tag Count="1" Owner="1">failed computation</Tag>
+    </Tags>
+    <NumDownloads>0</NumDownloads>
+    <NumViews>236</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>77</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>236478619</ID>
+    <Title>Transaction is a monad</Title>
+    <Description>Functional programming
+      Monads for aspects
+    </Description>
+    <Status>2</Status>
+    <Username>JarekRatajski</Username>
+    <URL>https://www.slideshare.net/JarekRatajski/transaction-is-a-monad</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/transactionisamonad-200701170131-thumbnail.jpg?cb=1593622948
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/transactionisamonad-200701170131-thumbnail-2.jpg?cb=1593622948
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/transactionisamonad-200701170131-thumbnail-3.jpg?cb=1593622948
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/transactionisamonad-200701170131-thumbnail-4.jpg?cb=1593622948
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/i5x6LRbgOujgFE" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/JarekRatajski/transaction-is-a-monad" title="Transaction is
+      a monad" target="_blank"&gt;Transaction is a monad&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/JarekRatajski" target="_blank"&gt;Jarek Ratajski&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-07-01 17:01:31 UTC</Created>
+    <Updated>2020-07-01 17:02:28 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/transactionisamonad-200701170131.pdf?response-content-disposition=attachment&amp;Signature=CFuUS%2BlVM84kEt5rG%2FEw9NPjuvU%3D&amp;Expires=1595479637&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>i5x6LRbgOujgFE</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/i5x6LRbgOujgFE</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>100077302</UserID>
+    <PPTLocation>transactionisamonad-200701170131</PPTLocation>
+    <StrippedTitle>transaction-is-a-monad</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">java</Tag>
+      <Tag Count="1" Owner="1">transactions</Tag>
+      <Tag Count="1" Owner="1">fp</Tag>
+      <Tag Count="1" Owner="1">monads</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>2</NumDownloads>
+    <NumViews>97</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>138</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>236352898</ID>
+    <Title>Android app development training certificate of completion</Title>
+    <Description>Android Development using Kotlin</Description>
+    <Status>2</Status>
+    <Username>sayan1998</Username>
+    <URL>https://www.slideshare.net/sayan1998/android-app-development-training-certificate-of-completion-236352898</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/androidappdevelopmenttraining-certificateofcompletion-200629080434-thumbnail.jpg?cb=1593418026
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/androidappdevelopmenttraining-certificateofcompletion-200629080434-thumbnail-2.jpg?cb=1593418026
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/androidappdevelopmenttraining-certificateofcompletion-200629080434-thumbnail-3.jpg?cb=1593418026
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/androidappdevelopmenttraining-certificateofcompletion-200629080434-thumbnail-4.jpg?cb=1593418026
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/vIN7aRcSCT5xdW" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a
+      href="https://www.slideshare.net/sayan1998/android-app-development-training-certificate-of-completion-236352898"
+      title="Android app development training certificate of completion" target="_blank"&gt;Android app development
+      training certificate of completion&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/sayan1998" target="_blank"&gt;sayan1998&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-06-29 08:04:34 UTC</Created>
+    <Updated>2020-06-29 08:07:06 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/androidappdevelopmenttraining-certificateofcompletion-200629080434.pdf?response-content-disposition=attachment&amp;Signature=zIPpzXZIhLRYrp4ShTsoKKueiSE%3D&amp;Expires=1595479637&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>vIN7aRcSCT5xdW</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/vIN7aRcSCT5xdW</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>68722129</UserID>
+    <PPTLocation>androidappdevelopmenttraining-certificateofcompletion-200629080434</PPTLocation>
+    <StrippedTitle>android-app-development-training-certificate-of-completion-236352898</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">#android</Tag>
+      <Tag Count="1" Owner="1">#training</Tag>
+      <Tag Count="1" Owner="1">#app</Tag>
+      <Tag Count="1" Owner="1">#project</Tag>
+      <Tag Count="1" Owner="1">#kotlin</Tag>
+      <Tag Count="1" Owner="1">#androiddeveloper</Tag>
+      <Tag Count="1" Owner="1">#internshala</Tag>
+    </Tags>
+    <NumDownloads>0</NumDownloads>
+    <NumViews>17</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>1</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>236216952</ID>
+    <Title>Kotlin黑魔法：Delegated Properties</Title>
+    <Description>How to use Delegated Properties in Kotlin. Using Delegated Properties is a way to simplify your
+      redundant code.
+    </Description>
+    <Status>2</Status>
+    <Username>EnPingHsieh</Username>
+    <URL>https://www.slideshare.net/EnPingHsieh/kotlindelegated-properties</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/lenefrnrweg00gsajteq-signature-8df98af5580e0a4e4df97afad3e7309bd71a41c97f49c5a233f5edfbff59efaf-poli-200625185045-thumbnail.jpg?cb=1593111328
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/lenefrnrweg00gsajteq-signature-8df98af5580e0a4e4df97afad3e7309bd71a41c97f49c5a233f5edfbff59efaf-poli-200625185045-thumbnail-2.jpg?cb=1593111328
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/lenefrnrweg00gsajteq-signature-8df98af5580e0a4e4df97afad3e7309bd71a41c97f49c5a233f5edfbff59efaf-poli-200625185045-thumbnail-3.jpg?cb=1593111328
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/lenefrnrweg00gsajteq-signature-8df98af5580e0a4e4df97afad3e7309bd71a41c97f49c5a233f5edfbff59efaf-poli-200625185045-thumbnail-4.jpg?cb=1593111328
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/8ywnc1pz1xCpS8" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/EnPingHsieh/kotlindelegated-properties"
+      title="Kotlin黑魔法：Delegated Properties" target="_blank"&gt;Kotlin黑魔法：Delegated Properties&lt;/a&gt; &lt;/strong&gt;
+      from &lt;strong&gt;&lt;a href="https://www.slideshare.net/EnPingHsieh" target="_blank"&gt;En-Ping Hsieh&lt;/a&gt;&lt;/strong&gt;
+      &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-06-25 18:50:45 UTC</Created>
+    <Updated>2020-06-25 18:55:28 UTC</Updated>
+    <Language>en</Language>
+    <Format>pptx</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/lenefrnrweg00gsajteq-signature-8df98af5580e0a4e4df97afad3e7309bd71a41c97f49c5a233f5edfbff59efaf-poli-200625185045.pdf?response-content-disposition=attachment&amp;Signature=WdJl2acemXzPuRBhXcIf91a2XNM%3D&amp;Expires=1595479637&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>8ywnc1pz1xCpS8</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/8ywnc1pz1xCpS8</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>87131440</UserID>
+    <PPTLocation>
+      lenefrnrweg00gsajteq-signature-8df98af5580e0a4e4df97afad3e7309bd71a41c97f49c5a233f5edfbff59efaf-poli-200625185045
+    </PPTLocation>
+    <StrippedTitle>kotlindelegated-properties</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">android</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">delegated properties</Tag>
+    </Tags>
+    <NumDownloads>2</NumDownloads>
+    <NumViews>42</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>75</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+</Tag>
