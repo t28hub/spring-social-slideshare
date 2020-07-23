@@ -1,0 +1,1213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Slideshows>
+  <Meta>
+    <Query>kotlin</Query>
+    <ResultOffset/>
+    <NumResults>18</NumResults>
+    <TotalResults>4268</TotalResults>
+  </Meta>
+  <Slideshow>
+    <ID>120024751</ID>
+    <Title>Kotlin Coroutines in Practice @ KotlinConf 2018</Title>
+    <Description>Kotlin Coroutines in Practice, presented at KotlinConf 2018, video is available here
+      https://www.youtube.com/watch?v=a3agLJQ6vt8
+    </Description>
+    <Status>2</Status>
+    <Username>elizarov</Username>
+    <URL>https://www.slideshare.net/elizarov/kotlin-coroutines-in-practice-kotlinconf-2018</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/2018kotlinconf-kotlincoroutinesinpractice-181019135933-thumbnail.jpg?cb=1539957650
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/2018kotlinconf-kotlincoroutinesinpractice-181019135933-thumbnail-2.jpg?cb=1539957650
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/2018kotlinconf-kotlincoroutinesinpractice-181019135933-thumbnail-3.jpg?cb=1539957650
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/2018kotlinconf-kotlincoroutinesinpractice-181019135933-thumbnail-4.jpg?cb=1539957650
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/oU2R4a2KmxXmTd" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/elizarov/kotlin-coroutines-in-practice-kotlinconf-2018"
+      title="Kotlin Coroutines in Practice @ KotlinConf 2018" target="_blank"&gt;Kotlin Coroutines in Practice @
+      KotlinConf 2018&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="https://www.slideshare.net/elizarov"
+      target="_blank"&gt;Roman Elizarov&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2018-10-19 13:59:33 UTC</Created>
+    <Updated>2018-10-19 14:00:50 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/2018kotlinconf-kotlincoroutinesinpractice-181019135933.pdf?response-content-disposition=attachment&amp;Signature=DifLn%2FVQc9nrp0NhRXgtaz%2BOzf4%3D&amp;Expires=1595483061&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>oU2R4a2KmxXmTd</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/oU2R4a2KmxXmTd</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>40791756</UserID>
+    <PPTLocation>2018kotlinconf-kotlincoroutinesinpractice-181019135933</PPTLocation>
+    <StrippedTitle>kotlin-coroutines-in-practice-kotlinconf-2018</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">coroutines</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>164</NumDownloads>
+    <NumViews>2783</NumViews>
+    <NumComments>2</NumComments>
+    <NumFavorites>14</NumFavorites>
+    <NumSlides>128</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>97248568</ID>
+    <Title>Kotlin Crash Course</Title>
+    <Description>These are the slides I was using in a short Kotlin crash course I delivered in Google Campus (Tel-Aviv)
+      on May 14th 2018. More info about this event can be found at https://www.meetup.com/life-michael/events/243709706/
+      More info about my company professional training services for software developers can be found at
+      http://www.lifemichael.com. More information about the Kotlin professional course I deliver can be found at
+      kotlin.course.lifemichael.com.
+    </Description>
+    <Status>2</Status>
+    <Username>lifemichael</Username>
+    <URL>https://www.slideshare.net/lifemichael/kotlin-crash-course-97248568</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlincrashcourse20180514-180516054005-thumbnail.jpg?cb=1534149052
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlincrashcourse20180514-180516054005-thumbnail-2.jpg?cb=1534149052
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlincrashcourse20180514-180516054005-thumbnail-3.jpg?cb=1534149052
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlincrashcourse20180514-180516054005-thumbnail-4.jpg?cb=1534149052
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/gk4Zacvc08ED7W" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/lifemichael/kotlin-crash-course-97248568" title="Kotlin
+      Crash Course" target="_blank"&gt;Kotlin Crash Course&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/lifemichael" target="_blank"&gt;Haim Michael&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2018-05-16 05:40:05 UTC</Created>
+    <Updated>2018-08-13 08:30:52 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/kotlincrashcourse20180514-180516054005.pdf?response-content-disposition=attachment&amp;Signature=zOk%2BrcPpit42WVGBIHo4lUhssAw%3D&amp;Expires=1595483061&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>gk4Zacvc08ED7W</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/gk4Zacvc08ED7W</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>30584846</UserID>
+    <PPTLocation>kotlincrashcourse20180514-180516054005</PPTLocation>
+    <StrippedTitle>kotlin-crash-course-97248568</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">java</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>68</NumDownloads>
+    <NumViews>1459</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>6</NumFavorites>
+    <NumSlides>159</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>140124688</ID>
+    <Title>Effective Java and Kotlin</Title>
+    <Description>https://www.youtube.com/watch?v=QIRJKIDLZgU
+      Effective Java는 효율적이고 잘 설계된 Java 프로그램을 구현하기 위한 지침들을 소개하는 책입니다. Kotlin에서는 이 지침들이 잘 적용될 수 있는 설계를 갖추고 있는데요, Kotlin
+      Reference 문서에서는 설명을 뒷받침하기 위해 이 책을 인용하기도 합니다. 세션에서는 &amp;quot;이펙티브 자바&amp;quot; 책의 규칙들을 짚어가면서, Kotlin에 어떻게 반영되었는지,
+      혹은 어떻게 적용될수 있는지에 대해 공유합니다.
+    </Description>
+    <Status>2</Status>
+    <Username>ssusere1baae</Username>
+    <URL>https://www.slideshare.net/ssusere1baae/effective-java-and-kotlin</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/effectivejavaandkotlinslideshare-190409034417-thumbnail.jpg?cb=1556682310
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/effectivejavaandkotlinslideshare-190409034417-thumbnail-2.jpg?cb=1556682310
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/effectivejavaandkotlinslideshare-190409034417-thumbnail-3.jpg?cb=1556682310
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/effectivejavaandkotlinslideshare-190409034417-thumbnail-4.jpg?cb=1556682310
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/McRLUx591JsVTg" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/ssusere1baae/effective-java-and-kotlin" title="Effective
+      Java and Kotlin" target="_blank"&gt;Effective Java and Kotlin&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/ssusere1baae" target="_blank"&gt;경주 전&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2019-04-09 03:44:17 UTC</Created>
+    <Updated>2019-05-01 03:45:10 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/effectivejavaandkotlinslideshare-190409034417.pdf?response-content-disposition=attachment&amp;Signature=677Ha6Wr%2BHLaW1i6UEbGckVwGKc%3D&amp;Expires=1595483061&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>McRLUx591JsVTg</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/McRLUx591JsVTg</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>86565626</UserID>
+    <PPTLocation>effectivejavaandkotlinslideshare-190409034417</PPTLocation>
+    <StrippedTitle>effective-java-and-kotlin</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">effective java</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>38</NumDownloads>
+    <NumViews>5271</NumViews>
+    <NumComments>3</NumComments>
+    <NumFavorites>61</NumFavorites>
+    <NumSlides>109</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>78397230</ID>
+    <Title>Kotlin</Title>
+    <Description>Slides of my Kotlin Presentation on Android Crash Course at Wizeline Academy - 29 and 30 jully 2017.
+    </Description>
+    <Status>2</Status>
+    <Username>AdemarAlvesdeOliveir</Username>
+    <URL>https://www.slideshare.net/AdemarAlvesdeOliveir/kotlin-78397230</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlin-170731004822-thumbnail.jpg?cb=1501462370</ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlin-170731004822-thumbnail-2.jpg?cb=1501462370
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlin-170731004822-thumbnail-3.jpg?cb=1501462370
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlin-170731004822-thumbnail-4.jpg?cb=1501462370
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/GQEqewNTCyqi1z" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/AdemarAlvesdeOliveir/kotlin-78397230" title="Kotlin"
+      target="_blank"&gt;Kotlin&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/AdemarAlvesdeOliveir" target="_blank"&gt;Ademar Alves de Oliveira&lt;/a&gt;&lt;/strong&gt;
+      &lt;/div&gt;
+
+    </Embed>
+    <Created>2017-07-31 00:48:22 UTC</Created>
+    <Updated>2017-07-31 00:52:50 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>https://s3.amazonaws.com/ppt-download/kotlin-170731004822.pdf?response-content-disposition=attachment&amp;Signature=1MwHpwaYbJevN%2BEsPux75q2AwaY%3D&amp;Expires=1595483061&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ</DownloadUrl>
+    <SecretKey>GQEqewNTCyqi1z</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/GQEqewNTCyqi1z</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>62516272</UserID>
+    <PPTLocation>kotlin-170731004822</PPTLocation>
+    <StrippedTitle>kotlin-78397230</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">java</Tag>
+      <Tag Count="1" Owner="1">android</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>69</NumDownloads>
+    <NumViews>812</NumViews>
+    <NumComments>1</NumComments>
+    <NumFavorites>10</NumFavorites>
+    <NumSlides>229</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>111927867</ID>
+    <Title>Effective kotlin</Title>
+    <Description>Kotlin is a language that is designed to improve productivity immediately upon its adoption. However,
+      there exists a sea of language features and third party libraries that can further supercharge your workflow.
+
+      This talk will discuss the use of language features and libraries to do things like improve type safety with
+      sealed classes or reduce boilerplate with domain specific languages and infix functions.
+
+      We’ll also cover some functional programming concepts that either build upon the language, like the Option type
+      does with nullability, or supplement the language, like the Try type does with Kotlin’s lack of checked
+      exceptions.
+    </Description>
+    <Status>2</Status>
+    <Username>AndrewOrobator</Username>
+    <URL>https://www.slideshare.net/AndrewOrobator/effective-kotlin</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/effectivekotlin-180828123804-thumbnail.jpg?cb=1535460042
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/effectivekotlin-180828123804-thumbnail-2.jpg?cb=1535460042
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/effectivekotlin-180828123804-thumbnail-3.jpg?cb=1535460042
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/effectivekotlin-180828123804-thumbnail-4.jpg?cb=1535460042
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/tVMGhJBkvuZAIR" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/AndrewOrobator/effective-kotlin" title="Effective kotlin"
+      target="_blank"&gt;Effective kotlin&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/AndrewOrobator" target="_blank"&gt;AndrewOrobator&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2018-08-28 12:38:04 UTC</Created>
+    <Updated>2018-08-28 12:40:42 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/effectivekotlin-180828123804.pdf?response-content-disposition=attachment&amp;Signature=E5O40beIhpt8w2mjmxiqU60Byv0%3D&amp;Expires=1595483061&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>tVMGhJBkvuZAIR</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/tVMGhJBkvuZAIR</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>76089503</UserID>
+    <PPTLocation>effectivekotlin-180828123804</PPTLocation>
+    <StrippedTitle>effective-kotlin</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">code</Tag>
+      <Tag Count="1" Owner="1">programming</Tag>
+      <Tag Count="1" Owner="1">android</Tag>
+      <Tag Count="1" Owner="1">functional programming</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">type safety</Tag>
+    </Tags>
+    <NumDownloads>32</NumDownloads>
+    <NumViews>1029</NumViews>
+    <NumComments>1</NumComments>
+    <NumFavorites>5</NumFavorites>
+    <NumSlides>192</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>55520486</ID>
+    <Title>Kotlin: Why Do You Care?</Title>
+    <Description>Kotlin talk from JetBrains Night Munich (25 Nov 2015)</Description>
+    <Status>2</Status>
+    <Username>intelliyole</Username>
+    <URL>https://www.slideshare.net/intelliyole/kotlin-why-do-you-care</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlinexperiencereport-25nov2015-151125194034-lva1-app6892-thumbnail.jpg?cb=1448480560
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlinexperiencereport-25nov2015-151125194034-lva1-app6892-thumbnail-2.jpg?cb=1448480560
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlinexperiencereport-25nov2015-151125194034-lva1-app6892-thumbnail-3.jpg?cb=1448480560
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlinexperiencereport-25nov2015-151125194034-lva1-app6892-thumbnail-4.jpg?cb=1448480560
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/K9gw8dzzSc5CJC" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/intelliyole/kotlin-why-do-you-care" title="Kotlin: Why Do
+      You Care?" target="_blank"&gt;Kotlin: Why Do You Care?&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/intelliyole" target="_blank"&gt;intelliyole&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2015-11-25 19:40:34 UTC</Created>
+    <Updated>2015-11-25 19:42:40 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/kotlinexperiencereport-25nov2015-151125194034-lva1-app6892.pdf?response-content-disposition=attachment&amp;Signature=vnF%2F3pddVEW1PqwUflpGO2mRZvc%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>K9gw8dzzSc5CJC</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/K9gw8dzzSc5CJC</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>3204080</UserID>
+    <PPTLocation>kotlinexperiencereport-25nov2015-151125194034-lva1-app6892</PPTLocation>
+    <StrippedTitle>kotlin-why-do-you-care</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">jetbrains</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>90</NumDownloads>
+    <NumViews>4972</NumViews>
+    <NumComments>6</NumComments>
+    <NumFavorites>19</NumFavorites>
+    <NumSlides>67</NumSlides>
+    <RelatedSlideshows>
+      <RelatedSlideshowID rank="1">61900802</RelatedSlideshowID>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>94842418</ID>
+    <Title>Kotlin Backstage - Android Makers Paris 2018</Title>
+    <Description>Kotlin offers a modern language design in contrast to Java, while at the same time maintaining full
+      Java interoperably: Data classes, properties, delegation, inline functions, string interpolation and much more.
+      But, if Java can&amp;#39;t offer these features how come Kotlin can? What does Kotlin do to make it possible to
+      use this Syntactic sugar?
+
+      In this talk, we will go backstage and dig into the Bytecode that Kotlin generates to make all the features we
+      love work on a runtime that technically does not support them. We will look at the impact kotlin code generations
+      has on method count. Get a deeper understanding of how Object and companion object work and see the implications
+      of the use of either under different circumstances. Finally look at common patterns that can help reduce the size
+      of both the bytecode and method count.
+    </Description>
+    <Status>2</Status>
+    <Username>vonGraham</Username>
+    <URL>https://www.slideshare.net/vonGraham/kotlin-backstage-android-makers-paris-2018</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlin-backstage-amfr-180424080528-thumbnail.jpg?cb=1524557194
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlin-backstage-amfr-180424080528-thumbnail-2.jpg?cb=1524557194
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlin-backstage-amfr-180424080528-thumbnail-3.jpg?cb=1524557194
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlin-backstage-amfr-180424080528-thumbnail-4.jpg?cb=1524557194
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/3zm8Tw9VJAx0e6" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/vonGraham/kotlin-backstage-android-makers-paris-2018"
+      title="Kotlin Backstage - Android Makers Paris 2018" target="_blank"&gt;Kotlin Backstage - Android Makers Paris
+      2018&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="https://www.slideshare.net/vonGraham"
+      target="_blank"&gt;Mitchell Tilbrook&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2018-04-24 08:05:28 UTC</Created>
+    <Updated>2018-04-24 08:06:34 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/kotlin-backstage-amfr-180424080528.pdf?response-content-disposition=attachment&amp;Signature=FClkXnb9VD3UiHJZhNx%2BiqdK8gQ%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>3zm8Tw9VJAx0e6</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/3zm8Tw9VJAx0e6</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>53524480</UserID>
+    <PPTLocation>kotlin-backstage-amfr-180424080528</PPTLocation>
+    <StrippedTitle>kotlin-backstage-android-makers-paris-2018</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">java</Tag>
+      <Tag Count="1" Owner="1">bytecode</Tag>
+      <Tag Count="1" Owner="1">jvm</Tag>
+      <Tag Count="1" Owner="1">android</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>13</NumDownloads>
+    <NumViews>441</NumViews>
+    <NumComments>8</NumComments>
+    <NumFavorites>7</NumFavorites>
+    <NumSlides>173</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>111317663</ID>
+    <Title>Fp basic-kotlin</Title>
+    <Description>FunctionalProgramming with kotlin
+
+      PureFunction
+      Immutable
+      Lazy evaluation
+      FP DataStructur
+      Higher-order function
+      FirstClassCitizen(Function)
+      Recursion
+      PartialAppliedFunction
+      Curring
+      Collection
+      PartialFunction
+      Algebraic Data Type
+      Error
+    </Description>
+    <Status>2</Status>
+    <Username>myeonginwoo</Username>
+    <URL>https://www.slideshare.net/myeonginwoo/fp-basickotlin</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/fp-basic-kotlin-180824134622-thumbnail.jpg?cb=1535118546
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/fp-basic-kotlin-180824134622-thumbnail-2.jpg?cb=1535118546
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/fp-basic-kotlin-180824134622-thumbnail-3.jpg?cb=1535118546
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/fp-basic-kotlin-180824134622-thumbnail-4.jpg?cb=1535118546
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/hCXSlSOtfpTs1u" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/myeonginwoo/fp-basickotlin" title="Fp basic-kotlin"
+      target="_blank"&gt;Fp basic-kotlin&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/myeonginwoo" target="_blank"&gt;Myeongin Woo&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2018-08-24 13:46:22 UTC</Created>
+    <Updated>2018-08-24 13:49:06 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/fp-basic-kotlin-180824134622.pdf?response-content-disposition=attachment&amp;Signature=Ol5Mo9MFKV9qxHgtV8lZ3nZ2nT8%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>hCXSlSOtfpTs1u</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/hCXSlSOtfpTs1u</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>49091063</UserID>
+    <PPTLocation>fp-basic-kotlin-180824134622</PPTLocation>
+    <StrippedTitle>fp-basickotlin</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">exception</Tag>
+      <Tag Count="1" Owner="1">fp</Tag>
+      <Tag Count="1" Owner="1">recursion</Tag>
+      <Tag Count="1" Owner="1">functionalprogramming</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">higher-order function</Tag>
+      <Tag Count="1" Owner="1">lazysoul</Tag>
+      <Tag Count="1" Owner="1">first-class citizen</Tag>
+      <Tag Count="1" Owner="1">sealedclass</Tag>
+      <Tag Count="1" Owner="1">tacademy</Tag>
+      <Tag Count="1" Owner="1">algebraic-data</Tag>
+    </Tags>
+    <NumDownloads>10</NumDownloads>
+    <NumViews>143</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>2</NumFavorites>
+    <NumSlides>285</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>152689511</ID>
+    <Title>炎炎夏日學 Android 課程 - Part1: Kotlin 語法介紹</Title>
+    <Description>炎炎夏日學 Android 課程 - Part1: Kotlin 語法介紹
+      （Kotlin EveryWhere 活動）
+    </Description>
+    <Status>2</Status>
+    <Username>j796160836</Username>
+    <URL>https://www.slideshare.net/j796160836/android-part1-kotlin</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlinandroidworkshoppart1-190630015323-thumbnail.jpg?cb=1561859676
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlinandroidworkshoppart1-190630015323-thumbnail-2.jpg?cb=1561859676
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlinandroidworkshoppart1-190630015323-thumbnail-3.jpg?cb=1561859676
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlinandroidworkshoppart1-190630015323-thumbnail-4.jpg?cb=1561859676
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/4T5E0R74HSgtpc" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/j796160836/android-part1-kotlin" title="炎炎夏日學 Android 課程 -
+      Part1: Kotlin 語法介紹" target="_blank"&gt;炎炎夏日學 Android 課程 - Part1: Kotlin 語法介紹&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/j796160836" target="_blank"&gt;Johnny Sung&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2019-06-30 01:53:23 UTC</Created>
+    <Updated>2019-06-30 01:54:36 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/kotlinandroidworkshoppart1-190630015323.pdf?response-content-disposition=attachment&amp;Signature=pCI8q9XvzS8Rm9lvP9QdaMOap%2B0%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>4T5E0R74HSgtpc</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/4T5E0R74HSgtpc</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>37492694</UserID>
+    <PPTLocation>kotlinandroidworkshoppart1-190630015323</PPTLocation>
+    <StrippedTitle>android-part1-kotlin</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">development</Tag>
+      <Tag Count="1" Owner="1">android</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>3</NumDownloads>
+    <NumViews>536</NumViews>
+    <NumComments>6</NumComments>
+    <NumFavorites>3</NumFavorites>
+    <NumSlides>107</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>111288025</ID>
+    <Title>Refactoring point of Kotlin application</Title>
+    <Description>Kotlin Fest 2018の発表資料です</Description>
+    <Status>2</Status>
+    <Username>RecruitLifestyle</Username>
+    <URL>https://www.slideshare.net/RecruitLifestyle/refactoring-point-of-kotlin-application</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/refactoringpointofkotlinapplication-180824075221-thumbnail.jpg?cb=1535097292
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/refactoringpointofkotlinapplication-180824075221-thumbnail-2.jpg?cb=1535097292
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/refactoringpointofkotlinapplication-180824075221-thumbnail-3.jpg?cb=1535097292
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/refactoringpointofkotlinapplication-180824075221-thumbnail-4.jpg?cb=1535097292
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/crHCtpqwXf4ABn" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/RecruitLifestyle/refactoring-point-of-kotlin-application"
+      title="Refactoring point of Kotlin application" target="_blank"&gt;Refactoring point of Kotlin application&lt;/a&gt;
+      &lt;/strong&gt; from &lt;strong&gt;&lt;a href="https://www.slideshare.net/RecruitLifestyle" target="_blank"&gt;Recruit
+      Lifestyle Co., Ltd.&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2018-08-24 07:52:21 UTC</Created>
+    <Updated>2018-08-24 07:54:52 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/refactoringpointofkotlinapplication-180824075221.pdf?response-content-disposition=attachment&amp;Signature=mPojb6ZVzRXB3AUPW3g8om%2Bzr3w%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>crHCtpqwXf4ABn</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/crHCtpqwXf4ABn</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>79152501</UserID>
+    <PPTLocation>refactoringpointofkotlinapplication-180824075221</PPTLocation>
+    <StrippedTitle>refactoring-point-of-kotlin-application</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">android</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">リクルートライフスタイル</Tag>
+      <Tag Count="1" Owner="1">recruitlifestyle</Tag>
+    </Tags>
+    <NumDownloads>14</NumDownloads>
+    <NumViews>7861</NumViews>
+    <NumComments>2</NumComments>
+    <NumFavorites>5</NumFavorites>
+    <NumSlides>141</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>236714755</ID>
+    <Title>Rapid Web API development with Kotlin and Ktor</Title>
+    <Description>Introduction to Kotlin and Ktor with flow, async and channel examples. Ktor is an async web framework
+      with minimal ceremony that leverages the advantages of Kotlin like coroutines and extensible functional DSLs..
+    </Description>
+    <Status>2</Status>
+    <Username>Trayan_Iliev</Username>
+    <URL>https://www.slideshare.net/Trayan_Iliev/rapid-web-api-development-with-kotlin-and-ktor</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/ktor-200708130934-thumbnail.jpg?cb=1594214054</ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/ktor-200708130934-thumbnail-2.jpg?cb=1594214054
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/ktor-200708130934-thumbnail-3.jpg?cb=1594214054
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/ktor-200708130934-thumbnail-4.jpg?cb=1594214054
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/2v1O1zSvqt6Zae" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/Trayan_Iliev/rapid-web-api-development-with-kotlin-and-ktor"
+      title="Rapid Web API development with Kotlin and Ktor" target="_blank"&gt;Rapid Web API development with Kotlin
+      and Ktor&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="https://www.slideshare.net/Trayan_Iliev"
+      target="_blank"&gt;Trayan Iliev&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-07-08 13:09:34 UTC</Created>
+    <Updated>2020-07-08 13:14:14 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>https://s3.amazonaws.com/ppt-download/ktor-200708130934.pdf?response-content-disposition=attachment&amp;Signature=exvNvMEtNQ0i1I3htsht1SBLyYg%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ</DownloadUrl>
+    <SecretKey>2v1O1zSvqt6Zae</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/2v1O1zSvqt6Zae</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69281280</UserID>
+    <PPTLocation>ktor-200708130934</PPTLocation>
+    <StrippedTitle>rapid-web-api-development-with-kotlin-and-ktor</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">web</Tag>
+      <Tag Count="1" Owner="1">framework</Tag>
+      <Tag Count="1" Owner="1">channel</Tag>
+      <Tag Count="1" Owner="1">rest</Tag>
+      <Tag Count="1" Owner="1">flow</Tag>
+      <Tag Count="1" Owner="1">web service</Tag>
+      <Tag Count="1" Owner="1">io</Tag>
+      <Tag Count="1" Owner="1">async</Tag>
+      <Tag Count="1" Owner="1">websocket</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">ktor</Tag>
+    </Tags>
+    <NumDownloads>2</NumDownloads>
+    <NumViews>133</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>55</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>179563838</ID>
+    <Title>Mastering Kotlin Standard Library</Title>
+    <Description>In this talk I presented three important topics in Kotlin Standard Library: Scope Functions (let,
+      apply, also, run and with); Annotations (Deprecated, Experimental, Jvm*, DslMarker); and Delegates (lazy,
+      vetoable, observable)
+    </Description>
+    <Status>2</Status>
+    <Username>nglauber</Username>
+    <URL>https://www.slideshare.net/nglauber/mastering-kotlin-standard-library</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlinstdlib-191007003221-thumbnail.jpg?cb=1570408476
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlinstdlib-191007003221-thumbnail-2.jpg?cb=1570408476
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlinstdlib-191007003221-thumbnail-3.jpg?cb=1570408476
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlinstdlib-191007003221-thumbnail-4.jpg?cb=1570408476
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/10K2pks2ulix0s" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/nglauber/mastering-kotlin-standard-library" title="Mastering
+      Kotlin Standard Library" target="_blank"&gt;Mastering Kotlin Standard Library&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/nglauber" target="_blank"&gt;Nelson Glauber Leal&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2019-10-07 00:32:21 UTC</Created>
+    <Updated>2019-10-07 00:34:36 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/kotlinstdlib-191007003221.pdf?response-content-disposition=attachment&amp;Signature=FL8e%2FZolb%2BplrnMrteaaAEsX0VM%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>10K2pks2ulix0s</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/10K2pks2ulix0s</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>30211699</UserID>
+    <PPTLocation>kotlinstdlib-191007003221</PPTLocation>
+    <StrippedTitle>mastering-kotlin-standard-library</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">annotations</Tag>
+      <Tag Count="1" Owner="1">delegates</Tag>
+      <Tag Count="1" Owner="1">standard library</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">std lib</Tag>
+      <Tag Count="1" Owner="1">scope functions</Tag>
+    </Tags>
+    <NumDownloads>13</NumDownloads>
+    <NumViews>285</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>3</NumFavorites>
+    <NumSlides>99</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>94998156</ID>
+    <Title>Kotlin @ Coupang Backend 2017</Title>
+    <Description>쿠팡 카탈로그 부서에서 Kotlin 을 Backend 에 도입한 사례와 Kotlin 기본 문법과 Coroutines 에 대해 설명합니다.</Description>
+    <Status>2</Status>
+    <Username>debop</Username>
+    <URL>https://www.slideshare.net/debop/kotlin-coupang-backend-2017</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlinatcoupang2017-180425151604-thumbnail.jpg?cb=1524669462
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlinatcoupang2017-180425151604-thumbnail-2.jpg?cb=1524669462
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlinatcoupang2017-180425151604-thumbnail-3.jpg?cb=1524669462
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/kotlinatcoupang2017-180425151604-thumbnail-4.jpg?cb=1524669462
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/J6aSYU6ibI1kgv" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/debop/kotlin-coupang-backend-2017" title="Kotlin @ Coupang
+      Backend 2017" target="_blank"&gt;Kotlin @ Coupang Backend 2017&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/debop" target="_blank"&gt;Sunghyouk Bae&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2018-04-25 15:16:04 UTC</Created>
+    <Updated>2018-04-25 15:17:42 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/kotlinatcoupang2017-180425151604.pdf?response-content-disposition=attachment&amp;Signature=JmFJkU%2BjMfdOQKK7feRHKVD2Wqg%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>J6aSYU6ibI1kgv</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/J6aSYU6ibI1kgv</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>6538382</UserID>
+    <PPTLocation>kotlinatcoupang2017-180425151604</PPTLocation>
+    <StrippedTitle>kotlin-coupang-backend-2017</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">backend</Tag>
+      <Tag Count="1" Owner="1">tokenizer</Tag>
+      <Tag Count="1" Owner="1">coroutines</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">coupang</Tag>
+    </Tags>
+    <NumDownloads>20</NumDownloads>
+    <NumViews>1340</NumViews>
+    <NumComments>8</NumComments>
+    <NumFavorites>11</NumFavorites>
+    <NumSlides>85</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>197317120</ID>
+    <Title>Kotlin Generation</Title>
+    <Description>Talk about why developer should know about Kotlin. This session in Code Mania 111 at 10 June 2018.
+    </Description>
+    <Status>2</Status>
+    <Username>sanaka504</Username>
+    <URL>https://www.slideshare.net/sanaka504/kotlin-generation</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/codemania111kotlin-191125071914-thumbnail.jpg?cb=1574666477
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/codemania111kotlin-191125071914-thumbnail-2.jpg?cb=1574666477
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/codemania111kotlin-191125071914-thumbnail-3.jpg?cb=1574666477
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/codemania111kotlin-191125071914-thumbnail-4.jpg?cb=1574666477
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/2bb9t9KZevmm3N" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/sanaka504/kotlin-generation" title="Kotlin Generation"
+      target="_blank"&gt;Kotlin Generation&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/sanaka504" target="_blank"&gt;Minseo Chayabanjonglerd&lt;/a&gt;&lt;/strong&gt;
+      &lt;/div&gt;
+
+    </Embed>
+    <Created>2019-11-25 07:19:14 UTC</Created>
+    <Updated>2019-11-25 07:21:17 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/codemania111kotlin-191125071914.pdf?response-content-disposition=attachment&amp;Signature=ZRlNIeqTBTqUw9b7pMdMj5Ey4jw%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>2bb9t9KZevmm3N</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/2bb9t9KZevmm3N</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>32361712</UserID>
+    <PPTLocation>codemania111kotlin-191125071914</PPTLocation>
+    <StrippedTitle>kotlin-generation</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>3</NumDownloads>
+    <NumViews>45</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>125</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>82078432</ID>
+    <Title>Fresh Async with Kotlin @ QConSF 2017</Title>
+    <Description>Fresh Async with Kotlin, presented at QConSF 2017</Description>
+    <Status>2</Status>
+    <Username>elizarov</Username>
+    <URL>https://www.slideshare.net/elizarov/fresh-async-with-kotlin</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/2017qconsf-freshasyncwithkotlin-171114223811-thumbnail.jpg?cb=1510779842
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/2017qconsf-freshasyncwithkotlin-171114223811-thumbnail-2.jpg?cb=1510779842
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/2017qconsf-freshasyncwithkotlin-171114223811-thumbnail-3.jpg?cb=1510779842
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/2017qconsf-freshasyncwithkotlin-171114223811-thumbnail-4.jpg?cb=1510779842
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/GKJFAvOJ7SNeR1" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/elizarov/fresh-async-with-kotlin" title="Fresh Async with
+      Kotlin @ QConSF 2017" target="_blank"&gt;Fresh Async with Kotlin @ QConSF 2017&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/elizarov" target="_blank"&gt;Roman Elizarov&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2017-11-14 22:38:11 UTC</Created>
+    <Updated>2017-11-15 21:04:02 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/2017qconsf-freshasyncwithkotlin-171114223811.pdf?response-content-disposition=attachment&amp;Signature=rtd4eRGHFYcQER7nYr0yvItUui4%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>GKJFAvOJ7SNeR1</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/GKJFAvOJ7SNeR1</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>40791756</UserID>
+    <PPTLocation>2017qconsf-freshasyncwithkotlin-171114223811</PPTLocation>
+    <StrippedTitle>fresh-async-with-kotlin</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">async</Tag>
+      <Tag Count="1" Owner="1">coroutines</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>27</NumDownloads>
+    <NumViews>459</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>145</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>113974157</ID>
+    <Title>Aprendendo Kotlin na Prática</Title>
+    <Description>Estes são os slides utilizados durante o minicurso &amp;quot;Aprendendo Kotlin na Prática&amp;quot;
+      SECOMP UFScar 2018.
+    </Description>
+    <Status>2</Status>
+    <Username>felipe_pedroso</Username>
+    <URL>https://www.slideshare.net/felipe_pedroso/aprendendo-kotlin-na-prtica</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/minicurso-kotlin-na-pratica-180912014446-thumbnail.jpg?cb=1536716787
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/minicurso-kotlin-na-pratica-180912014446-thumbnail-2.jpg?cb=1536716787
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/minicurso-kotlin-na-pratica-180912014446-thumbnail-3.jpg?cb=1536716787
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/minicurso-kotlin-na-pratica-180912014446-thumbnail-4.jpg?cb=1536716787
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/nxXBY8424189fy" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/felipe_pedroso/aprendendo-kotlin-na-prtica"
+      title="Aprendendo Kotlin na Prática" target="_blank"&gt;Aprendendo Kotlin na Prática&lt;/a&gt; &lt;/strong&gt;
+      from &lt;strong&gt;&lt;a href="https://www.slideshare.net/felipe_pedroso" target="_blank"&gt;Felipe Pedroso&lt;/a&gt;&lt;/strong&gt;
+      &lt;/div&gt;
+
+    </Embed>
+    <Created>2018-09-12 01:44:46 UTC</Created>
+    <Updated>2018-09-12 01:46:27 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/minicurso-kotlin-na-pratica-180912014446.pdf?response-content-disposition=attachment&amp;Signature=F2s7P9nPG8bNEdq9N4i3oO2eVZM%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>nxXBY8424189fy</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/nxXBY8424189fy</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>36388084</UserID>
+    <PPTLocation>minicurso-kotlin-na-pratica-180912014446</PPTLocation>
+    <StrippedTitle>aprendendo-kotlin-na-prtica</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">programming</Tag>
+      <Tag Count="1" Owner="1">intellij</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>51</NumDownloads>
+    <NumViews>1622</NumViews>
+    <NumComments>7</NumComments>
+    <NumFavorites>5</NumFavorites>
+    <NumSlides>78</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>81245900</ID>
+    <Title>Kotlin Data Model</Title>
+    <Description>2017/10/26 Android Taipei 分享
+
+      透過 Data Model 的演進，了解 Kotlin 的優點，並開始導入 Kotlin
+
+      現今 Data Model 的趨勢為以下三點:
+      1. 自動產生 (Code Generation)
+      2. Immutable Object
+      3. Null-safety
+
+      了解如何透過 Kotlin Data Classes 達到以上三點要求
+
+      Demo Project
+      https://github.com/ch8908/KotlinDataClass
+    </Description>
+    <Status>2</Status>
+    <Username>ssuser72c3b0</Username>
+    <URL>https://www.slideshare.net/ssuser72c3b0/kotlin-data-model</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlin-171026144718-thumbnail.jpg?cb=1509334988</ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlin-171026144718-thumbnail-2.jpg?cb=1509334988
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlin-171026144718-thumbnail-3.jpg?cb=1509334988
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/kotlin-171026144718-thumbnail-4.jpg?cb=1509334988
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/jWuTUiQyLhIzIj" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/ssuser72c3b0/kotlin-data-model" title="Kotlin Data Model"
+      target="_blank"&gt;Kotlin Data Model&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/ssuser72c3b0" target="_blank"&gt;Kros Huang&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2017-10-26 14:47:18 UTC</Created>
+    <Updated>2017-10-30 03:43:08 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>https://s3.amazonaws.com/ppt-download/kotlin-171026144718.pdf?response-content-disposition=attachment&amp;Signature=3MZTp2myscKV2XnKn6QN4n2816A%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ</DownloadUrl>
+    <SecretKey>jWuTUiQyLhIzIj</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/jWuTUiQyLhIzIj</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>43966813</UserID>
+    <PPTLocation>kotlin-171026144718</PPTLocation>
+    <StrippedTitle>kotlin-data-model</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">mobile</Tag>
+      <Tag Count="1" Owner="1">java</Tag>
+      <Tag Count="1" Owner="1">android</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+      <Tag Count="1" Owner="1">data class</Tag>
+      <Tag Count="1" Owner="1">kotlin class</Tag>
+    </Tags>
+    <NumDownloads>43</NumDownloads>
+    <NumViews>1750</NumViews>
+    <NumComments>2</NumComments>
+    <NumFavorites>11</NumFavorites>
+    <NumSlides>84</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>87239456</ID>
+    <Title>Android Development with Kotlin, Part 1 - Introduction</Title>
+    <Description>Intro to developing Android Apps using Kotlin as development language.
+
+      - Hybrid &amp;amp; Native Apps
+      - Native Android Development
+      - Android &amp;amp; SDK Versions
+      - Hello World
+      - Emulators, Devices &amp;amp; ADB
+      - Android Emulators &amp;amp; Build Process
+      - Kotlin Android Extensions
+      - App Lifecycle
+      - Saving App State
+      - Debugging
+      - Code Style + Documentation
+      - Activities &amp;amp; Intents
+      - Implicit Intents
+    </Description>
+    <Status>2</Status>
+    <Username>andreasjakl</Username>
+    <URL>https://www.slideshare.net/andreasjakl/android-development-with-kotlin-part-1-introduction</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/androiddevelopmentwithkotlinpart1-introduction-180205080812-thumbnail.jpg?cb=1517818148
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/androiddevelopmentwithkotlinpart1-introduction-180205080812-thumbnail-2.jpg?cb=1517818148
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/androiddevelopmentwithkotlinpart1-introduction-180205080812-thumbnail-3.jpg?cb=1517818148
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/androiddevelopmentwithkotlinpart1-introduction-180205080812-thumbnail-4.jpg?cb=1517818148
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/E3GyZFwYQZxKSF" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a
+      href="https://www.slideshare.net/andreasjakl/android-development-with-kotlin-part-1-introduction" title="Android
+      Development with Kotlin, Part 1 - Introduction" target="_blank"&gt;Android Development with Kotlin, Part 1 -
+      Introduction&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href="https://www.slideshare.net/andreasjakl"
+      target="_blank"&gt;Andreas Jakl&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2018-02-05 08:08:12 UTC</Created>
+    <Updated>2018-02-05 08:09:08 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/androiddevelopmentwithkotlinpart1-introduction-180205080812.pdf?response-content-disposition=attachment&amp;Signature=SOmnR56zZ8u7kwHQn8BkHpievx0%3D&amp;Expires=1595483062&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>E3GyZFwYQZxKSF</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/E3GyZFwYQZxKSF</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>23707446</UserID>
+    <PPTLocation>androiddevelopmentwithkotlinpart1-introduction-180205080812</PPTLocation>
+    <StrippedTitle>android-development-with-kotlin-part-1-introduction</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">android</Tag>
+      <Tag Count="1" Owner="1">hello world</Tag>
+      <Tag Count="1" Owner="1">kotlin</Tag>
+    </Tags>
+    <NumDownloads>42</NumDownloads>
+    <NumViews>448</NumViews>
+    <NumComments>2</NumComments>
+    <NumFavorites>1</NumFavorites>
+    <NumSlides>90</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+</Slideshows>

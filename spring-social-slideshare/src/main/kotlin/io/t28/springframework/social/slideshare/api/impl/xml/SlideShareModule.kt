@@ -1,6 +1,7 @@
 package io.t28.springframework.social.slideshare.api.impl.xml
 
 import com.fasterxml.jackson.databind.module.SimpleModule
+import io.t28.springframework.social.slideshare.api.SearchResults
 import io.t28.springframework.social.slideshare.api.Slideshow
 import io.t28.springframework.social.slideshare.api.Slideshows
 
@@ -14,6 +15,8 @@ class SlideShareModule : SimpleModule("SlideShareModule") {
             setMixInAnnotations<Slideshow.Tag, SlideshowMixin.TagMixin>()
             setMixInAnnotations<Slideshow.RelatedSlideshowId, SlideshowMixin.RelatedSlideshowIdMixin>()
             setMixInAnnotations<Slideshows, SlideshowsMixin>()
+            setMixInAnnotations<SearchResults, SearchResultsMixin>()
+            setMixInAnnotations<SearchResults.Meta, SearchResultsMixin.MetaMixin>()
         }
     }
 

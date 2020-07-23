@@ -79,4 +79,15 @@ interface SlideshowOperations {
      */
     @Throws(ApiException::class)
     fun getSlideshowsByUser(user: String, options: GetSlideshowsOptions? = null): Slideshows
+
+    /**
+     * Search slideshows
+     * [Slideshow Search | SlideShare API Documentation](https://www.slideshare.net/developers/documentation#search_slideshows)
+     *
+     * @param query The search query
+     * @param options The optional parameters
+     * @return A search results containing the metadata and a collection of matching slideshows
+     * @throws ApiException If there is an error while communicating with SlideShare API
+     */
+    fun searchSlideshows(query: String, options: SearchOptions? = null): SearchResults
 }
