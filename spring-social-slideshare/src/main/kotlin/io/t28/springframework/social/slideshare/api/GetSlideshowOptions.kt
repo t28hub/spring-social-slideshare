@@ -5,7 +5,7 @@ package io.t28.springframework.social.slideshare.api
  *
  * @constructor
  *
- * @param excludeTags Whether or not to exclude tags
+ * @param excludeTags Whether or not to exclude tags.
  * @param detailed Whether or not to include detailed information.
  *
  * - [SlideshowOperations.getSlideshow]

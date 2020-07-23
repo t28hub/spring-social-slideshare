@@ -2,6 +2,7 @@ package io.t28.springframework.social.slideshare.api.impl
 
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
+import io.t28.springframework.social.slideshare.api.SearchOptions
 import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.SlideshowOperations
 import org.hamcrest.Matchers.matchesPattern
@@ -148,6 +149,31 @@ internal class SlideshowTemplateTest {
         assertEquals(slideshows.name, "GoogleCloudPlatformJP")
         assertEquals(slideshows.count, 162)
         assertEquals(slideshows.slideshows.size, 10)
+    }
+
+    @Test
+    fun `saerchSlideshows should return collection of matching slideshows`() {
+        // Arrange
+        mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/search_slideshows?.+")))
+            .andExpect(method(GET))
+            .andRespond(withSuccess()
+                .contentType(APPLICATION_XML)
+                .body(ClassPathResource("search_slideshows.xml", SlideShare::class.java)))
+
+        // Act
+        val options = SearchOptions(
+            page = 1,
+            perPage = 10,
+            detailed = true
+        )
+        val results = slideshowOperations.searchSlideshows("kotlin", options)
+
+        // Assert
+        assertEquals(results.meta.query, "kotlin")
+        assertEquals(results.meta.resultOffset, null)
+        assertEquals(results.meta.numResults, 18)
+        assertEquals(results.meta.totalResults, 4268)
+        assertEquals(results.slideshows.size, 18)
     }
 
     companion object {

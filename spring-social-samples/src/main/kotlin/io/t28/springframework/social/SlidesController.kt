@@ -2,6 +2,8 @@ package io.t28.springframework.social
 
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
+import io.t28.springframework.social.slideshare.api.SearchOptions
+import io.t28.springframework.social.slideshare.api.SearchResults
 import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.Slideshow
 import io.t28.springframework.social.slideshare.api.Slideshows
@@ -27,6 +29,32 @@ class SlidesController(private val slideShare: SlideShare) {
         )
         return slideShare.slideshowOperations()
             .getSlideshowById(id = id, options = options)
+    }
+
+    @GetMapping("/search")
+    fun search(
+        @RequestParam q: String,
+        @RequestParam(defaultValue = "1") page: Int,
+        @RequestParam(defaultValue = "10") perPage: Int,
+        @RequestParam(defaultValue = "ALL") language: SearchOptions.Language,
+        @RequestParam(defaultValue = "RELEVANCE") sort: SearchOptions.Sort,
+        @RequestParam(defaultValue = "ANY") uploadDate: SearchOptions.UploadDate,
+        @RequestParam(defaultValue = "ALL") fileType: SearchOptions.FileType,
+        @RequestParam(defaultValue = "TEXT") searchType: SearchOptions.SearchType,
+        @RequestParam(defaultValue = "false") detailed: Boolean
+    ): SearchResults {
+        val options = SearchOptions(
+            page = page,
+            perPage = perPage,
+            language = language,
+            sort = sort,
+            uploadDate = uploadDate,
+            fileType = fileType,
+            what = searchType,
+            detailed = detailed
+        )
+        return slideShare.slideshowOperations()
+            .searchSlideshows(q, options)
     }
 
     @GetMapping("/tags/{tag}/slides")
