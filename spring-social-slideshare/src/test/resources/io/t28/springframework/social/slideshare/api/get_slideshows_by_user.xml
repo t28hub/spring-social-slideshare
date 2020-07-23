@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<User>
+  <Name>GoogleCloudPlatformJP</Name>
+  <Count>162</Count>
+  <Slideshow>
+    <ID>236199628</ID>
+    <Title>[Cloud OnAir] Cloud Run &amp;amp; Firestore で、実践アジャイル開発 2020年6月25日 放送</Title>
+    <Description>Cloud Run は、インフラ管理を一切する必要がなく、自動プロビジョニング、0 to N 高速スケールなアプリケーション基盤を GCP 上に構築出来ます。また Cloud Firestore
+      という高速でサーバーレスの、フルマネージドな ドキュメント データベースと合わせて利用し、Firebase および Google Cloud
+      Platform（GCP）と統合することで、フロントエンドからバックエンドまでのアジャイル開発を加速します。
+    </Description>
+    <Status>2</Status>
+    <Username>GoogleCloudPlatformJP</Username>
+    <URL>https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-cloud-run-firestore-2020625</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/0625-200625094921-thumbnail.jpg?cb=1593078644</ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/0625-200625094921-thumbnail-2.jpg?cb=1593078644
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0625-200625094921-thumbnail-3.jpg?cb=1593078644
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0625-200625094921-thumbnail-4.jpg?cb=1593078644
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/3dZZVqvpeeBYiZ" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-cloud-run-firestore-2020625" title="[Cloud
+      OnAir] Cloud Run &amp;amp; Firestore で、実践アジャイル開発 2020年6月25日 放送" target="_blank"&gt;[Cloud OnAir] Cloud Run &amp;amp;
+      Firestore で、実践アジャイル開発 2020年6月25日 放送&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP" target="_blank"&gt;Google Cloud Platform - Japan&lt;/a&gt;&lt;/strong&gt;
+      &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-06-25 09:49:21 UTC</Created>
+    <Updated>2020-06-25 09:50:44 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>https://s3.amazonaws.com/ppt-download/0625-200625094921.pdf?response-content-disposition=attachment&amp;Signature=NhMax6MKKycu07leKM52xgupXmw%3D&amp;Expires=1595480022&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ</DownloadUrl>
+    <SecretKey>3dZZVqvpeeBYiZ</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/3dZZVqvpeeBYiZ</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69313998</UserID>
+    <PPTLocation>0625-200625094921</PPTLocation>
+    <StrippedTitle>cloud-onair-cloud-run-firestore-2020625</StrippedTitle>
+    <Tags>
+    </Tags>
+    <NumDownloads>5</NumDownloads>
+    <NumViews>550</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>44</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>234666268</ID>
+    <Title>[Cloud OnAir] [Cloud OnAir] 最新版 GCP ではじめる、サーバーレスアプリケーションの開発。 2020年5月28日 放送 2018年11月8日 放送</Title>
+    <Description>今回の放送では、提供開始から約 1 年、アプリケーション モダナイズを加速する Anthos の最新情報と 5/14 に発表された Google Cloud VMware Engine
+      の最新情報をお届けします。
+    </Description>
+    <Status>2</Status>
+    <Username>GoogleCloudPlatformJP</Username>
+    <URL>https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-cloud-onair-gcp-2020528-2018118</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/0528-200528093059-thumbnail.jpg?cb=1590658463</ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/0528-200528093059-thumbnail-2.jpg?cb=1590658463
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0528-200528093059-thumbnail-3.jpg?cb=1590658463
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0528-200528093059-thumbnail-4.jpg?cb=1590658463
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/J8UKLWx2nq8qJu" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-cloud-onair-gcp-2020528-2018118" title="[Cloud
+      OnAir] [Cloud OnAir] 最新版 GCP ではじめる、サーバーレスアプリケーションの開発。 2020年5月28日 放送 2018年11月8日 放送" target="_blank"&gt;[Cloud
+      OnAir] [Cloud OnAir] 最新版 GCP ではじめる、サーバーレスアプリケーションの開発。 2020年5月28日 放送 2018年11月8日 放送&lt;/a&gt; &lt;/strong&gt; from
+      &lt;strong&gt;&lt;a href="https://www.slideshare.net/GoogleCloudPlatformJP" target="_blank"&gt;Google Cloud
+      Platform - Japan&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-05-28 09:30:58 UTC</Created>
+    <Updated>2020-05-28 09:34:23 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>https://s3.amazonaws.com/ppt-download/0528-200528093059.pdf?response-content-disposition=attachment&amp;Signature=TukxQxNDVFEVPH55x6J3B7xDg4o%3D&amp;Expires=1595480022&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ</DownloadUrl>
+    <SecretKey>J8UKLWx2nq8qJu</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/J8UKLWx2nq8qJu</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69313998</UserID>
+    <PPTLocation>0528-200528093059</PPTLocation>
+    <StrippedTitle>cloud-onair-cloud-onair-gcp-2020528-2018118</StrippedTitle>
+    <Tags>
+    </Tags>
+    <NumDownloads>8</NumDownloads>
+    <NumViews>776</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>31</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>233910635</ID>
+    <Title>[Cloud OnAir] 最新アップデート Google Cloud データ関連ソリューション 2020年5月14日 放送</Title>
+    <Description>Google Cloud データ関連ソリューションの最新のアップデートをお届けします。データベース関連では、Cloud SQL の Cross-region replication や Spanner
+      の外部キーサポート、さらに Oracle Bare Metal Solution についても説明します。Smart Analytics 関連では、BigQuery、Cloud Dataproc、Cloud Dataflow
+      などの主要な製品の最新情報をお届けします！
+    </Description>
+    <Status>2</Status>
+    <Username>GoogleCloudPlatformJP</Username>
+    <URL>https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-google-cloud-2020514</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/0514-200514080330-thumbnail.jpg?cb=1589450648</ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/0514-200514080330-thumbnail-2.jpg?cb=1589450648
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0514-200514080330-thumbnail-3.jpg?cb=1589450648
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0514-200514080330-thumbnail-4.jpg?cb=1589450648
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/tJDqJqTKGt9Tu0" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-google-cloud-2020514"
+      title="[Cloud OnAir] 最新アップデート Google Cloud データ関連ソリューション 2020年5月14日 放送" target="_blank"&gt;[Cloud OnAir] 最新アップデート
+      Google Cloud データ関連ソリューション 2020年5月14日 放送&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP" target="_blank"&gt;Google Cloud Platform - Japan&lt;/a&gt;&lt;/strong&gt;
+      &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-05-14 08:03:30 UTC</Created>
+    <Updated>2020-05-14 10:04:08 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>https://s3.amazonaws.com/ppt-download/0514-200514080330.pdf?response-content-disposition=attachment&amp;Signature=9o9ytTFnvC2pYM7GwZWXsXKy4%2BE%3D&amp;Expires=1595480022&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ</DownloadUrl>
+    <SecretKey>tJDqJqTKGt9Tu0</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/tJDqJqTKGt9Tu0</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69313998</UserID>
+    <PPTLocation>0514-200514080330</PPTLocation>
+    <StrippedTitle>cloud-onair-google-cloud-2020514</StrippedTitle>
+    <Tags>
+    </Tags>
+    <NumDownloads>15</NumDownloads>
+    <NumViews>591</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>1</NumFavorites>
+    <NumSlides>47</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>232707858</ID>
+    <Title>アプリ開発者、DB 管理者視点での Cloud Spanner 活用方法 | 第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online</Title>
+    <Description>2020 年 4 月 27 日（月）
+      第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online
+      Google Cloud 佐藤 貴彦によるセッション スライドです。
+    </Description>
+    <Status>2</Status>
+    <Username>GoogleCloudPlatformJP</Username>
+    <URL>
+      https://www.slideshare.net/GoogleCloudPlatformJP/db-cloud-spanner-10-google-cloud-inside-games-apps-online-232707858
+    </URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession03googlecloudinsidegamesappsonline-200427113913-thumbnail.jpg?cb=1587987591
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession03googlecloudinsidegamesappsonline-200427113913-thumbnail-2.jpg?cb=1587987591
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession03googlecloudinsidegamesappsonline-200427113913-thumbnail-3.jpg?cb=1587987591
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession03googlecloudinsidegamesappsonline-200427113913-thumbnail-4.jpg?cb=1587987591
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/MfpLdWiPIw1Z5R" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP/db-cloud-spanner-10-google-cloud-inside-games-apps-online-232707858"
+      title="アプリ開発者、DB 管理者視点での Cloud Spanner 活用方法 | 第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online"
+      target="_blank"&gt;アプリ開発者、DB 管理者視点での Cloud Spanner 活用方法 | 第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online&lt;/a&gt;
+      &lt;/strong&gt; from &lt;strong&gt;&lt;a href="https://www.slideshare.net/GoogleCloudPlatformJP" target="_blank"&gt;Google
+      Cloud Platform - Japan&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-04-27 11:39:13 UTC</Created>
+    <Updated>2020-04-27 11:39:51 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/slidesharesession03googlecloudinsidegamesappsonline-200427113913.pdf?response-content-disposition=attachment&amp;Signature=XAL%2B3AsjlyVI%2BJKB3FQQz3y8O7w%3D&amp;Expires=1595480022&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>MfpLdWiPIw1Z5R</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/MfpLdWiPIw1Z5R</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69313998</UserID>
+    <PPTLocation>slidesharesession03googlecloudinsidegamesappsonline-200427113913</PPTLocation>
+    <StrippedTitle>db-cloud-spanner-10-google-cloud-inside-games-apps-online-232707858</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">google cloud platform</Tag>
+      <Tag Count="1" Owner="1">gc_inside</Tag>
+    </Tags>
+    <NumDownloads>26</NumDownloads>
+    <NumViews>4667</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>11</NumFavorites>
+    <NumSlides>59</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>232703444</ID>
+    <Title>GKE に飛んでくるトラフィックを 自由自在に操る力 | 第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online</Title>
+    <Description>2020 年 4 月 27 日（月）
+      第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online
+      Google Cloud 篠原 一徳によるセッション スライドです。
+    </Description>
+    <Status>2</Status>
+    <Username>GoogleCloudPlatformJP</Username>
+    <URL>https://www.slideshare.net/GoogleCloudPlatformJP/gke-10-google-cloud-inside-games-apps-online-232703444</URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession01googlecloudinsidegamesappsonline-200427093521-thumbnail.jpg?cb=1587980732
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession01googlecloudinsidegamesappsonline-200427093521-thumbnail-2.jpg?cb=1587980732
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession01googlecloudinsidegamesappsonline-200427093521-thumbnail-3.jpg?cb=1587980732
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession01googlecloudinsidegamesappsonline-200427093521-thumbnail-4.jpg?cb=1587980732
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/BTuXgv9CGztDFt" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP/gke-10-google-cloud-inside-games-apps-online-232703444"
+      title="GKE に飛んでくるトラフィックを 自由自在に操る力 | 第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online" target="_blank"&gt;GKE
+      に飛んでくるトラフィックを 自由自在に操る力 | 第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online&lt;/a&gt; &lt;/strong&gt; from
+      &lt;strong&gt;&lt;a href="https://www.slideshare.net/GoogleCloudPlatformJP" target="_blank"&gt;Google Cloud
+      Platform - Japan&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-04-27 09:35:21 UTC</Created>
+    <Updated>2020-04-27 09:45:32 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/slidesharesession01googlecloudinsidegamesappsonline-200427093521.pdf?response-content-disposition=attachment&amp;Signature=1jl72E0lx2Nisf4NhYomWbzy9GI%3D&amp;Expires=1595480022&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>BTuXgv9CGztDFt</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/BTuXgv9CGztDFt</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69313998</UserID>
+    <PPTLocation>slidesharesession01googlecloudinsidegamesappsonline-200427093521</PPTLocation>
+    <StrippedTitle>gke-10-google-cloud-inside-games-apps-online-232703444</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">google cloud platform</Tag>
+      <Tag Count="1" Owner="1">gc_inside</Tag>
+    </Tags>
+    <NumDownloads>21</NumDownloads>
+    <NumViews>2697</NumViews>
+    <NumComments>1</NumComments>
+    <NumFavorites>8</NumFavorites>
+    <NumSlides>62</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>232702342</ID>
+    <Title>Google Cloud Game Servers 徹底入門 | 第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online</Title>
+    <Description>2020 年 4 月 27 日（月）
+      第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online
+      Google Cloud 奈良岡 仁によるセッション スライドです。
+    </Description>
+    <Status>2</Status>
+    <Username>GoogleCloudPlatformJP</Username>
+    <URL>
+      https://www.slideshare.net/GoogleCloudPlatformJP/google-cloud-game-servers-10-google-cloud-inside-games-apps-online
+    </URL>
+    <ThumbnailURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession02googlecloudinsidegamesappsonline-200427091111-thumbnail.jpg?cb=1587983853
+    </ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession02googlecloudinsidegamesappsonline-200427091111-thumbnail-2.jpg?cb=1587983853
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession02googlecloudinsidegamesappsonline-200427091111-thumbnail-3.jpg?cb=1587983853
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>
+      //cdn.slidesharecdn.com/ss_thumbnails/slidesharesession02googlecloudinsidegamesappsonline-200427091111-thumbnail-4.jpg?cb=1587983853
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/ofaGJup3y2SN1p" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP/google-cloud-game-servers-10-google-cloud-inside-games-apps-online"
+      title="Google Cloud Game Servers 徹底入門 | 第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online" target="_blank"&gt;Google
+      Cloud Game Servers 徹底入門 | 第 10 回 Google Cloud INSIDE Games &amp;amp; Apps Online&lt;/a&gt; &lt;/strong&gt; from
+      &lt;strong&gt;&lt;a href="https://www.slideshare.net/GoogleCloudPlatformJP" target="_blank"&gt;Google Cloud
+      Platform - Japan&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-04-27 09:11:11 UTC</Created>
+    <Updated>2020-04-27 10:37:33 UTC</Updated>
+    <Language>ja</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>
+      https://s3.amazonaws.com/ppt-download/slidesharesession02googlecloudinsidegamesappsonline-200427091111.pdf?response-content-disposition=attachment&amp;Signature=vsjvMySorMYhdGd%2BygMCup%2F4PUw%3D&amp;Expires=1595480022&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ
+    </DownloadUrl>
+    <SecretKey>ofaGJup3y2SN1p</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/ofaGJup3y2SN1p</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69313998</UserID>
+    <PPTLocation>slidesharesession02googlecloudinsidegamesappsonline-200427091111</PPTLocation>
+    <StrippedTitle>google-cloud-game-servers-10-google-cloud-inside-games-apps-online</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">google cloud platform</Tag>
+      <Tag Count="1" Owner="1">gc_inside</Tag>
+    </Tags>
+    <NumDownloads>15</NumDownloads>
+    <NumViews>1775</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>4</NumFavorites>
+    <NumSlides>44</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>231698035</ID>
+    <Title>[Cloud OnAir] Google Cloud 主催イベント Data Platform Day Recap！〜登壇企業インタビューと内容解説〜 2020年4月9日 放送</Title>
+    <Description>Google Cloud 主催オンライン開催イベント Data Platform Day
+      の内容を解説していきます。企業におけるデータ活用が進む中、データマネジメント、データ分析を支える分析基盤など、企業様はどのように収集、活用、構築しているのかをお伝えします。さらに当日はご出演いただいた企業様にさらに深くお話を聞くため、インタビューも行いました。
+    </Description>
+    <Status>2</Status>
+    <Username>GoogleCloudPlatformJP</Username>
+    <URL>https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-google-cloud-data-platform-day-recap-202049</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/0409-200409090356-thumbnail.jpg?cb=1586423062</ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/0409-200409090356-thumbnail-2.jpg?cb=1586423062
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0409-200409090356-thumbnail-3.jpg?cb=1586423062
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0409-200409090356-thumbnail-4.jpg?cb=1586423062
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/mot7FbCvEOQRmT" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-google-cloud-data-platform-day-recap-202049"
+      title="[Cloud OnAir] Google Cloud 主催イベント Data Platform Day Recap！〜登壇企業インタビューと内容解説〜 2020年4月9日 放送" target="_blank"&gt;[Cloud
+      OnAir] Google Cloud 主催イベント Data Platform Day Recap！〜登壇企業インタビューと内容解説〜 2020年4月9日 放送&lt;/a&gt; &lt;/strong&gt; from
+      &lt;strong&gt;&lt;a href="https://www.slideshare.net/GoogleCloudPlatformJP" target="_blank"&gt;Google Cloud
+      Platform - Japan&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-04-09 09:03:56 UTC</Created>
+    <Updated>2020-04-09 09:04:22 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>https://s3.amazonaws.com/ppt-download/0409-200409090356.pdf?response-content-disposition=attachment&amp;Signature=tp4gNW7KvOXNqhG6kJVfYlbERBw%3D&amp;Expires=1595480023&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ</DownloadUrl>
+    <SecretKey>mot7FbCvEOQRmT</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/mot7FbCvEOQRmT</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69313998</UserID>
+    <PPTLocation>0409-200409090356</PPTLocation>
+    <StrippedTitle>cloud-onair-google-cloud-data-platform-day-recap-202049</StrippedTitle>
+    <Tags>
+    </Tags>
+    <NumDownloads>4</NumDownloads>
+    <NumViews>597</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>16</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>230900817</ID>
+    <Title>[Cloud OnAir] 役に立つ Google Cloud ネットワーク機能のご紹介 2020年3月26日 放送</Title>
+    <Description>Google Cloud では VPC
+      やロードバランサーといった分かりやすいサービスが沢山あります。その他にも細かいネットワーキングの機能をたくさん追加していますので、今回の放送では様々な機能の使い所をご紹介していきます。
+    </Description>
+    <Status>2</Status>
+    <Username>GoogleCloudPlatformJP</Username>
+    <URL>https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-google-cloud-2020326</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/0326-200326091203-thumbnail.jpg?cb=1585216944</ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/0326-200326091203-thumbnail-2.jpg?cb=1585216944
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0326-200326091203-thumbnail-3.jpg?cb=1585216944
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0326-200326091203-thumbnail-4.jpg?cb=1585216944
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/KzEUvlkuMYy60Q" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a href="https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-google-cloud-2020326"
+      title="[Cloud OnAir] 役に立つ Google Cloud ネットワーク機能のご紹介 2020年3月26日 放送" target="_blank"&gt;[Cloud OnAir] 役に立つ Google
+      Cloud ネットワーク機能のご紹介 2020年3月26日 放送&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP" target="_blank"&gt;Google Cloud Platform - Japan&lt;/a&gt;&lt;/strong&gt;
+      &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-03-26 09:12:03 UTC</Created>
+    <Updated>2020-03-26 10:02:24 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>https://s3.amazonaws.com/ppt-download/0326-200326091203.pdf?response-content-disposition=attachment&amp;Signature=0s1p7msSRgjI7dt2y%2FUB2SSyk0o%3D&amp;Expires=1595480023&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ</DownloadUrl>
+    <SecretKey>KzEUvlkuMYy60Q</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/KzEUvlkuMYy60Q</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69313998</UserID>
+    <PPTLocation>0326-200326091203</PPTLocation>
+    <StrippedTitle>cloud-onair-google-cloud-2020326</StrippedTitle>
+    <Tags>
+    </Tags>
+    <NumDownloads>9</NumDownloads>
+    <NumViews>666</NumViews>
+    <NumComments>1</NumComments>
+    <NumFavorites>3</NumFavorites>
+    <NumSlides>47</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>230686334</ID>
+    <Title>[Cloud OnAir] ウェブサイトを防御しよう！〜 reCAPTCHA Enterprise の紹介〜 2020年3月19日 放送</Title>
+    <Description>スクレイピングや認証情報の読み取り、自動アカウント作成など不正行為がウェブ上で問題となっている昨今、そんな脅威からウェブサイトを保護するためのソリューション、reCAPTCHA Enterprise
+      をご紹介します。
+    </Description>
+    <Status>2</Status>
+    <Username>GoogleCloudPlatformJP</Username>
+    <URL>https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-recaptcha-enterprise-2020319</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/tt-200323001346-thumbnail.jpg?cb=1584922556</ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/tt-200323001346-thumbnail-2.jpg?cb=1584922556
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/tt-200323001346-thumbnail-3.jpg?cb=1584922556
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/tt-200323001346-thumbnail-4.jpg?cb=1584922556
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/63Ri4jDXISJXSN" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-recaptcha-enterprise-2020319" title="[Cloud
+      OnAir] ウェブサイトを防御しよう！〜 reCAPTCHA Enterprise の紹介〜 2020年3月19日 放送" target="_blank"&gt;[Cloud OnAir] ウェブサイトを防御しよう！〜
+      reCAPTCHA Enterprise の紹介〜 2020年3月19日 放送&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP" target="_blank"&gt;Google Cloud Platform - Japan&lt;/a&gt;&lt;/strong&gt;
+      &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-03-23 00:13:46 UTC</Created>
+    <Updated>2020-03-23 00:15:56 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>https://s3.amazonaws.com/ppt-download/tt-200323001346.pdf?response-content-disposition=attachment&amp;Signature=VjE43hbdzyhzIHMtjV2fMA%2Fcqao%3D&amp;Expires=1595480023&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ</DownloadUrl>
+    <SecretKey>63Ri4jDXISJXSN</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/63Ri4jDXISJXSN</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69313998</UserID>
+    <PPTLocation>tt-200323001346</PPTLocation>
+    <StrippedTitle>cloud-onair-recaptcha-enterprise-2020319</StrippedTitle>
+    <Tags>
+      <Tag Count="1" Owner="1">gcp</Tag>
+      <Tag Count="1" Owner="1">recaptcha</Tag>
+      <Tag Count="1" Owner="1">google cloud platform</Tag>
+      <Tag Count="1" Owner="1">cloud onair</Tag>
+    </Tags>
+    <NumDownloads>5</NumDownloads>
+    <NumViews>367</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>1</NumFavorites>
+    <NumSlides>30</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+  <Slideshow>
+    <ID>230142028</ID>
+    <Title>[Cloud OnAir] Google SaaS Day Recap 2020年3月12日 放送</Title>
+    <Description>2 月 27 日 にオンラインにて配信した Google SaaS Day、 Google のサービスを使用しどのようにビジネスを加速させているのか、多くの方にご出演いただきました。そんな Google
+      SaaS Day の内容を解説していきます。そして、ご出演いただいた企業様へ直撃インタビュー、さらに詳しいお話をお届けします。ぜひご覧ください。
+    </Description>
+    <Status>2</Status>
+    <Username>GoogleCloudPlatformJP</Username>
+    <URL>https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-google-saas-day-recap-2020312</URL>
+    <ThumbnailURL>//cdn.slidesharecdn.com/ss_thumbnails/0312-200312093402-thumbnail.jpg?cb=1584007486</ThumbnailURL>
+    <ThumbnailSize>[170,130]</ThumbnailSize>
+    <ThumbnailSmallURL>//cdn.slidesharecdn.com/ss_thumbnails/0312-200312093402-thumbnail-2.jpg?cb=1584007486
+    </ThumbnailSmallURL>
+    <ThumbnailXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0312-200312093402-thumbnail-3.jpg?cb=1584007486
+    </ThumbnailXLargeURL>
+    <ThumbnailXXLargeURL>//cdn.slidesharecdn.com/ss_thumbnails/0312-200312093402-thumbnail-4.jpg?cb=1584007486
+    </ThumbnailXXLargeURL>
+    <Embed>&lt;iframe src="https://www.slideshare.net/slideshow/embed_code/key/wPD4Mij9tcfSXP" width="427" height="356"
+      frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px;
+      margin-bottom:5px; max-width: 100%;" allowfullscreen&gt; &lt;/iframe&gt; &lt;div style="margin-bottom:5px"&gt;
+      &lt;strong&gt; &lt;a
+      href="https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-google-saas-day-recap-2020312" title="[Cloud
+      OnAir] Google SaaS Day Recap 2020年3月12日 放送" target="_blank"&gt;[Cloud OnAir] Google SaaS Day Recap 2020年3月12日 放送&lt;/a&gt;
+      &lt;/strong&gt; from &lt;strong&gt;&lt;a href="https://www.slideshare.net/GoogleCloudPlatformJP" target="_blank"&gt;Google
+      Cloud Platform - Japan&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+
+    </Embed>
+    <Created>2020-03-12 09:34:02 UTC</Created>
+    <Updated>2020-03-12 10:04:46 UTC</Updated>
+    <Language>en</Language>
+    <Format>pdf</Format>
+    <Download>1</Download>
+    <DownloadUrl>https://s3.amazonaws.com/ppt-download/0312-200312093402.pdf?response-content-disposition=attachment&amp;Signature=cGlI3uhjqsc1QeI9ZIoJxI6mGy4%3D&amp;Expires=1595480023&amp;AWSAccessKeyId=AKIAIA5TS2BVP74IAVEQ</DownloadUrl>
+    <SecretKey>wPD4Mij9tcfSXP</SecretKey>
+    <SlideshowEmbedUrl>https://www.slideshare.net/slideshow/embed_code/key/wPD4Mij9tcfSXP</SlideshowEmbedUrl>
+    <SlideshowType>0</SlideshowType>
+    <InContest>0</InContest>
+    <UserID>69313998</UserID>
+    <PPTLocation>0312-200312093402</PPTLocation>
+    <StrippedTitle>cloud-onair-google-saas-day-recap-2020312</StrippedTitle>
+    <Tags>
+    </Tags>
+    <NumDownloads>5</NumDownloads>
+    <NumViews>387</NumViews>
+    <NumComments>0</NumComments>
+    <NumFavorites>0</NumFavorites>
+    <NumSlides>34</NumSlides>
+    <RelatedSlideshows>
+    </RelatedSlideshows>
+    <PrivacyLevel>0</PrivacyLevel>
+    <FlagVisible>1</FlagVisible>
+    <ShowOnSS>0</ShowOnSS>
+    <SecretURL>0</SecretURL>
+    <AllowEmbed>0</AllowEmbed>
+    <ShareWithContacts>0</ShareWithContacts>
+  </Slideshow>
+</User>

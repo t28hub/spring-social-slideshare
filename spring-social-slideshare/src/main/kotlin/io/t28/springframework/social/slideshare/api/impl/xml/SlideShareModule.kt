@@ -2,13 +2,18 @@ package io.t28.springframework.social.slideshare.api.impl.xml
 
 import com.fasterxml.jackson.databind.module.SimpleModule
 import io.t28.springframework.social.slideshare.api.Slideshow
+import io.t28.springframework.social.slideshare.api.Slideshows
 
+/**
+ * Jackson module for setting up mixin annotations on SlideShare data classes.
+ */
 class SlideShareModule : SimpleModule("SlideShareModule") {
     override fun setupModule(context: SetupContext) {
         with(context) {
             setMixInAnnotations<Slideshow, SlideshowMixin>()
             setMixInAnnotations<Slideshow.Tag, SlideshowMixin.TagMixin>()
             setMixInAnnotations<Slideshow.RelatedSlideshowId, SlideshowMixin.RelatedSlideshowIdMixin>()
+            setMixInAnnotations<Slideshows, SlideshowsMixin>()
         }
     }
 
