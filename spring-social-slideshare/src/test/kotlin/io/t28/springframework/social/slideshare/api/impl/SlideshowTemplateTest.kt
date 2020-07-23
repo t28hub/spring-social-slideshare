@@ -1,5 +1,6 @@
 package io.t28.springframework.social.slideshare.api.impl
 
+import io.t28.springframework.social.slideshare.api.EditOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
 import io.t28.springframework.social.slideshare.api.SearchOptions
@@ -26,7 +27,8 @@ internal class SlideshowTemplateTest {
 
     @BeforeEach
     fun setup() {
-        slideShare = SlideShareTemplate(API_KEY, SHARED_SECRET)
+        val credentials = Credentials(username = SLIDESHARE_USERNAME, password = SLIDESHARE_PASSWORD)
+        slideShare = SlideShareTemplate(API_KEY, SHARED_SECRET, credentials)
         slideshowOperations = slideShare.slideshowOperations()
         mockServer = MockRestServiceServer.bindTo(slideShare.restTemplate()).build()
     }
@@ -152,7 +154,7 @@ internal class SlideshowTemplateTest {
     }
 
     @Test
-    fun `saerchSlideshows should return collection of matching slideshows`() {
+    fun `searchSlideshows should return collection of matching slideshows`() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/search_slideshows?.+")))
             .andExpect(method(GET))
@@ -176,8 +178,46 @@ internal class SlideshowTemplateTest {
         assertEquals(results.slideshows.size, 18)
     }
 
+    @Test
+    fun `editSlideshow should return edited slideshow ID`() {
+        // Arrange
+        mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/edit_slideshow?.+")))
+            .andExpect(method(GET))
+            .andRespond(withSuccess()
+                .contentType(APPLICATION_XML)
+                .body(ClassPathResource("edit_slideshow.xml", SlideShare::class.java)))
+
+        // Act
+        val options = EditOptions(
+            title = "New title",
+            private = true
+        )
+        val edited = slideshowOperations.editSlideshow("32795564", options)
+
+        // Assert
+        assertEquals(edited.id, "32795564")
+    }
+
+    @Test
+    fun `deleteSlideshow should return deleted slideshow ID`() {
+        // Arrange
+        mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/delete_slideshow?.+")))
+            .andExpect(method(GET))
+            .andRespond(withSuccess()
+                .contentType(APPLICATION_XML)
+                .body(ClassPathResource("delete_slideshow.xml", SlideShare::class.java)))
+
+        // Act
+        val deleted = slideshowOperations.deleteSlideshow("32795564")
+
+        // Assert
+        assertEquals(deleted.id, "32795564")
+    }
+
     companion object {
         const val API_KEY = "TEST_API_KEY"
         const val SHARED_SECRET = "TEST_SHARED_SECRET"
+        const val SLIDESHARE_USERNAME = "YOUR_SLIDESHARE_USERNAME"
+        const val SLIDESHARE_PASSWORD = "YOUR_SLIDESHARE_PASSWORD"
     }
 }

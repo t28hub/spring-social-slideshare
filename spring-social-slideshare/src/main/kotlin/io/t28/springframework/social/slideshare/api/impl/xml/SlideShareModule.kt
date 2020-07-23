@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.module.SimpleModule
 import io.t28.springframework.social.slideshare.api.SearchResults
 import io.t28.springframework.social.slideshare.api.Slideshow
 import io.t28.springframework.social.slideshare.api.Slideshows
+import io.t28.springframework.social.slideshare.api.UpdateResults
 
 /**
  * Jackson module for setting up mixin annotations on SlideShare data classes.
@@ -17,6 +18,7 @@ class SlideShareModule : SimpleModule("SlideShareModule") {
             setMixInAnnotations<Slideshows, SlideshowsMixin>()
             setMixInAnnotations<SearchResults, SearchResultsMixin>()
             setMixInAnnotations<SearchResults.Meta, SearchResultsMixin.MetaMixin>()
+            setMixInAnnotations<UpdateResults, UpdateResultsMixin>()
         }
     }
 

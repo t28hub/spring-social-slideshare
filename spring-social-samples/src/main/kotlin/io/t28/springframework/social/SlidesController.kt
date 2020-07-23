@@ -1,5 +1,6 @@
 package io.t28.springframework.social
 
+import io.t28.springframework.social.slideshare.api.EditOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
 import io.t28.springframework.social.slideshare.api.SearchOptions
@@ -8,14 +9,17 @@ import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.Slideshow
 import io.t28.springframework.social.slideshare.api.Slideshows
 import org.springframework.http.MediaType.APPLICATION_JSON_VALUE
+import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PatchMapping
 import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/slides", produces = [APPLICATION_JSON_VALUE])
+@RequestMapping("/slides", consumes = [APPLICATION_JSON_VALUE], produces = [APPLICATION_JSON_VALUE])
 class SlidesController(private val slideShare: SlideShare) {
     @GetMapping("/{id}")
     fun get(
@@ -29,6 +33,26 @@ class SlidesController(private val slideShare: SlideShare) {
         )
         return slideShare.slideshowOperations()
             .getSlideshowById(id = id, options = options)
+    }
+
+    @PatchMapping("/{id}")
+    fun update(
+        @PathVariable id: String,
+        @RequestBody body: UpdateSlideshowRequest
+    ) {
+        val options = EditOptions(
+            title = body.title,
+            description = body.description,
+            tags = body.tags
+        )
+        slideShare.slideshowOperations()
+            .editSlideshow(id, options)
+    }
+
+    @DeleteMapping("/{id}")
+    fun delete(@PathVariable id: String) {
+        slideShare.slideshowOperations()
+            .deleteSlideshow(id)
     }
 
     @GetMapping("/search")
@@ -90,4 +114,14 @@ class SlidesController(private val slideShare: SlideShare) {
         return slideShare.slideshowOperations()
             .getSlideshowsByUser(user, options)
     }
+
+    data class UpdateSlideshowRequest(
+        val title: String? = null,
+        val description: String? = null,
+        val tags: List<String>? = null,
+        val private: Boolean? = null,
+        val generateSecretUrl: Boolean? = null,
+        val allowEmbed: Boolean? = null,
+        val shareWithContacts: Boolean? = null
+    )
 }
