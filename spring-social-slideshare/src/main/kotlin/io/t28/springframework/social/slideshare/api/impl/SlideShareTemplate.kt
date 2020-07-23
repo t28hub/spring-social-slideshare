@@ -14,19 +14,22 @@ import java.time.Clock
  * Implementation class for [SlideShare]
  *
  * @constructor
- * @param apiKey the API key provided by SlideShare
- * @param sharedSecret the shared secret provided by SlideShare
+ *
+ * @param apiKey The API key provided by SlideShare.
+ * @param sharedSecret The shared secret provided by SlideShare.
+ * @param credentials The user credentials.
  */
 class SlideShareTemplate(
     private val apiKey: String,
-    private val sharedSecret: String
+    private val sharedSecret: String,
+    private val credentials: Credentials? = null
 ) : SlideShare {
     private val restTemplate by lazy {
         createRestTemplate()
     }
 
     private val slideshowOperations by lazy {
-        SlideshowTemplate(restTemplate)
+        SlideshowTemplate(restTemplate, isAuthorized)
     }
 
     override fun slideshowOperations(): SlideshowOperations {
@@ -34,7 +37,7 @@ class SlideShareTemplate(
     }
 
     override fun isAuthorized(): Boolean {
-        return false
+        return credentials != null
     }
 
     internal fun restTemplate(): RestTemplate {
@@ -45,6 +48,9 @@ class SlideShareTemplate(
         return RestTemplate(getMessageConverters()).apply {
             requestFactory = ClientHttpRequestFactorySelector.bufferRequests(ClientHttpRequestFactorySelector.getRequestFactory())
             interceptors.add(ValidationInterceptor(apiKey, sharedSecret, Clock.systemDefaultZone()))
+            credentials?.let {
+                interceptors.add(AuthenticationInterceptor(it))
+            }
         }
     }
 

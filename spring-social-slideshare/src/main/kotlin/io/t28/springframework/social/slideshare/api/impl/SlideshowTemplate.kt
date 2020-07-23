@@ -1,5 +1,6 @@
 package io.t28.springframework.social.slideshare.api.impl
 
+import io.t28.springframework.social.slideshare.api.EditOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
 import io.t28.springframework.social.slideshare.api.SearchOptions
@@ -7,7 +8,9 @@ import io.t28.springframework.social.slideshare.api.SearchResults
 import io.t28.springframework.social.slideshare.api.Slideshow
 import io.t28.springframework.social.slideshare.api.SlideshowOperations
 import io.t28.springframework.social.slideshare.api.Slideshows
+import io.t28.springframework.social.slideshare.api.UpdateResults
 import org.springframework.social.ApiException
+import org.springframework.social.MissingAuthorizationException
 import org.springframework.web.client.RestTemplate
 import org.springframework.web.client.getForObject
 import org.springframework.web.util.UriComponentsBuilder
@@ -16,12 +19,17 @@ import org.springframework.web.util.UriComponentsBuilder
  * Implementation class for [SlideshowOperations]
  *
  * @constructor
- * @param restTemplate The [RestTemplate]
+ *
+ * @param restTemplate A [RestTemplate] instance.
+ * @param isAuthorized Whether or not it is authorized.
  */
-class SlideshowTemplate(private val restTemplate: RestTemplate) : SlideshowOperations {
+class SlideshowTemplate(
+    private val restTemplate: RestTemplate,
+    private val isAuthorized: Boolean
+) : SlideshowOperations {
     override fun getSlideshow(id: String?, url: String?, options: GetSlideshowOptions?): Slideshow {
         if (id.isNullOrEmpty() and url.isNullOrEmpty()) {
-            throw ApiException("SlideShare", "Either ID or URL must be required")
+            throw ApiException(PROVIDER_ID, "Either ID or URL must be required")
         }
 
         val uri = UriComponentsBuilder.fromUriString(API_BASE_URL).apply {
@@ -46,7 +54,7 @@ class SlideshowTemplate(private val restTemplate: RestTemplate) : SlideshowOpera
 
     override fun getSlideshowsByTag(tag: String, options: GetSlideshowsOptions?): Slideshows {
         if (tag.isEmpty()) {
-            throw ApiException("SlideShare", "Tag name must be non-empty string")
+            throw ApiException(PROVIDER_ID, "Tag name must be non-empty string")
         }
 
         return getSlideshows("get_slideshows_by_tag", tag = tag, options = options)
@@ -54,7 +62,7 @@ class SlideshowTemplate(private val restTemplate: RestTemplate) : SlideshowOpera
 
     override fun getSlideshowsByUser(user: String, options: GetSlideshowsOptions?): Slideshows {
         if (user.isEmpty()) {
-            throw ApiException("SlideShare", "User name must be non-empty string")
+            throw ApiException(PROVIDER_ID, "User name must be non-empty string")
         }
 
         return getSlideshows("get_slideshows_by_user", user = user, options = options)
@@ -62,7 +70,7 @@ class SlideshowTemplate(private val restTemplate: RestTemplate) : SlideshowOpera
 
     override fun searchSlideshows(query: String, options: SearchOptions?): SearchResults {
         if (query.isEmpty()) {
-            throw ApiException("SlideShare", "Query string must be non-empty string")
+            throw ApiException(PROVIDER_ID, "Query string must be non-empty string")
         }
 
         val uri = UriComponentsBuilder.fromUriString(API_BASE_URL).apply {
@@ -82,6 +90,63 @@ class SlideshowTemplate(private val restTemplate: RestTemplate) : SlideshowOpera
         return restTemplate.getForObject(uri)
     }
 
+    override fun editSlideshow(id: String, options: EditOptions): UpdateResults {
+        requireAuthorization()
+        if (id.isEmpty()) {
+            throw ApiException(PROVIDER_ID, "ID must be non-empty string")
+        }
+
+        val uri = UriComponentsBuilder.fromUriString(API_BASE_URL).apply {
+            path("/edit_slideshow")
+            queryParam("slideshow_id", id)
+            with(options) {
+                title?.let { title ->
+                    queryParam("slideshow_title", title)
+                }
+                description?.let { description ->
+                    queryParam("slideshow_description", description)
+                }
+                tags?.let { tags ->
+                    queryParam("slideshow_tags", tags.joinToString(","))
+                }
+                private?.let { private ->
+                    queryParam("make_slideshow_private", if (private) "Y" else "N")
+                }
+                generateSecretUrl?.let { enabled ->
+                    queryParam("generate_secret_url", if (enabled) "Y" else "N")
+                }
+                allowEmbed?.let { enabled ->
+                    queryParam("allow_embeds", if (enabled) "Y" else "N")
+                }
+                shareWithContacts?.let { enabled ->
+                    queryParam("share_with_contacts", if (enabled) "Y" else "N")
+                }
+            }
+        }.toUriString()
+        return restTemplate.getForObject(uri)
+    }
+
+    override fun deleteSlideshow(id: String): UpdateResults {
+        requireAuthorization()
+        if (id.isEmpty()) {
+            throw ApiException("SlideShare", "ID must be non-empty string")
+        }
+
+        val uri = UriComponentsBuilder.fromUriString(API_BASE_URL).apply {
+            path("/delete_slideshow")
+            queryParam("slideshow_id", id)
+        }.toUriString()
+        return restTemplate.getForObject(uri)
+    }
+
+    @Throws(MissingAuthorizationException::class)
+    private fun requireAuthorization() {
+        if (isAuthorized) {
+            return
+        }
+        throw MissingAuthorizationException(PROVIDER_ID)
+    }
+
     private fun getSlideshows(path: String, tag: String = "", user: String = "", options: GetSlideshowsOptions?): Slideshows {
         val uri = UriComponentsBuilder.fromUriString(API_BASE_URL).apply {
             path(path)
@@ -98,6 +163,7 @@ class SlideshowTemplate(private val restTemplate: RestTemplate) : SlideshowOpera
     }
 
     companion object {
+        private const val PROVIDER_ID = "SlideShare"
         private const val API_BASE_URL = "https://www.slideshare.net/api/2/"
     }
 }

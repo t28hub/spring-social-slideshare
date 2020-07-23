@@ -89,5 +89,29 @@ interface SlideshowOperations {
      * @return A search results containing the metadata and a collection of matching slideshows
      * @throws ApiException If there is an error while communicating with SlideShare API
      */
+    @Throws(ApiException::class)
     fun searchSlideshows(query: String, options: SearchOptions? = null): SearchResults
+
+    /**
+     * Edit information of slideshow
+     * [Edit existing slideshow | SlideShare API Documentation](https://www.slideshare.net/developers/documentation#edit_slideshow)
+     *
+     * @param id The slideshow ID to be edited
+     * @param options The optional parameters
+     * @return The edited slideshow ID
+     * @throws ApiException If there is an error while communicating with SlideShare API
+     */
+    @Throws(ApiException::class)
+    fun editSlideshow(id: String, options: EditOptions): UpdateResults
+
+    /**
+     * Delete the slideshow
+     * [Delete slideshow | SlideShare API Documentation](https://www.slideshare.net/developers/documentation#delete_slideshow)
+     *
+     * @param id The slideshow ID to be deleted
+     * @return The deleted slideshow ID
+     * @throws ApiException If there is an error while communicating with SlideShare API
+     */
+    @Throws(ApiException::class)
+    fun deleteSlideshow(id: String): UpdateResults
 }

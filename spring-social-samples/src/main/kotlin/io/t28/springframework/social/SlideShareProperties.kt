@@ -7,5 +7,7 @@ import org.springframework.boot.context.properties.ConstructorBinding
 @ConfigurationProperties(prefix = "spring.social.slideshare")
 data class SlideShareProperties(
     val apiKey: String,
-    val sharedSecret: String
+    val sharedSecret: String,
+    val username: String? = null,
+    val password: String? = null
 )
