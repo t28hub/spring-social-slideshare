@@ -6,10 +6,8 @@ import io.t28.springframework.social.slideshare.api.GetUserContactsOptions
 import io.t28.springframework.social.slideshare.api.Tag
 import io.t28.springframework.social.slideshare.api.UserOperations
 import org.springframework.social.ApiException
-import org.springframework.social.MissingAuthorizationException
 import org.springframework.web.client.RestTemplate
 import org.springframework.web.client.getForObject
-import org.springframework.web.util.UriComponentsBuilder
 
 /**
  * Implementation class for [UserOperations]
@@ -21,17 +19,16 @@ import org.springframework.web.util.UriComponentsBuilder
  */
 class UserTemplate(
     private val restTemplate: RestTemplate,
-    private val isAuthorized: Boolean
-) : UserOperations {
+     isAuthorized: Boolean
+) : AbstractSlideShareOperations(isAuthorized), UserOperations {
     override fun getUserFavorites(user: String): List<Favorite> {
         if (user.isEmpty()) {
             throw ApiException(PROVIDER_ID, "User name must be non-empty string")
         }
 
-        val uri = UriComponentsBuilder.fromUriString(API_BASE_URL).apply {
-            path("/get_user_favorites")
+        val uri = buildUriString("/get_user_favorites") {
             queryParam("username_for", user)
-        }.toUriString()
+        }
         // Convert to a list after deserialize as an array because getForObject erasures generic type.
         return restTemplate.getForObject<Array<Favorite>>(uri).asList()
     }
@@ -41,8 +38,7 @@ class UserTemplate(
             throw ApiException(PROVIDER_ID, "User name must be non-empty string")
         }
 
-        val uri = UriComponentsBuilder.fromUriString(API_BASE_URL).apply {
-            path("/get_user_contacts")
+        val uri = buildUriString("/get_user_contacts") {
             queryParam("username_for", user)
             options.limit?.let { limit ->
                 queryParam("limit", limit)
@@ -50,7 +46,7 @@ class UserTemplate(
             options.offset?.let { offset ->
                 queryParam("offset", offset)
             }
-        }.toUriString()
+        }
         // Convert to a list after deserialize as an array because getForObject erasures generic type.
         return restTemplate.getForObject<Array<Contact>>(uri).asList()
     }
@@ -58,22 +54,7 @@ class UserTemplate(
     override fun getUserTags(): List<Tag> {
         requireAuthorization()
 
-        val uri = UriComponentsBuilder.fromUriString(API_BASE_URL).apply {
-            path("/get_user_tags")
-        }.toUriString()
+        val uri = buildUriString("/get_user_tags")
         return restTemplate.getForObject<Array<Tag>>(uri).asList()
-    }
-
-    @Throws(MissingAuthorizationException::class)
-    private fun requireAuthorization() {
-        if (isAuthorized) {
-            return
-        }
-        throw MissingAuthorizationException(PROVIDER_ID)
-    }
-
-    companion object {
-        private const val PROVIDER_ID = "SlideShare"
-        private const val API_BASE_URL = "https://www.slideshare.net/api/2/"
     }
 }
