@@ -68,6 +68,24 @@ internal class UserTemplateTest {
         assertEquals(contacts[0].numComments, 1)
     }
 
+    @Test
+    fun `getUserTags should return a collection of tags by the authenticated user`() {
+        // Arrange
+        mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_user_tags?.+")))
+            .andExpect(method(HttpMethod.GET))
+            .andRespond(withSuccess()
+                .contentType(APPLICATION_XML)
+                .body(ClassPathResource("get_user_tags.xml", SlideShare::class.java)))
+
+        // Act
+        val tags = userOperations.getUserTags()
+
+        // Assert
+        assertEquals(tags.size, 3)
+        assertEquals(tags[0].name, "kotlin")
+        assertEquals(tags[0].count, 5)
+    }
+
     companion object {
         const val API_KEY = "TEST_API_KEY"
         const val SHARED_SECRET = "TEST_SHARED_SECRET"

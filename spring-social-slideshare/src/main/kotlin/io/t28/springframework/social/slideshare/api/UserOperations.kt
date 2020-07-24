@@ -28,4 +28,13 @@ interface UserOperations {
      */
     @Throws(ApiException::class)
     fun getUserContacts(user: String, options: GetUserContactsOptions = GetUserContactsOptions()): List<Contact>
+
+    /**
+     * Retrieve tags by the authenticated user.
+     * [Get User Tags | SlideShare API Documentation](https://www.slideshare.net/developers/documentation#get_user_tags)
+     *
+     * @return A collection of tag.
+     * @throws ApiException If there is an error while communicating with SlideShare API
+     */
+    fun getUserTags(): List<Tag>
 }

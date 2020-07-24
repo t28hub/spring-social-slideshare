@@ -6,6 +6,7 @@ import io.t28.springframework.social.slideshare.api.Favorite
 import io.t28.springframework.social.slideshare.api.SearchResults
 import io.t28.springframework.social.slideshare.api.Slideshow
 import io.t28.springframework.social.slideshare.api.Slideshows
+import io.t28.springframework.social.slideshare.api.Tag
 import io.t28.springframework.social.slideshare.api.UpdateResults
 
 /**
@@ -26,6 +27,7 @@ class SlideShareModule : SimpleModule("SlideShareModule") {
             // mixin annotations for [UserOperations]
             setMixInAnnotations<Contact, ContactMixin>()
             setMixInAnnotations<Favorite, FavoriteMixin>()
+            setMixInAnnotations<Tag, TagMixin>()
         }
     }
 
