@@ -3,8 +3,10 @@ package io.t28.springframework.social.slideshare.api.impl
 import io.t28.springframework.social.slideshare.api.Contact
 import io.t28.springframework.social.slideshare.api.Favorite
 import io.t28.springframework.social.slideshare.api.GetUserContactsOptions
+import io.t28.springframework.social.slideshare.api.Tag
 import io.t28.springframework.social.slideshare.api.UserOperations
 import org.springframework.social.ApiException
+import org.springframework.social.MissingAuthorizationException
 import org.springframework.web.client.RestTemplate
 import org.springframework.web.client.getForObject
 import org.springframework.web.util.UriComponentsBuilder
@@ -51,6 +53,23 @@ class UserTemplate(
         }.toUriString()
         // Convert to a list after deserialize as an array because getForObject erasures generic type.
         return restTemplate.getForObject<Array<Contact>>(uri).asList()
+    }
+
+    override fun getUserTags(): List<Tag> {
+        requireAuthorization()
+
+        val uri = UriComponentsBuilder.fromUriString(API_BASE_URL).apply {
+            path("/get_user_tags")
+        }.toUriString()
+        return restTemplate.getForObject<Array<Tag>>(uri).asList()
+    }
+
+    @Throws(MissingAuthorizationException::class)
+    private fun requireAuthorization() {
+        if (isAuthorized) {
+            return
+        }
+        throw MissingAuthorizationException(PROVIDER_ID)
     }
 
     companion object {

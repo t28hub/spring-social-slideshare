@@ -4,6 +4,7 @@ import io.t28.springframework.social.slideshare.api.Contact
 import io.t28.springframework.social.slideshare.api.Favorite
 import io.t28.springframework.social.slideshare.api.GetUserContactsOptions
 import io.t28.springframework.social.slideshare.api.SlideShare
+import io.t28.springframework.social.slideshare.api.Tag
 import org.springframework.http.MediaType.APPLICATION_JSON_VALUE
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
@@ -30,5 +31,10 @@ class UsersController(private val slideShare: SlideShare) {
             limit = limit
         )
         return slideShare.userOperations().getUserContacts(user, options)
+    }
+
+    @GetMapping("/tags")
+    fun getTags(): List<Tag> {
+        return slideShare.userOperations().getUserTags()
     }
 }
