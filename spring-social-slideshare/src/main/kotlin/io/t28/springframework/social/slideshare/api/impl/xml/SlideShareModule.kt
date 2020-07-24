@@ -1,6 +1,7 @@
 package io.t28.springframework.social.slideshare.api.impl.xml
 
 import com.fasterxml.jackson.databind.module.SimpleModule
+import io.t28.springframework.social.slideshare.api.Contact
 import io.t28.springframework.social.slideshare.api.Favorite
 import io.t28.springframework.social.slideshare.api.SearchResults
 import io.t28.springframework.social.slideshare.api.Slideshow
@@ -13,6 +14,7 @@ import io.t28.springframework.social.slideshare.api.UpdateResults
 class SlideShareModule : SimpleModule("SlideShareModule") {
     override fun setupModule(context: SetupContext) {
         with(context) {
+            // mixin annotations for [SlideshowOperations]
             setMixInAnnotations<Slideshow, SlideshowMixin>()
             setMixInAnnotations<Slideshow.Tag, SlideshowMixin.TagMixin>()
             setMixInAnnotations<Slideshow.RelatedSlideshowId, SlideshowMixin.RelatedSlideshowIdMixin>()
@@ -20,6 +22,9 @@ class SlideShareModule : SimpleModule("SlideShareModule") {
             setMixInAnnotations<SearchResults, SearchResultsMixin>()
             setMixInAnnotations<SearchResults.Meta, SearchResultsMixin.MetaMixin>()
             setMixInAnnotations<UpdateResults, UpdateResultsMixin>()
+
+            // mixin annotations for [UserOperations]
+            setMixInAnnotations<Contact, ContactMixin>()
             setMixInAnnotations<Favorite, FavoriteMixin>()
         }
     }

@@ -15,5 +15,17 @@ interface UserOperations {
      * @throws ApiException If there is an error while communicating with SlideShare API
      */
     @Throws(ApiException::class)
-    fun getFavorites(user: String): List<Favorite>
+    fun getUserFavorites(user: String): List<Favorite>
+
+    /**
+     * Retrieve contact information for a specified user.
+     * [Get User Contacts | SlideShare API Documentation](https://www.slideshare.net/developers/documentation#get_user_contacts)
+     *
+     * @param user The user name.
+     * @param options The optional parameters.
+     * @return A collection of contact information.
+     * @throws ApiException If there is an error while communicating with SlideShare API
+     */
+    @Throws(ApiException::class)
+    fun getUserContacts(user: String, options: GetUserContactsOptions = GetUserContactsOptions()): List<Contact>
 }
