@@ -13,4 +13,11 @@ interface SlideShare : ApiBinding {
      * @return [SlideshowOperations]
      */
     fun slideshowOperations(): SlideshowOperations
+
+    /**
+     * Operations for users.
+     *
+     * @return [UserOperations]
+     */
+    fun userOperations(): UserOperations
 }
