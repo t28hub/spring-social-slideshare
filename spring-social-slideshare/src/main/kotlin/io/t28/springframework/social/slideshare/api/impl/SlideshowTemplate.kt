@@ -129,7 +129,7 @@ class SlideshowTemplate(
     override fun deleteSlideshow(id: String): UpdateResults {
         requireAuthorization()
         if (id.isEmpty()) {
-            throw ApiException("SlideShare", "ID must be non-empty string")
+            throw ApiException(PROVIDER_ID, "ID must be non-empty string")
         }
 
         val uri = UriComponentsBuilder.fromUriString(API_BASE_URL).apply {

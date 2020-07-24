@@ -2,6 +2,7 @@ package io.t28.springframework.social.slideshare.api.impl
 
 import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.SlideshowOperations
+import io.t28.springframework.social.slideshare.api.UserOperations
 import io.t28.springframework.social.slideshare.api.impl.xml.ObjectMappers
 import org.springframework.http.converter.HttpMessageConverter
 import org.springframework.http.converter.StringHttpMessageConverter
@@ -32,8 +33,16 @@ class SlideShareTemplate(
         SlideshowTemplate(restTemplate, isAuthorized)
     }
 
+    private val userOperations by lazy {
+        UserTemplate(restTemplate, isAuthorized)
+    }
+
     override fun slideshowOperations(): SlideshowOperations {
         return slideshowOperations
+    }
+
+    override fun userOperations(): UserOperations {
+        return userOperations
     }
 
     override fun isAuthorized(): Boolean {
