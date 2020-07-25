@@ -30,7 +30,9 @@ internal class SlideshowTemplateTest {
         val credentials = Credentials(username = SLIDESHARE_USERNAME, password = SLIDESHARE_PASSWORD)
         slideShare = SlideShareTemplate(API_KEY, SHARED_SECRET, credentials)
         slideshowOperations = slideShare.slideshowOperations()
-        mockServer = MockRestServiceServer.bindTo(slideShare.restTemplate()).build()
+        mockServer = MockRestServiceServer.bindTo(slideShare.restTemplate())
+            .bufferContent()
+            .build()
     }
 
     @Test
