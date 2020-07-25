@@ -1,14 +1,15 @@
 package io.t28.springframework.social.slideshare.api.impl
 
-import io.t28.springframework.social.slideshare.api.EditOptions
+import io.t28.springframework.social.slideshare.api.EditSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
-import io.t28.springframework.social.slideshare.api.SearchOptions
+import io.t28.springframework.social.slideshare.api.SearchSlideshowsOptions
 import io.t28.springframework.social.slideshare.api.SearchResults
 import io.t28.springframework.social.slideshare.api.Slideshow
 import io.t28.springframework.social.slideshare.api.SlideshowOperations
 import io.t28.springframework.social.slideshare.api.Slideshows
 import io.t28.springframework.social.slideshare.api.UpdateResults
+import io.t28.springframework.social.slideshare.ext.`as`
 import org.springframework.social.ApiException
 import org.springframework.web.client.RestTemplate
 import org.springframework.web.client.getForObject
@@ -25,7 +26,7 @@ class SlideshowTemplate(
     private val restTemplate: RestTemplate,
     isAuthorized: Boolean
 ) : AbstractSlideShareOperations(isAuthorized), SlideshowOperations {
-    override fun getSlideshow(id: String?, url: String?, options: GetSlideshowOptions?): Slideshow {
+    override fun getSlideshow(id: String?, url: String?, options: GetSlideshowOptions): Slideshow {
         if (id.isNullOrEmpty() and url.isNullOrEmpty()) {
             throw ApiException(PROVIDER_ID, "Either ID or URL must be required")
         }
@@ -33,60 +34,58 @@ class SlideshowTemplate(
         val uri = buildUriString("/get_slideshow") {
             if (!id.isNullOrEmpty()) queryParam("slideshow_id", id)
             if (!url.isNullOrEmpty()) queryParam("slideshow_url", url)
-            options?.let {
-                queryParam("exclude_tags", if (it.excludeTags) 1 else 0)
-                queryParam("detailed", if (it.detailed) 1 else 0)
+            with(options) {
+                queryParam("exclude_tags", excludeTags.asInt())
+                queryParam("detailed", detailed.asInt())
             }
         }
         return restTemplate.getForObject(uri)
     }
 
-    override fun getSlideshowById(id: String, options: GetSlideshowOptions?): Slideshow {
+    override fun getSlideshowById(id: String, options: GetSlideshowOptions): Slideshow {
         return getSlideshow(id = id, url = null, options = options)
     }
 
-    override fun getSlideshowByUrl(url: String, options: GetSlideshowOptions?): Slideshow {
+    override fun getSlideshowByUrl(url: String, options: GetSlideshowOptions): Slideshow {
         return getSlideshow(id = null, url = url, options = options)
     }
 
-    override fun getSlideshowsByTag(tag: String, options: GetSlideshowsOptions?): Slideshows {
+    override fun getSlideshowsByTag(tag: String, options: GetSlideshowsOptions): Slideshows {
         if (tag.isEmpty()) {
             throw ApiException(PROVIDER_ID, "Tag name must be non-empty string")
         }
-
         return getSlideshows("/get_slideshows_by_tag", tag = tag, options = options)
     }
 
-    override fun getSlideshowsByUser(user: String, options: GetSlideshowsOptions?): Slideshows {
+    override fun getSlideshowsByUser(user: String, options: GetSlideshowsOptions): Slideshows {
         if (user.isEmpty()) {
             throw ApiException(PROVIDER_ID, "User name must be non-empty string")
         }
-
         return getSlideshows("/get_slideshows_by_user", user = user, options = options)
     }
 
-    override fun searchSlideshows(query: String, options: SearchOptions?): SearchResults {
+    override fun searchSlideshows(query: String, options: SearchSlideshowsOptions): SearchResults {
         if (query.isEmpty()) {
             throw ApiException(PROVIDER_ID, "Query string must be non-empty string")
         }
 
         val uri = buildUriString("/search_slideshows") {
             queryParam("q", query)
-            options?.let {
-                queryParam("page", it.page)
-                queryParam("items_per_page", it.perPage)
-                queryParam("lang", it.language.code)
-                queryParam("sort", it.sort.value)
-                queryParam("upload_date", it.uploadDate.value)
-                queryParam("what", it.what.value)
-                queryParam("file_type", it.fileType.value)
-                queryParam("detailed", if (it.detailed) 1 else 0)
+            with(options) {
+                queryParam("page", page)
+                queryParam("items_per_page", perPage)
+                queryParam("lang", language.code)
+                queryParam("sort", sort.value)
+                queryParam("upload_date", uploadDate.value)
+                queryParam("what", what.value)
+                queryParam("file_type", fileType.value)
+                queryParam("detailed", detailed.asInt())
             }
         }
         return restTemplate.getForObject(uri)
     }
 
-    override fun editSlideshow(id: String, options: EditOptions): UpdateResults {
+    override fun editSlideshow(id: String, options: EditSlideshowOptions): UpdateResults {
         requireAuthorization()
         if (id.isEmpty()) {
             throw ApiException(PROVIDER_ID, "ID must be non-empty string")
@@ -95,27 +94,13 @@ class SlideshowTemplate(
         val uri = buildUriString("/edit_slideshow") {
             queryParam("slideshow_id", id)
             with(options) {
-                title?.let { title ->
-                    queryParam("slideshow_title", title)
-                }
-                description?.let { description ->
-                    queryParam("slideshow_description", description)
-                }
-                tags?.let { tags ->
-                    queryParam("slideshow_tags", tags.joinToString(","))
-                }
-                private?.let { private ->
-                    queryParam("make_slideshow_private", if (private) "Y" else "N")
-                }
-                generateSecretUrl?.let { enabled ->
-                    queryParam("generate_secret_url", if (enabled) "Y" else "N")
-                }
-                allowEmbed?.let { enabled ->
-                    queryParam("allow_embeds", if (enabled) "Y" else "N")
-                }
-                shareWithContacts?.let { enabled ->
-                    queryParam("share_with_contacts", if (enabled) "Y" else "N")
-                }
+                title?.let { title -> queryParam("slideshow_title", title) }
+                description?.let { description -> queryParam("slideshow_description", description) }
+                tags?.let { tags -> queryParam("slideshow_tags", tags.joinToString(",")) }
+                private?.let { private -> queryParam("make_slideshow_private", private.asString()) }
+                generateSecretUrl?.let { enabled -> queryParam("generate_secret_url", enabled.asString()) }
+                allowEmbed?.let { enabled -> queryParam("allow_embeds", enabled.asString()) }
+                shareWithContacts?.let { enabled -> queryParam("share_with_contacts", enabled.asString()) }
             }
         }
         return restTemplate.getForObject(uri)
@@ -133,17 +118,22 @@ class SlideshowTemplate(
         return restTemplate.getForObject(uri)
     }
 
-    private fun getSlideshows(path: String, tag: String = "", user: String = "", options: GetSlideshowsOptions?): Slideshows {
+    private fun getSlideshows(path: String, tag: String = "", user: String = "", options: GetSlideshowsOptions): Slideshows {
         val uri = buildUriString(path) {
             if (tag.isNotEmpty()) queryParam("tag", tag)
             if (user.isNotEmpty()) queryParam("username_for", user)
-            options?.let {
-                it.limit?.run { queryParam("limit", this) }
-                it.offset?.run { queryParam("offset", this) }
-                queryParam("detailed", if (it.detailed) 1 else 0)
-                queryParam("get_unconverted", if (it.unconverted) 1 else 0)
+            with(options) {
+                limit?.run { queryParam("limit", this) }
+                offset?.run { queryParam("offset", this) }
+                queryParam("detailed", detailed.asInt())
+                queryParam("get_unconverted", unconverted.asInt())
             }
         }
         return restTemplate.getForObject(uri)
+    }
+
+    companion object {
+        private fun Boolean.asInt() = `as`(positive = 1, negative = 0)
+        private fun Boolean.asString() = `as`(positive = "Y", negative = "N")
     }
 }

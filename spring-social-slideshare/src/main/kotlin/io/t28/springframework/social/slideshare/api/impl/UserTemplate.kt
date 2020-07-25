@@ -5,9 +5,9 @@ import io.t28.springframework.social.slideshare.api.Favorite
 import io.t28.springframework.social.slideshare.api.GetUserContactsOptions
 import io.t28.springframework.social.slideshare.api.Tag
 import io.t28.springframework.social.slideshare.api.UserOperations
+import io.t28.springframework.social.slideshare.ext.getForListObject
 import org.springframework.social.ApiException
 import org.springframework.web.client.RestTemplate
-import org.springframework.web.client.getForObject
 
 /**
  * Implementation class for [UserOperations]
@@ -29,8 +29,7 @@ class UserTemplate(
         val uri = buildUriString("/get_user_favorites") {
             queryParam("username_for", user)
         }
-        // Convert to a list after deserialize as an array because getForObject erasures generic type.
-        return restTemplate.getForObject<Array<Favorite>>(uri).asList()
+        return restTemplate.getForListObject(uri)
     }
 
     override fun getUserContacts(user: String, options: GetUserContactsOptions): List<Contact> {
@@ -40,21 +39,18 @@ class UserTemplate(
 
         val uri = buildUriString("/get_user_contacts") {
             queryParam("username_for", user)
-            options.limit?.let { limit ->
-                queryParam("limit", limit)
-            }
-            options.offset?.let { offset ->
-                queryParam("offset", offset)
+            with(options) {
+                limit?.let { limit -> queryParam("limit", limit) }
+                offset?.let { offset -> queryParam("offset", offset) }
             }
         }
-        // Convert to a list after deserialize as an array because getForObject erasures generic type.
-        return restTemplate.getForObject<Array<Contact>>(uri).asList()
+        return restTemplate.getForListObject(uri)
     }
 
     override fun getUserTags(): List<Tag> {
         requireAuthorization()
 
         val uri = buildUriString("/get_user_tags")
-        return restTemplate.getForObject<Array<Tag>>(uri).asList()
+        return restTemplate.getForListObject(uri)
     }
 }

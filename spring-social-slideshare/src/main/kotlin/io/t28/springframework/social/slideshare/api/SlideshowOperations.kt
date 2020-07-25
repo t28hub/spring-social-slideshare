@@ -20,7 +20,7 @@ interface SlideshowOperations {
      * - [getSlideshowByUrl]
      */
     @Throws(ApiException::class)
-    fun getSlideshow(id: String?, url: String?, options: GetSlideshowOptions? = null): Slideshow
+    fun getSlideshow(id: String?, url: String?, options: GetSlideshowOptions = GetSlideshowOptions()): Slideshow
 
     /**
      * Retrieve slideshow information for a specified ID.
@@ -35,7 +35,7 @@ interface SlideshowOperations {
      * - [getSlideshowByUrl]
      */
     @Throws(ApiException::class)
-    fun getSlideshowById(id: String, options: GetSlideshowOptions? = null): Slideshow
+    fun getSlideshowById(id: String, options: GetSlideshowOptions = GetSlideshowOptions()): Slideshow
 
     /**
      * Retrieve slideshow information for a specified URL.
@@ -50,7 +50,7 @@ interface SlideshowOperations {
      * - [getSlideshowById]
      */
     @Throws(ApiException::class)
-    fun getSlideshowByUrl(url: String, options: GetSlideshowOptions? = null): Slideshow
+    fun getSlideshowByUrl(url: String, options: GetSlideshowOptions = GetSlideshowOptions()): Slideshow
 
     /**
      * Retrieve a collection of slideshows for a specified tag.
@@ -64,7 +64,7 @@ interface SlideshowOperations {
      * - [getSlideshowsByUser]
      */
     @Throws(ApiException::class)
-    fun getSlideshowsByTag(tag: String, options: GetSlideshowsOptions? = null): Slideshows
+    fun getSlideshowsByTag(tag: String, options: GetSlideshowsOptions = GetSlideshowsOptions()): Slideshows
 
     /**
      * Retrieve a collection of slideshows for a specified user.
@@ -78,7 +78,7 @@ interface SlideshowOperations {
      * - [getSlideshowsByUser]
      */
     @Throws(ApiException::class)
-    fun getSlideshowsByUser(user: String, options: GetSlideshowsOptions? = null): Slideshows
+    fun getSlideshowsByUser(user: String, options: GetSlideshowsOptions = GetSlideshowsOptions()): Slideshows
 
     /**
      * Search slideshows
@@ -90,7 +90,7 @@ interface SlideshowOperations {
      * @throws ApiException If there is an error while communicating with SlideShare API
      */
     @Throws(ApiException::class)
-    fun searchSlideshows(query: String, options: SearchOptions? = null): SearchResults
+    fun searchSlideshows(query: String, options: SearchSlideshowsOptions = SearchSlideshowsOptions()): SearchResults
 
     /**
      * Edit information of slideshow
@@ -102,7 +102,7 @@ interface SlideshowOperations {
      * @throws ApiException If there is an error while communicating with SlideShare API
      */
     @Throws(ApiException::class)
-    fun editSlideshow(id: String, options: EditOptions): UpdateResults
+    fun editSlideshow(id: String, options: EditSlideshowOptions): UpdateResults
 
     /**
      * Delete the slideshow
