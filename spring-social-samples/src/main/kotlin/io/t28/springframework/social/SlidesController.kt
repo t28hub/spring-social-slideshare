@@ -1,9 +1,9 @@
 package io.t28.springframework.social
 
-import io.t28.springframework.social.slideshare.api.EditOptions
+import io.t28.springframework.social.slideshare.api.EditSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
-import io.t28.springframework.social.slideshare.api.SearchOptions
+import io.t28.springframework.social.slideshare.api.SearchSlideshowsOptions
 import io.t28.springframework.social.slideshare.api.SearchResults
 import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.Slideshow
@@ -40,7 +40,7 @@ class SlidesController(private val slideShare: SlideShare) {
         @PathVariable id: String,
         @RequestBody body: UpdateSlideshowRequest
     ) {
-        val options = EditOptions(
+        val options = EditSlideshowOptions(
             title = body.title,
             description = body.description,
             tags = body.tags
@@ -60,14 +60,14 @@ class SlidesController(private val slideShare: SlideShare) {
         @RequestParam q: String,
         @RequestParam(defaultValue = "1") page: Int,
         @RequestParam(defaultValue = "10") perPage: Int,
-        @RequestParam(defaultValue = "ALL") language: SearchOptions.Language,
-        @RequestParam(defaultValue = "RELEVANCE") sort: SearchOptions.Sort,
-        @RequestParam(defaultValue = "ANY") uploadDate: SearchOptions.UploadDate,
-        @RequestParam(defaultValue = "ALL") fileType: SearchOptions.FileType,
-        @RequestParam(defaultValue = "TEXT") searchType: SearchOptions.SearchType,
+        @RequestParam(defaultValue = "ALL") language: SearchSlideshowsOptions.Language,
+        @RequestParam(defaultValue = "RELEVANCE") sort: SearchSlideshowsOptions.Sort,
+        @RequestParam(defaultValue = "ANY") uploadDate: SearchSlideshowsOptions.UploadDate,
+        @RequestParam(defaultValue = "ALL") fileType: SearchSlideshowsOptions.FileType,
+        @RequestParam(defaultValue = "TEXT") searchType: SearchSlideshowsOptions.SearchType,
         @RequestParam(defaultValue = "false") detailed: Boolean
     ): SearchResults {
-        val options = SearchOptions(
+        val options = SearchSlideshowsOptions(
             page = page,
             perPage = perPage,
             language = language,

@@ -16,7 +16,7 @@ package io.t28.springframework.social.slideshare.api
  *
  * - [SlideshowOperations.searchSlideshows]
  */
-data class SearchOptions(
+data class SearchSlideshowsOptions(
     val page: Int = 1,
     val perPage: Int = 12,
     val language: Language = Language.ENGLISH,

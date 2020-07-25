@@ -15,7 +15,7 @@ package io.t28.springframework.social.slideshare.api
  *
  * - [SlideshowOperations.editSlideshow]
  */
-data class EditOptions(
+data class EditSlideshowOptions(
     val title: String? = null,
     val description: String? = null,
     val tags: List<String>? = null,

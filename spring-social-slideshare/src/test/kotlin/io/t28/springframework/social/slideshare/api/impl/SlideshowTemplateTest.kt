@@ -1,9 +1,9 @@
 package io.t28.springframework.social.slideshare.api.impl
 
-import io.t28.springframework.social.slideshare.api.EditOptions
+import io.t28.springframework.social.slideshare.api.EditSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
-import io.t28.springframework.social.slideshare.api.SearchOptions
+import io.t28.springframework.social.slideshare.api.SearchSlideshowsOptions
 import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.SlideshowOperations
 import org.hamcrest.Matchers.matchesPattern
@@ -163,7 +163,7 @@ internal class SlideshowTemplateTest {
                 .body(ClassPathResource("search_slideshows.xml", SlideShare::class.java)))
 
         // Act
-        val options = SearchOptions(
+        val options = SearchSlideshowsOptions(
             page = 1,
             perPage = 10,
             detailed = true
@@ -188,7 +188,7 @@ internal class SlideshowTemplateTest {
                 .body(ClassPathResource("edit_slideshow.xml", SlideShare::class.java)))
 
         // Act
-        val options = EditOptions(
+        val options = EditSlideshowOptions(
             title = "New title",
             private = true
         )
