@@ -50,7 +50,8 @@ internal class SlideShareErrorHandler(private val xmlMapper: XmlMapper) : Defaul
         return try {
             xmlMapper.readValue<SlideShareError>(response.body)
             true
-        } catch (e: JsonProcessingException) {
+        } catch (_: JsonProcessingException) {
+            // Ignore thrown exception due to check whether response body is deserializable as a SlideShareError.
             false
         }
     }

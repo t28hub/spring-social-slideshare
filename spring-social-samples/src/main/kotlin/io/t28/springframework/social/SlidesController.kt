@@ -55,6 +55,7 @@ class SlidesController(private val slideShare: SlideShare) {
             .deleteSlideshow(id)
     }
 
+    @Suppress("LongParameterList")
     @GetMapping("/search")
     fun search(
         @RequestParam q: String,

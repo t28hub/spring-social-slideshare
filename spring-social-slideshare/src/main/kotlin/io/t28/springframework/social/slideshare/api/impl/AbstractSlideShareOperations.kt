@@ -9,7 +9,7 @@ import org.springframework.web.util.UriComponentsBuilder
  * @constructor
  * @param isAuthorized Whether or not it is authorized.
  */
-abstract class AbstractSlideShareOperations(private val isAuthorized: Boolean) {
+internal abstract class AbstractSlideShareOperations(private val isAuthorized: Boolean) {
     /**
      * Throws a [MissingAuthorizationException] if it is not authorized.
      *

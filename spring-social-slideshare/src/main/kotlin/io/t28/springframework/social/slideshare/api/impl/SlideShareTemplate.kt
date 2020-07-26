@@ -4,7 +4,7 @@ import io.t28.springframework.social.slideshare.api.FavoriteOperations
 import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.SlideshowOperations
 import io.t28.springframework.social.slideshare.api.UserOperations
-import io.t28.springframework.social.slideshare.api.impl.xml.ObjectMappers
+import io.t28.springframework.social.slideshare.api.impl.xml.ObjectMapperHolder
 import org.springframework.http.converter.HttpMessageConverter
 import org.springframework.http.converter.StringHttpMessageConverter
 import org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter
@@ -69,14 +69,14 @@ class SlideShareTemplate(
             credentials?.let {
                 interceptors.add(AuthenticationInterceptor(it))
             }
-            errorHandler = SlideShareErrorHandler(ObjectMappers.xmlMapper())
+            errorHandler = SlideShareErrorHandler(ObjectMapperHolder.xmlMapper())
         }
     }
 
     private fun getMessageConverters(): List<HttpMessageConverter<out Any>> {
         return listOf(
             StringHttpMessageConverter(),
-            MappingJackson2XmlHttpMessageConverter(ObjectMappers.xmlMapper())
+            MappingJackson2XmlHttpMessageConverter(ObjectMapperHolder.xmlMapper())
         )
     }
 }
