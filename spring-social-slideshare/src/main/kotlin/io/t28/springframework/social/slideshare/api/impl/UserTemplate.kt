@@ -19,7 +19,7 @@ import org.springframework.web.client.RestTemplate
  */
 class UserTemplate(
     private val restTemplate: RestTemplate,
-     isAuthorized: Boolean
+    isAuthorized: Boolean
 ) : AbstractSlideShareOperations(isAuthorized), UserOperations {
     override fun getUserFavorites(user: String): List<Favorite> {
         if (user.isEmpty()) {

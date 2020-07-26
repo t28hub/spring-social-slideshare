@@ -17,7 +17,7 @@ import org.springframework.web.client.getForObject
  */
 class FavoriteTemplate(
     private val restTemplate: RestTemplate,
-     isAuthorized: Boolean
+    isAuthorized: Boolean
 ) : AbstractSlideShareOperations(isAuthorized), FavoriteOperations {
     override fun addFavorite(slideshowId: String): FavoriteResults {
         if (slideshowId.isEmpty()) {

@@ -3,8 +3,8 @@ package io.t28.springframework.social.slideshare.api.impl
 import io.t28.springframework.social.slideshare.api.EditSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
-import io.t28.springframework.social.slideshare.api.SearchSlideshowsOptions
 import io.t28.springframework.social.slideshare.api.SearchResults
+import io.t28.springframework.social.slideshare.api.SearchSlideshowsOptions
 import io.t28.springframework.social.slideshare.api.Slideshow
 import io.t28.springframework.social.slideshare.api.SlideshowOperations
 import io.t28.springframework.social.slideshare.api.Slideshows

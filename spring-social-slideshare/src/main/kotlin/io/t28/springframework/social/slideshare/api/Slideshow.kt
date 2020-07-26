@@ -48,10 +48,10 @@ data class Slideshow(
      * A conversion status
      */
     enum class Status {
-        QUEUED,     // 0 if queued for conversion
+        QUEUED, // 0 if queued for conversion
         CONVERTING, // 1 if converting
-        CONVERTED,  // 2 if converted
-        FAILED      // 3 if conversion failed
+        CONVERTED, // 2 if converted
+        FAILED // 3 if conversion failed
     }
 
     /**

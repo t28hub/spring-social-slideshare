@@ -23,8 +23,11 @@ fun String.sha1(): String {
 internal fun String.hash(algorithm: String): String {
     val bytes = MessageDigest.getInstance(algorithm).digest(toByteArray())
     val chars = "0123456789ABCDEF".toCharArray()
-    return bytes.fold(StringBuilder(bytes.size shl 1), { builder, byte ->
-        builder.append(chars[byte.toInt() and 0xF0 shr 4])
-        builder.append(chars[byte.toInt() and 0x0F])
-    }).toString()
+    return bytes.fold(
+        StringBuilder(bytes.size shl 1),
+        { builder, byte ->
+            builder.append(chars[byte.toInt() and 0xF0 shr 4])
+            builder.append(chars[byte.toInt() and 0x0F])
+        }
+    ).toString()
 }

@@ -22,4 +22,3 @@ internal object RelatedSlideshowIdListDeserializer : JsonDeserializer<List<Slide
         return emptyList()
     }
 }
-

@@ -27,11 +27,12 @@ internal class NumericBooleanDeserializerTest {
     fun `should deserialize 0 to false`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Root>
               <Supported>0</Supported>
             </Root>
-        """.trimIndent()
+            """.trimIndent()
 
         // Act
         val deserialized = mapper.readValue<Xml>(content)
@@ -44,11 +45,12 @@ internal class NumericBooleanDeserializerTest {
     fun `should deserialize 1 to true`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Root>
               <Supported>1</Supported>
             </Root>
-        """.trimIndent()
+            """.trimIndent()
 
         // Act
         val deserialized = mapper.readValue<Xml>(content)
@@ -61,11 +63,12 @@ internal class NumericBooleanDeserializerTest {
     fun `should throw Exception if value is neither 0 nor 1`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Root>
               <Supported>2</Supported>
             </Root>
-        """.trimIndent()
+            """.trimIndent()
 
         // Assert
         assertThrows<JsonMappingException> {
@@ -78,11 +81,12 @@ internal class NumericBooleanDeserializerTest {
     fun `should throw Exception if value is missing`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Root>
               <Supported></Supported>
             </Root>
-        """.trimIndent()
+            """.trimIndent()
 
         // Assert
         assertThrows<JsonMappingException> {

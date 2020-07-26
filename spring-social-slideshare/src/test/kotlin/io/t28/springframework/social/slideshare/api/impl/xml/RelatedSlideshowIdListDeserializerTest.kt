@@ -27,7 +27,8 @@ internal class RelatedSlideshowIdListDeserializerTest {
     fun `should deserialize non-empty RelatedSlideshows`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Xml>
               <RelatedSlideshows>
                 <RelatedSlideshowID rank="1">100000</RelatedSlideshowID>
@@ -35,7 +36,7 @@ internal class RelatedSlideshowIdListDeserializerTest {
                 <RelatedSlideshowID rank="3">100002</RelatedSlideshowID>
               </RelatedSlideshows>
             </Xml>
-        """.trimIndent()
+            """.trimIndent()
 
         // Act
         val deserialized = mapper.readValue<Xml>(content)
@@ -51,11 +52,12 @@ internal class RelatedSlideshowIdListDeserializerTest {
     fun `should deserialize empty RelatedSlideshows`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Xml>
               <RelatedSlideshows> </RelatedSlideshows>
             </Xml>
-        """.trimIndent()
+            """.trimIndent()
 
         // Act
         val deserialized = mapper.readValue<Xml>(content)
@@ -68,10 +70,11 @@ internal class RelatedSlideshowIdListDeserializerTest {
     fun `should deserialize to empty list if RelatedSlideshows is missing`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Xml>
             </Xml>
-        """.trimIndent()
+            """.trimIndent()
 
         // Act
         val deserialized = mapper.readValue<Xml>(content)
