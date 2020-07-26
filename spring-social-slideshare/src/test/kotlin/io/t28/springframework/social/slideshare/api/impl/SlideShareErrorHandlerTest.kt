@@ -1,7 +1,7 @@
 package io.t28.springframework.social.slideshare.api.impl
 
 import io.t28.springframework.social.slideshare.api.SlideShare
-import io.t28.springframework.social.slideshare.api.impl.xml.ObjectMappers
+import io.t28.springframework.social.slideshare.api.impl.xml.ObjectMapperHolder
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.BeforeAll
@@ -23,7 +23,7 @@ internal class SlideShareErrorHandlerTest {
 
     @BeforeAll
     fun setup() {
-        errorHandler = SlideShareErrorHandler(ObjectMappers.xmlMapper())
+        errorHandler = SlideShareErrorHandler(ObjectMapperHolder.xmlMapper())
     }
 
     @Test

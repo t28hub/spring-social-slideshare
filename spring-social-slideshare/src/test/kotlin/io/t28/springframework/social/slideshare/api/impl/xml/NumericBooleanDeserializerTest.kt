@@ -18,7 +18,7 @@ internal class NumericBooleanDeserializerTest {
 
     @BeforeAll
     fun setup() {
-        mapper = XmlMapper.Builder(ObjectMappers.xmlMapper())
+        mapper = XmlMapper.Builder(ObjectMapperHolder.xmlMapper())
             .addMixIn(Xml::class.java, XmlMixin::class.java)
             .build()
     }

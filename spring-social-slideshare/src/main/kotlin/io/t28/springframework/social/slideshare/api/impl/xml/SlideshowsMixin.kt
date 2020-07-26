@@ -4,7 +4,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import io.t28.springframework.social.slideshare.api.Slideshow
+import io.t28.springframework.social.slideshare.api.Slideshows
 
+/**
+ * Annotated mixin to add annotations to [Slideshows]
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 interface SlideshowsMixin {
     @get:JacksonXmlProperty(localName = "Name")
