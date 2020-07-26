@@ -22,8 +22,8 @@ comments:
   active: true
   excludes: ['**/test/**', '**/androidTest/**', '**/commonTest/**', '**/jvmTest/**', '**/jsTest/**', '**/iosTest/**']
   AbsentOrWrongFileLicense:
-    active: false
-    licenseTemplateFile: 'license.template'
+    active: true
+    licenseTemplateFile: 'LICENSE.template'
   CommentOverPrivateFunction:
     active: false
   CommentOverPrivateProperty:
