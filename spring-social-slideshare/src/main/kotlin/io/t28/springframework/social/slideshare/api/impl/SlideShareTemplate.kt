@@ -60,6 +60,7 @@ class SlideShareTemplate(
             credentials?.let {
                 interceptors.add(AuthenticationInterceptor(it))
             }
+            errorHandler = SlideShareErrorHandler(ObjectMappers.xmlMapper())
         }
     }
 

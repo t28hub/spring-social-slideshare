@@ -25,7 +25,9 @@ internal class UserTemplateTest {
         val credentials = Credentials(username = SLIDESHARE_USERNAME, password = SLIDESHARE_PASSWORD)
         slideShare = SlideShareTemplate(API_KEY, SHARED_SECRET, credentials)
         userOperations = slideShare.userOperations()
-        mockServer = MockRestServiceServer.bindTo(slideShare.restTemplate()).build()
+        mockServer = MockRestServiceServer.bindTo(slideShare.restTemplate())
+            .bufferContent()
+            .build()
     }
 
     @Test

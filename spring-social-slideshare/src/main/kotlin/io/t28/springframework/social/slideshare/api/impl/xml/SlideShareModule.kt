@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.module.SimpleModule
 import io.t28.springframework.social.slideshare.api.Contact
 import io.t28.springframework.social.slideshare.api.Favorite
 import io.t28.springframework.social.slideshare.api.SearchResults
+import io.t28.springframework.social.slideshare.api.SlideShareError
 import io.t28.springframework.social.slideshare.api.Slideshow
 import io.t28.springframework.social.slideshare.api.Slideshows
 import io.t28.springframework.social.slideshare.api.Tag
@@ -28,6 +29,10 @@ class SlideShareModule : SimpleModule("SlideShareModule") {
             setMixInAnnotations<Contact, ContactMixin>()
             setMixInAnnotations<Favorite, FavoriteMixin>()
             setMixInAnnotations<Tag, TagMixin>()
+
+            // mixin annotations for API errors
+            setMixInAnnotations<SlideShareError, SlideShareErrorMixin>()
+            setMixInAnnotations<SlideShareError.Message, SlideShareErrorMixin.MessageMixin>()
         }
     }
 
