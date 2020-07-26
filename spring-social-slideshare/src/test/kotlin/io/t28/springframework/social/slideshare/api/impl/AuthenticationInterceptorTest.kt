@@ -54,18 +54,21 @@ internal class AuthenticationInterceptorTest {
         interceptor.intercept(request, emptyBody, execution)
 
         // Assert
-        verify(execution).execute(argThat {
-            if (method != HttpMethod.GET || !headers.isNullOrEmpty()) {
-                return@argThat false
-            }
+        verify(execution).execute(
+            argThat {
+                if (method != HttpMethod.GET || !headers.isNullOrEmpty()) {
+                    return@argThat false
+                }
 
-            uri.scheme == "https" &&
-                uri.host == "www.slideshare.net" &&
-                uri.path == "/api/2/delete_slideshow" &&
-                uri.query.contains("slideshow_id=32795564") &&
-                uri.query.contains("username=$SLIDESHARE_USERNAME") &&
-                uri.query.contains("password=$SLIDESHARE_PASSWORD")
-        }, eq(emptyBody))
+                uri.scheme == "https" &&
+                    uri.host == "www.slideshare.net" &&
+                    uri.path == "/api/2/delete_slideshow" &&
+                    uri.query.contains("slideshow_id=32795564") &&
+                    uri.query.contains("username=$SLIDESHARE_USERNAME") &&
+                    uri.query.contains("password=$SLIDESHARE_PASSWORD")
+            },
+            eq(emptyBody)
+        )
         verifyNoMoreInteractions(execution)
     }
 

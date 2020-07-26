@@ -5,7 +5,7 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.module.kotlin.readValue
 import org.intellij.lang.annotations.Language
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -25,11 +25,12 @@ internal class TagTextDeserializerTest {
     fun `should split text to list`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Root>
               <Tags>Java,Groovy,Scala,Kotlin</Tags>
             </Root>
-        """.trimIndent()
+            """.trimIndent()
 
         // Act
         val deserialized = mapper.readValue<Xml>(content)
@@ -46,11 +47,12 @@ internal class TagTextDeserializerTest {
     fun `should return empty list if value is empty`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Root>
               <Tags></Tags>
             </Root>
-        """.trimIndent()
+            """.trimIndent()
 
         // Act
         val deserialized = mapper.readValue<Xml>(content)
@@ -63,10 +65,11 @@ internal class TagTextDeserializerTest {
     fun `should return empty list if tag is missing`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Root>
             </Root>
-        """.trimIndent()
+            """.trimIndent()
 
         // Act
         val deserialized = mapper.readValue<Xml>(content)

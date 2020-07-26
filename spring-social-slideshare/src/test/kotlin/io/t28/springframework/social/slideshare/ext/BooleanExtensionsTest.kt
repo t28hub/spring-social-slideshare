@@ -1,6 +1,6 @@
 package io.t28.springframework.social.slideshare.ext
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 

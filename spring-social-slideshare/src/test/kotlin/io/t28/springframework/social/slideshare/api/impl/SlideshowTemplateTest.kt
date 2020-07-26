@@ -25,9 +25,11 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshow?.+")))
             .andExpect(method(GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("get_slideshow.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("get_slideshow.xml".readResource())
+            )
 
         // Act
         val options = GetSlideshowOptions(excludeTags = false, detailed = true)
@@ -43,9 +45,11 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshow?.+")))
             .andExpect(method(GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("get_slideshow.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("get_slideshow.xml".readResource())
+            )
 
         // Act
         val options = GetSlideshowOptions(excludeTags = false, detailed = true)
@@ -71,9 +75,11 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshow?.+")))
             .andExpect(method(GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("get_slideshow.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("get_slideshow.xml".readResource())
+            )
 
         // Act
         val options = GetSlideshowOptions(excludeTags = false, detailed = true)
@@ -89,9 +95,11 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshow?.+")))
             .andExpect(method(GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("get_slideshow.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("get_slideshow.xml".readResource())
+            )
 
         // Act
         val options = GetSlideshowOptions(excludeTags = false, detailed = true)
@@ -107,9 +115,11 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshows_by_tag?.+")))
             .andExpect(method(GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("get_slideshows_by_tag.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("get_slideshows_by_tag.xml".readResource())
+            )
 
         // Act
         val options = GetSlideshowsOptions(offset = 0, limit = 10, detailed = true)
@@ -126,9 +136,11 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshows_by_user?.+")))
             .andExpect(method(GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("get_slideshows_by_user.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("get_slideshows_by_user.xml".readResource())
+            )
 
         // Act
         val options = GetSlideshowsOptions(offset = 0, limit = 10, detailed = true)
@@ -145,9 +157,11 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/search_slideshows?.+")))
             .andExpect(method(GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("search_slideshows.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("search_slideshows.xml".readResource())
+            )
 
         // Act
         val options = SearchSlideshowsOptions(
@@ -170,9 +184,11 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/edit_slideshow?.+")))
             .andExpect(method(GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("edit_slideshow.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("edit_slideshow.xml".readResource())
+            )
 
         // Act
         val options = EditSlideshowOptions(
@@ -190,9 +206,11 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/delete_slideshow?.+")))
             .andExpect(method(GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("delete_slideshow.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("delete_slideshow.xml".readResource())
+            )
 
         // Act
         val deleted = slideshowOperations.deleteSlideshow("32795564")

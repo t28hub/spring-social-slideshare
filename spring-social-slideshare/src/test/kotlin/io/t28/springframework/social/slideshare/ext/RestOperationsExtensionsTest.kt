@@ -38,14 +38,17 @@ internal class RestOperationsExtensionsTest {
     fun `getForListObject should return a list instead of a typed array`() {
         // Arrange
         @Language("json")
-        val content = """
+        val content =
+            """
             [ "Alice", "Bob", "Charlie"]
-        """.trimIndent()
+            """.trimIndent()
         mockServer.expect(requestTo(matchesPattern("^https://www.example.com/?.+")))
             .andExpect(method(GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_JSON)
-                .body(content))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_JSON)
+                    .body(content)
+            )
 
         // Act
         val tags = restOperations.getForListObject<String>("https://www.example.com/")
@@ -61,14 +64,17 @@ internal class RestOperationsExtensionsTest {
     fun `getForListObject should return an empty list when element is empty`() {
         // Arrange
         @Language("json")
-        val content = """
+        val content =
+            """
             []
-        """.trimIndent()
+            """.trimIndent()
         mockServer.expect(requestTo(matchesPattern("^https://www.example.com/?.+")))
             .andExpect(method(GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_JSON)
-                .body(content))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_JSON)
+                    .body(content)
+            )
 
         // Act
         val tags = restOperations.getForListObject<String>("https://www.example.com/")

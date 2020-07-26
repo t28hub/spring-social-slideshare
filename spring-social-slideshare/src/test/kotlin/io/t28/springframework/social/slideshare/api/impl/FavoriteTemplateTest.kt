@@ -2,7 +2,9 @@ package io.t28.springframework.social.slideshare.api.impl
 
 import io.t28.springframework.social.slideshare.api.FavoriteOperations
 import org.hamcrest.Matchers.matchesPattern
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import org.springframework.http.HttpMethod.GET
 import org.springframework.http.MediaType.APPLICATION_XML
@@ -21,9 +23,11 @@ internal class FavoriteTemplateTest : AbstractSlideShareApiTest() {
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/add_favorite?.+")))
             .andExpect(method(GET))
             .andExpect(queryParam("slideshow_id", "49627175"))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("add_favorite.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("add_favorite.xml".readResource())
+            )
 
         // Act
         val results = favoriteTemplate.addFavorite("49627175")
@@ -38,9 +42,11 @@ internal class FavoriteTemplateTest : AbstractSlideShareApiTest() {
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/check_favorite?.+")))
             .andExpect(method(GET))
             .andExpect(queryParam("slideshow_id", "49627175"))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("check_favorite_favorited.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("check_favorite_favorited.xml".readResource())
+            )
 
         // Act
         val state = favoriteTemplate.checkFavorite("49627175")
@@ -57,9 +63,11 @@ internal class FavoriteTemplateTest : AbstractSlideShareApiTest() {
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/check_favorite?.+")))
             .andExpect(method(GET))
             .andExpect(queryParam("slideshow_id", "49627178"))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("check_favorite_not_favorited.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("check_favorite_not_favorited.xml".readResource())
+            )
 
         // Act
         val state = favoriteTemplate.checkFavorite("49627178")

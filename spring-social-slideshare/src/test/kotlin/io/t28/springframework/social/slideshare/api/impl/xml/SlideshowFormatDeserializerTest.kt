@@ -34,11 +34,12 @@ internal class SlideshowFormatDeserializerTest {
     fun `should convert string representation to enum`(string: String, expected: Slideshow.Format) {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Root>
               <Format>$string</Format>
             </Root>
-        """.trimIndent()
+            """.trimIndent()
 
         // Act
         val parsed = mapper.readValue<Xml>(content)
@@ -51,13 +52,14 @@ internal class SlideshowFormatDeserializerTest {
     fun `should throw exception if value is not string`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Root>
               <Format>
                 <Value>pptx</Value>
               </Format>
             </Root>
-        """.trimIndent()
+            """.trimIndent()
 
         // Assert
         assertThrows<JsonMappingException> {

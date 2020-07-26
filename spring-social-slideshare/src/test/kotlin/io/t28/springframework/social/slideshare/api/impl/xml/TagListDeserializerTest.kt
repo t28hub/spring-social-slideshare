@@ -6,7 +6,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.module.kotlin.readValue
 import io.t28.springframework.social.slideshare.api.Slideshow
 import org.intellij.lang.annotations.Language
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -26,7 +26,8 @@ internal class TagListDeserializerTest {
     fun `should deserialize non-empty Tags`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Xml>
               <Tags>
                 <Tag Count="1" Owner="1">jvm</Tag>
@@ -34,7 +35,7 @@ internal class TagListDeserializerTest {
                 <Tag Count="4" Owner="0">kotlin</Tag>
               </Tags>
             </Xml>
-        """.trimIndent()
+            """.trimIndent()
 
         // Act
         val deserialized = mapper.readValue<Xml>(content)
@@ -50,11 +51,12 @@ internal class TagListDeserializerTest {
     fun `should deserialize empty Tags`() {
         // Arrange
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Xml>
               <Tags> </Tags>
             </Xml>
-        """.trimIndent()
+            """.trimIndent()
 
         // Act
         val deserialized = mapper.readValue<Xml>(content)
@@ -67,10 +69,11 @@ internal class TagListDeserializerTest {
     fun `should deserialize to empty list if Tags is missing`() {
         // Act
         @Language("xml")
-        val content = """
+        val content =
+            """
             <Xml>
             </Xml>
-        """.trimIndent()
+            """.trimIndent()
         val deserialized = mapper.readValue<Xml>(content)
 
         // Assert

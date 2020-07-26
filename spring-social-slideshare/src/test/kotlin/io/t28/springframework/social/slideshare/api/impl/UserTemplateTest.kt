@@ -20,9 +20,11 @@ internal class UserTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_user_favorites?.+")))
             .andExpect(method(HttpMethod.GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("get_user_favorites.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("get_user_favorites.xml".readResource())
+            )
 
         // Act
         val favorites = userOperations.getUserFavorites("t28hub")
@@ -40,9 +42,11 @@ internal class UserTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_user_contacts?.+")))
             .andExpect(method(HttpMethod.GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("get_user_contacts.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("get_user_contacts.xml".readResource())
+            )
 
         // Act
         val options = GetUserContactsOptions(limit = 10, offset = 1)
@@ -60,9 +64,11 @@ internal class UserTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_user_tags?.+")))
             .andExpect(method(HttpMethod.GET))
-            .andRespond(withSuccess()
-                .contentType(APPLICATION_XML)
-                .body("get_user_tags.xml".readResource()))
+            .andRespond(
+                withSuccess()
+                    .contentType(APPLICATION_XML)
+                    .body("get_user_tags.xml".readResource())
+            )
 
         // Act
         val tags = userOperations.getUserTags()

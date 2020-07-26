@@ -62,19 +62,22 @@ internal class ValidationInterceptorTest {
         interceptor.intercept(request, emptyBody, execution)
 
         // Assert
-        verify(execution).execute(argThat {
-            if (method != GET || !headers.isNullOrEmpty()) {
-                return@argThat false
-            }
+        verify(execution).execute(
+            argThat {
+                if (method != GET || !headers.isNullOrEmpty()) {
+                    return@argThat false
+                }
 
-            uri.scheme == "https" &&
-                uri.host == "www.slideshare.net" &&
-                uri.path == "/api/2/get_slideshow" &&
-                uri.query.contains("slideshow_url=https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019") &&
-                uri.query.contains("api_key=$API_KEY") &&
-                uri.query.contains("ts=1577804") &&
-                uri.query.contains("hash=${"${SHARED_SECRET}1577804".sha1().toLowerCase()}")
-        }, eq(emptyBody))
+                uri.scheme == "https" &&
+                    uri.host == "www.slideshare.net" &&
+                    uri.path == "/api/2/get_slideshow" &&
+                    uri.query.contains("slideshow_url=https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019") &&
+                    uri.query.contains("api_key=$API_KEY") &&
+                    uri.query.contains("ts=1577804") &&
+                    uri.query.contains("hash=${"${SHARED_SECRET}1577804".sha1().toLowerCase()}")
+            },
+            eq(emptyBody)
+        )
         verifyNoMoreInteractions(execution)
     }
 

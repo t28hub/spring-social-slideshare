@@ -2,10 +2,8 @@ package io.t28.springframework.social.slideshare.api.impl.xml
 
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.core.JsonToken.VALUE_STRING
-import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.DeserializationContext
 import com.fasterxml.jackson.databind.JsonDeserializer
-import io.t28.springframework.social.slideshare.api.Slideshow
 
 /**
  * Deserializer to split tag text

@@ -17,4 +17,3 @@ data class SearchResults(
         val totalResults: Int
     )
 }
-
