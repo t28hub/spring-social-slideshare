@@ -20,4 +20,11 @@ interface SlideShare : ApiBinding {
      * @return [UserOperations]
      */
     fun userOperations(): UserOperations
+
+    /**
+     * Operations for favorites.
+     *
+     * @return [FavoriteOperations]
+     */
+    fun favoriteOperations(): FavoriteOperations
 }
