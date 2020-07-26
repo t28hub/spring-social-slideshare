@@ -1,5 +1,6 @@
 package io.t28.springframework.social.slideshare.api.impl
 
+import io.t28.springframework.social.slideshare.api.FavoriteOperations
 import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.SlideshowOperations
 import io.t28.springframework.social.slideshare.api.UserOperations
@@ -37,12 +38,20 @@ class SlideShareTemplate(
         UserTemplate(restTemplate, isAuthorized)
     }
 
+    private val favoriteOperations by lazy {
+        FavoriteTemplate(restTemplate, isAuthorized)
+    }
+
     override fun slideshowOperations(): SlideshowOperations {
         return slideshowOperations
     }
 
     override fun userOperations(): UserOperations {
         return userOperations
+    }
+
+    override fun favoriteOperations(): FavoriteOperations {
+        return favoriteOperations
     }
 
     override fun isAuthorized(): Boolean {
