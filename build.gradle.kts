@@ -16,6 +16,8 @@
 import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
 
 plugins {
+    java
+    jacoco
     kotlin("jvm") version "1.3.72" apply false
     kotlin("plugin.spring") version "1.3.72" apply false
     id("org.jlleitschuh.gradle.ktlint") version "9.3.0"
@@ -35,6 +37,7 @@ allprojects {
 subprojects {
     apply(plugin = "java")
     apply(plugin = "idea")
+    apply(plugin = "jacoco")
     apply(plugin = "org.jlleitschuh.gradle.ktlint")
     apply(plugin = "io.gitlab.arturbosch.detekt")
 
@@ -63,5 +66,9 @@ subprojects {
                 destination = file("$buildDir/reports/detekt/index.html")
             }
         }
+    }
+
+    jacoco {
+        toolVersion = "0.8.5"
     }
 }

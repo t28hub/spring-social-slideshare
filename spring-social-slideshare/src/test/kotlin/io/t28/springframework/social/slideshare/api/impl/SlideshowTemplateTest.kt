@@ -29,6 +29,7 @@ import org.springframework.http.HttpMethod.GET
 import org.springframework.http.MediaType.APPLICATION_XML
 import org.springframework.social.ApiException
 import org.springframework.test.web.client.match.MockRestRequestMatchers.method
+import org.springframework.test.web.client.match.MockRestRequestMatchers.queryParam
 import org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo
 import org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess
 
@@ -41,11 +42,11 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshow?.+")))
             .andExpect(method(GET))
+            .andExpect(queryParam("slideshow_id", "179842138"))
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
-                    .body("get_slideshow.xml".readResource())
-            )
+                    .body("get_slideshow.xml".readResource()))
 
         // Act
         val options = GetSlideshowOptions(excludeTags = false, detailed = true)
@@ -61,6 +62,7 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshow?.+")))
             .andExpect(method(GET))
+            .andExpect(queryParam("slideshow_url", "https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019"))
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
@@ -77,12 +79,24 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
     }
 
     @Test
-    fun `getSlideshow should throw APIException when both ID and URL are missing`() {
-        // Assert
+    fun `getSlideshow should throw ApiException when both ID and URL are null`() {
+        // Act
         val exception = assertThrows<ApiException> {
-            // Act
             slideshowOperations.getSlideshow(id = null, url = null)
         }
+
+        // Assert
+        assertEquals(exception.providerId, "SlideShare")
+    }
+
+    @Test
+    fun `getSlideshow should throw ApiException when both ID and URL are empty`() {
+        // Act
+        val exception = assertThrows<ApiException> {
+            slideshowOperations.getSlideshow(id = "", url = "")
+        }
+
+        // Assert
         assertEquals(exception.providerId, "SlideShare")
     }
 
@@ -91,6 +105,7 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshow?.+")))
             .andExpect(method(GET))
+            .andExpect(queryParam("slideshow_id", "179842138"))
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
@@ -111,6 +126,7 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshow?.+")))
             .andExpect(method(GET))
+            .andExpect(queryParam("slideshow_url", "https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019"))
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
@@ -131,6 +147,7 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshows_by_tag?.+")))
             .andExpect(method(GET))
+            .andExpect(queryParam("tag", "kotlin"))
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
@@ -148,10 +165,22 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
     }
 
     @Test
+    fun `getSlideshowsByTag should throw ApiException if tag is empty`() {
+        // Act
+        val exception = assertThrows<ApiException> {
+            slideshowOperations.getSlideshowsByTag("")
+        }
+
+        // Assert
+        assertEquals(exception.providerId, "SlideShare")
+    }
+
+    @Test
     fun `getSlideshowsByUser should return collection of slideshows for a specified user`() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_slideshows_by_user?.+")))
             .andExpect(method(GET))
+            .andExpect(queryParam("username_for", "GoogleCloudPlatformJP"))
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
@@ -169,10 +198,22 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
     }
 
     @Test
+    fun `getSlideshowsByUser should throw ApiException if username is empty`() {
+        // Act
+        val exception = assertThrows<ApiException> {
+            slideshowOperations.getSlideshowsByUser("")
+        }
+
+        // Assert
+        assertEquals(exception.providerId, "SlideShare")
+    }
+
+    @Test
     fun `searchSlideshows should return collection of matching slideshows`() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/search_slideshows?.+")))
             .andExpect(method(GET))
+            .andExpect(queryParam("q", "kotlin"))
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
@@ -196,10 +237,22 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
     }
 
     @Test
+    fun `searchSlideshows should throw ApiException if query is empty`() {
+        // Act
+        val exception = assertThrows<ApiException> {
+            slideshowOperations.searchSlideshows("")
+        }
+
+        // Assert
+        assertEquals(exception.providerId, "SlideShare")
+    }
+
+    @Test
     fun `editSlideshow should return edited slideshow ID`() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/edit_slideshow?.+")))
             .andExpect(method(GET))
+            .andExpect(queryParam("slideshow_id", "32795564"))
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
@@ -218,10 +271,26 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
     }
 
     @Test
+    fun `editSlideshow should throw ApiException if slideshow ID is empty`() {
+        // Act
+        val exception = assertThrows<ApiException> {
+            val options = EditSlideshowOptions(
+                title = "New title",
+                private = true
+            )
+            slideshowOperations.editSlideshow("", options)
+        }
+
+        // Assert
+        assertEquals(exception.providerId, "SlideShare")
+    }
+
+    @Test
     fun `deleteSlideshow should return deleted slideshow ID`() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/delete_slideshow?.+")))
             .andExpect(method(GET))
+            .andExpect(queryParam("slideshow_id", "32795564"))
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
@@ -233,5 +302,16 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
 
         // Assert
         assertEquals(deleted.id, "32795564")
+    }
+
+    @Test
+    fun `deleteSlideshow should throw ApiException if slideshow ID is empty`() {
+        // Act
+        val exception = assertThrows<ApiException> {
+            slideshowOperations.deleteSlideshow("")
+        }
+
+        // Assert
+        assertEquals(exception.providerId, "SlideShare")
     }
 }

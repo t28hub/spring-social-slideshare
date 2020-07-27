@@ -22,15 +22,17 @@ import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 import org.springframework.http.HttpMethod.GET
 import org.springframework.http.MediaType.APPLICATION_XML
+import org.springframework.social.ApiException
 import org.springframework.test.web.client.match.MockRestRequestMatchers.method
 import org.springframework.test.web.client.match.MockRestRequestMatchers.queryParam
 import org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo
 import org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess
 
 internal class FavoriteTemplateTest : AbstractSlideShareApiTest() {
-    private val favoriteTemplate: FavoriteOperations
+    private val favoriteOperations: FavoriteOperations
         get() = slideShare.favoriteOperations()
 
     @Test
@@ -46,10 +48,21 @@ internal class FavoriteTemplateTest : AbstractSlideShareApiTest() {
             )
 
         // Act
-        val results = favoriteTemplate.addFavorite("49627175")
+        val results = favoriteOperations.addFavorite("49627175")
 
         // Assert
         assertEquals(results.id, "49627175")
+    }
+
+    @Test
+    fun `addFavorite should throw ApiExceptio if slideshow ID is empty`() {
+        // Act
+        val exception = assertThrows<ApiException> {
+            favoriteOperations.addFavorite("")
+        }
+
+        // Assert
+        assertEquals(exception.providerId, "SlideShare")
     }
 
     @Test
@@ -65,7 +78,7 @@ internal class FavoriteTemplateTest : AbstractSlideShareApiTest() {
             )
 
         // Act
-        val state = favoriteTemplate.checkFavorite("49627175")
+        val state = favoriteOperations.checkFavorite("49627175")
 
         // Assert
         assertEquals(state.id, "49627175")
@@ -86,11 +99,22 @@ internal class FavoriteTemplateTest : AbstractSlideShareApiTest() {
             )
 
         // Act
-        val state = favoriteTemplate.checkFavorite("49627178")
+        val state = favoriteOperations.checkFavorite("49627178")
 
         // Assert
         assertEquals(state.id, "49627178")
         assertEquals(state.user, "60146491")
         assertFalse(state.favorited)
+    }
+
+    @Test
+    fun `checkFavorite should throw ApiExceptio if slideshow ID is empty`() {
+        // Act
+        val exception = assertThrows<ApiException> {
+            favoriteOperations.checkFavorite("")
+        }
+
+        // Assert
+        assertEquals(exception.providerId, "SlideShare")
     }
 }

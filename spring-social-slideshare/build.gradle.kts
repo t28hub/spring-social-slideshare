@@ -15,6 +15,7 @@
  */
 plugins {
     `java-library`
+    jacoco
     id("org.springframework.boot") version "2.3.0.RELEASE"
     id("io.spring.dependency-management") version "1.0.9.RELEASE"
     kotlin("jvm")
@@ -51,5 +52,15 @@ tasks {
 
     test {
         useJUnitPlatform()
+    }
+
+    jacocoTestReport {
+        reports {
+            csv.isEnabled = false
+            xml.isEnabled = true
+            xml.destination = file("$buildDir/reports/jacoco/jacoco.xml")
+            html.isEnabled = true
+            html.destination = file("$buildDir/reports/jacoco")
+        }
     }
 }
