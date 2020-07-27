@@ -20,6 +20,7 @@ plugins {
     id("io.spring.dependency-management") version "1.0.9.RELEASE"
     kotlin("jvm")
     kotlin("plugin.spring")
+    id("org.jetbrains.dokka") version "0.10.1"
 }
 
 dependencies {
@@ -62,5 +63,10 @@ tasks {
             html.isEnabled = true
             html.destination = file("$buildDir/reports/jacoco")
         }
+    }
+
+    dokka {
+        outputFormat = "html"
+        outputDirectory = "$buildDir/javadoc"
     }
 }

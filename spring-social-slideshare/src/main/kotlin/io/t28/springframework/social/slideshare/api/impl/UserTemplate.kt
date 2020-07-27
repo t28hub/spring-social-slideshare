@@ -25,9 +25,7 @@ import org.springframework.social.ApiException
 import org.springframework.web.client.RestTemplate
 
 /**
- * Implementation class for [UserOperations]
- *
- * @constructor
+ * Implementation class for [UserOperations].
  *
  * @param restTemplate A [RestTemplate] instance.
  * @param isAuthorized Whether or not it is authorized.

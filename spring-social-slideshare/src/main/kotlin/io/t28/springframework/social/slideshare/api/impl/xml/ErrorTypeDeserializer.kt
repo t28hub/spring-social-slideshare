@@ -22,9 +22,9 @@ import com.fasterxml.jackson.databind.JsonDeserializer
 import io.t28.springframework.social.slideshare.api.SlideShareError.ErrorType
 
 /**
- * Deserializer to convert error ID to [ErrorType]
+ * Deserializer to convert error ID to [ErrorType].
  */
-object ErrorTypeDeserializer : JsonDeserializer<ErrorType>() {
+internal object ErrorTypeDeserializer : JsonDeserializer<ErrorType>() {
     override fun deserialize(parser: JsonParser, context: DeserializationContext): ErrorType {
         if (parser.currentToken != JsonToken.VALUE_STRING) {
             throw context.wrongTokenException(parser, String::class.java, JsonToken.VALUE_STRING, "ID")

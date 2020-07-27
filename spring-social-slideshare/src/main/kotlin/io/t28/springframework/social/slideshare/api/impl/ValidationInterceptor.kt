@@ -25,18 +25,18 @@ import java.net.URI
 import java.time.Clock
 
 /**
- * Interceptor for the SlideShare API validation
+ * Interceptor for the SlideShare API validation....
+ *
+ * - [API Validation using the SlideShare API](https://www.slideshare.net/developers/documentation)
  *
  * The SlideShare API requires the following parameters for all requests:
- * - api_key: the API key provided by SlideShare
- * - ts: the current Unix timeStamp
- * - hash: the SHA-1 hash of the concatenation of the shared secret and the timestamp
- * [API Validation using the SlideShare API](https://www.slideshare.net/developers/documentation)
+ * - api_key: the API key provided by SlideShare.
+ * - ts: the current Unix timeStamp.
+ * - hash: the SHA-1 hash of the concatenation of the shared secret and the timestamp.
  *
- * @constructor
- * @param apiKey the API key provided by SlideShare
- * @param sharedSecret the shared secret provided by SlideShare
- * @param clock the [Clock] instance to retrieve the current Unix timestamp
+ * @param apiKey the API key provided by SlideShare.
+ * @param sharedSecret the shared secret provided by SlideShare.
+ * @param clock the [Clock] instance to retrieve the current Unix timestamp.
  */
 internal class ValidationInterceptor(
     private val apiKey: String,

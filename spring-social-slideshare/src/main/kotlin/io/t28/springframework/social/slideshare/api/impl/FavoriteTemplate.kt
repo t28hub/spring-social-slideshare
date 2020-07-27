@@ -25,8 +25,6 @@ import org.springframework.web.client.getForObject
 /**
  * Implementation class for [FavoriteOperations]
  *
- * @constructor
- *
  * @param restTemplate A [RestTemplate] instance.
  * @param isAuthorized Whether or not it is authorized.
  */

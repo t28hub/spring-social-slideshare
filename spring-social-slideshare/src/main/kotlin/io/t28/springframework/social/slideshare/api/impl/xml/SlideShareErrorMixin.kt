@@ -21,10 +21,10 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import io.t28.springframework.social.slideshare.api.SlideShareError
 
 /**
- * Annotated mixin to add annotations to [SlideShareError]
+ * Annotated mixin to add annotations to [SlideShareError].
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-interface SlideShareErrorMixin {
+internal interface SlideShareErrorMixin {
     @get:JacksonXmlProperty(localName = "Message")
     val message: MessageMixin
 

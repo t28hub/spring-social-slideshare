@@ -22,10 +22,10 @@ import io.t28.springframework.social.slideshare.api.SearchResults
 import io.t28.springframework.social.slideshare.api.Slideshow
 
 /**
- * Annotated mixin to add annotations to [SearchResults]
+ * Annotated mixin to add annotations to [SearchResults].
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-interface SearchResultsMixin {
+internal interface SearchResultsMixin {
     @get:JacksonXmlProperty(localName = "Meta")
     val meta: SearchResults.Meta
 

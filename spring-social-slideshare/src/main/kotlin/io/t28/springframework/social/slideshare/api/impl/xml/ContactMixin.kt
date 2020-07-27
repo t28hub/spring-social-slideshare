@@ -21,11 +21,11 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
 import io.t28.springframework.social.slideshare.api.Contact
 
 /**
- * Annotated mixin to add annotations to [Contact]
+ * Annotated mixin to add annotations to [Contact].
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JacksonXmlRootElement(localName = "Contact")
-interface ContactMixin {
+internal interface ContactMixin {
     @get:JacksonXmlProperty(localName = "Username")
     val username: String
 

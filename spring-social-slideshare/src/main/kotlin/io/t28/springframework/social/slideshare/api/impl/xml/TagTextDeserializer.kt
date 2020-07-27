@@ -21,7 +21,7 @@ import com.fasterxml.jackson.databind.DeserializationContext
 import com.fasterxml.jackson.databind.JsonDeserializer
 
 /**
- * Deserializer to split tag text
+ * Deserializer to split tag text.
  */
 internal object TagTextDeserializer : JsonDeserializer<List<String>>() {
     private const val DELIMITER = ","

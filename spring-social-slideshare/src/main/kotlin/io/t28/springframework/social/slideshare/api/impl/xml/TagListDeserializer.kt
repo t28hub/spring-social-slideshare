@@ -23,7 +23,7 @@ import com.fasterxml.jackson.databind.JsonDeserializer
 import io.t28.springframework.social.slideshare.api.Slideshow
 
 /**
- * Deserializer to convert empty tag list
+ * Deserializer to convert empty tag list.
  */
 internal object TagListDeserializer : JsonDeserializer<List<Slideshow.Tag>>() {
     override fun deserialize(parser: JsonParser, context: DeserializationContext): List<Slideshow.Tag> {

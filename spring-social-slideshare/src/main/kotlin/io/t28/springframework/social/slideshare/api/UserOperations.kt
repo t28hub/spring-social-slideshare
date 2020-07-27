@@ -23,33 +23,36 @@ import org.springframework.social.ApiException
 interface UserOperations {
     /**
      * Retrieve favorited slideshows for a specified user.
-     * [Get User Favorites | SlideShare API Documentation](https://www.slideshare.net/developers/documentation#get_user_favorites)
+     *
+     * - [Get User Favorites | SlideShare API Documentation](https://www.slideshare.net/developers/documentation#get_user_favorites)
      *
      * @param user The user name.
      * @return A collection of favorited slideshows.
-     * @throws ApiException If there is an error while communicating with SlideShare API
+     * @throws ApiException If there is an error while communicating with SlideShare API.
      */
     @Throws(ApiException::class)
     fun getUserFavorites(user: String): List<Favorite>
 
     /**
      * Retrieve contact information for a specified user.
-     * [Get User Contacts | SlideShare API Documentation](https://www.slideshare.net/developers/documentation#get_user_contacts)
+     *
+     * - [Get User Contacts | SlideShare API Documentation](https://www.slideshare.net/developers/documentation#get_user_contacts)
      *
      * @param user The user name.
      * @param options The optional parameters.
      * @return A collection of contact information.
-     * @throws ApiException If there is an error while communicating with SlideShare API
+     * @throws ApiException If there is an error while communicating with SlideShare API.
      */
     @Throws(ApiException::class)
     fun getUserContacts(user: String, options: GetUserContactsOptions = GetUserContactsOptions()): List<Contact>
 
     /**
      * Retrieve tags by the authenticated user.
-     * [Get User Tags | SlideShare API Documentation](https://www.slideshare.net/developers/documentation#get_user_tags)
+     *
+     * - [Get User Tags | SlideShare API Documentation](https://www.slideshare.net/developers/documentation#get_user_tags)
      *
      * @return A collection of tag.
-     * @throws ApiException If there is an error while communicating with SlideShare API
+     * @throws ApiException If there is an error while communicating with SlideShare API.
      */
     fun getUserTags(): List<Tag>
 }

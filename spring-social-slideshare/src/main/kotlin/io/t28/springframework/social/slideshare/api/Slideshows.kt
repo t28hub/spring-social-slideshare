@@ -16,7 +16,11 @@
 package io.t28.springframework.social.slideshare.api
 
 /**
- * Collection of slideshows
+ * Collection of slideshows.
+ *
+ * @param name The username or tag.
+ * @param count The number of slideshows matched.
+ * @param slideshows The matched slideshows.
  */
 data class Slideshows(
     val name: String,

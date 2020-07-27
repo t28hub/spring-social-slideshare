@@ -52,7 +52,6 @@ import org.springframework.web.client.DefaultResponseErrorHandler
 /**
  * Response error handler for SlideShare API.
  *
- * @constructor
  * @param xmlMapper The [XmlMapper] for response deserialization.
  */
 internal class SlideShareErrorHandler(private val xmlMapper: XmlMapper) : DefaultResponseErrorHandler() {

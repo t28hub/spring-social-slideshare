@@ -18,7 +18,7 @@ package io.t28.springframework.social.slideshare.api
 /**
  * Optional parameters for searching slideshows
  *
- * @constructor
+ * - [SlideshowOperations.searchSlideshows]
  *
  * @param page The page number of the results.
  * @param perPage The results per page.
@@ -28,8 +28,6 @@ package io.t28.springframework.social.slideshare.api
  * @param fileType File type to search.
  * @param what Type of search.
  * @param detailed Whether or not to include detailed information.
- *
- * - [SlideshowOperations.searchSlideshows]
  */
 data class SearchSlideshowsOptions(
     val page: Int = 1,
@@ -42,77 +40,193 @@ data class SearchSlideshowsOptions(
     val detailed: Boolean = false
 ) {
     /**
-     * Supported language
-     *
-     * @constructor
+     * Supported language.
      *
      * @param code The language code defined by SlideShare.
      */
+    @Suppress("unused")
     enum class Language(internal val code: String) {
+        /**
+         * All languages.
+         */
         ALL("**"),
+
+        /**
+         * Chinese.
+         */
         CHINESE("zh"),
+
+        /**
+         * Dutch.
+         */
         DUTCH("nl"),
+
+        /**
+         * English.
+         */
         ENGLISH("en"),
+
+        /**
+         * French.
+         */
         FRENCH("fr"),
+
+        /**
+         * German.
+         */
         GERMAN("de"),
+
+        /**
+         * Italian.
+         */
         ITALIAN("it"),
+
+        /**
+         * Japanese.
+         */
         JAPANESE("ja"),
+
+        /**
+         * Korean.
+         */
         KOREAN("ko"),
+
+        /**
+         * Portuguese.
+         */
         PORTUGUESE("pt"),
+
+        /**
+         * Romanian.
+         */
         ROMANIAN("ro"),
+
+        /**
+         * Spanish.
+         */
         SPANISH("es"),
+
+        /**
+         * Other languages.
+         */
         OTHER("!!")
     }
 
     /**
-     * Sorting options
+     * Sorting options.
      *
-     * @constructor
-     *
-     * @param value The string representation of the sort
+     * @param value The string representation of the sort.
      */
+    @Suppress("unused")
     enum class Sort(internal val value: String) {
+        /**
+         * Sorts by descending date.
+         */
         LATEST("latest"),
+
+        /**
+         * Sorts by relevance.
+         */
         RELEVANCE("relevance"),
+
+        /**
+         * Sorts by descending viewed count.
+         */
         MOST_VIEWED("mostviewed"),
+
+        /**
+         * Sorts by descending downloaded count.
+         */
         MOST_DOWNLOADED("mostdownloaded")
     }
 
     /**
      * Type of search results restriction.
      */
+    @Suppress("unused")
     enum class UploadDate {
+        /**
+         * Any upload date.
+         */
         ANY,
+
+        /**
+         * Upload date within a week.
+         */
         WEEK,
+
+        /**
+         * Upload date within a month.
+         */
         MONTH,
+
+        /**
+         * Upload date within a year.
+         */
         YEAR;
 
+        /**
+         * The string representation of [UploadDate]
+         */
         internal val value: String = name.toLowerCase()
     }
 
     /**
-     * Type of search
+     * Type of search.
      */
+    @Suppress("unused")
     enum class SearchType {
+        /**
+         * Search tags.
+         */
         TAG,
+
+        /**
+         * Search text.
+         */
         TEXT;
 
+        /**
+         * The string representation of [SearchType]
+         */
         internal val value: String = name.toLowerCase()
     }
 
     /**
-     * Supported file type
+     * Supported file type.
      *
-     * @constructor
-     *
-     * @param value The string representation of file type
+     * @param value The string representation of [FileType].
      */
+    @Suppress("unused")
     enum class FileType(internal val value: String) {
+        /**
+         * Search any file type.
+         */
         ALL("all"),
+
+        /**
+         * Search documents.
+         */
         DOCUMENT("documents"),
-        INFOGRAPHIC("inforgraphics"),
+
+        /**
+         * Search infographics.
+         */
+        INFOGRAPHIC("infographics"),
+
+        /**
+         * Search presentations.
+         */
         PRESENTATION("presentations"),
+
+        /**
+         * Search videos.
+         */
         VIDEO("videos"),
+
+        /**
+         * Search webinars.
+         */
         WEBINAR("webinars")
     }
 }

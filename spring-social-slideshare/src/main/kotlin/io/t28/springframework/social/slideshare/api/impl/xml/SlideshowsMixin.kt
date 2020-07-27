@@ -22,10 +22,10 @@ import io.t28.springframework.social.slideshare.api.Slideshow
 import io.t28.springframework.social.slideshare.api.Slideshows
 
 /**
- * Annotated mixin to add annotations to [Slideshows]
+ * Annotated mixin to add annotations to [Slideshows].
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-interface SlideshowsMixin {
+internal interface SlideshowsMixin {
     @get:JacksonXmlProperty(localName = "Name")
     val name: String
 

@@ -29,9 +29,7 @@ import org.springframework.web.client.RestTemplate
 import java.time.Clock
 
 /**
- * Implementation class for [SlideShare]
- *
- * @constructor
+ * Implementation class for [SlideShare].
  *
  * @param apiKey The API key provided by SlideShare.
  * @param sharedSecret The shared secret provided by SlideShare.
