@@ -14,12 +14,9 @@
  * limitations under the License.
  */
 plugins {
-    java
-    id("org.springframework.boot") version "2.3.0.RELEASE"
-    id("io.spring.dependency-management") version "1.0.9.RELEASE"
     kotlin("jvm")
     kotlin("plugin.spring")
-    id("org.jlleitschuh.gradle.ktlint")
+    id("org.springframework.boot") version "2.3.0.RELEASE"
 }
 
 dependencies {

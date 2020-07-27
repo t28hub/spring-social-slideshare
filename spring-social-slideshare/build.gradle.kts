@@ -15,9 +15,6 @@
  */
 plugins {
     `java-library`
-    jacoco
-    id("org.springframework.boot") version "2.3.0.RELEASE"
-    id("io.spring.dependency-management") version "1.0.9.RELEASE"
     kotlin("jvm")
     kotlin("plugin.spring")
     id("org.jetbrains.dokka") version "0.10.1"
@@ -47,10 +44,6 @@ tasks {
         kotlinOptions.jvmTarget = jvmTarget
     }
 
-    bootJar {
-        enabled = false
-    }
-
     test {
         useJUnitPlatform()
     }
@@ -66,7 +59,17 @@ tasks {
     }
 
     dokka {
-        outputFormat = "html"
+        outputFormat = "javadoc"
         outputDirectory = "$buildDir/javadoc"
+        configuration {
+            perPackageOption {
+                prefix = "io.t28.springframework.social.slideshare.api.impl.xml"
+                suppress = true
+            }
+            perPackageOption {
+                prefix = "io.t28.springframework.social.slideshare.ext"
+                suppress = true
+            }
+        }
     }
 }
