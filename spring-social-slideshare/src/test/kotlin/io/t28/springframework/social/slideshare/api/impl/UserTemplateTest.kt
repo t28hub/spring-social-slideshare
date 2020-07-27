@@ -21,9 +21,12 @@ import io.t28.springframework.social.slideshare.api.UserOperations
 import org.hamcrest.Matchers.matchesPattern
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.assertThrows
 import org.springframework.http.HttpMethod
 import org.springframework.http.MediaType.APPLICATION_XML
+import org.springframework.social.ApiException
 import org.springframework.test.web.client.match.MockRestRequestMatchers.method
+import org.springframework.test.web.client.match.MockRestRequestMatchers.queryParam
 import org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo
 import org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess
 
@@ -36,6 +39,7 @@ internal class UserTemplateTest : AbstractSlideShareApiTest() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_user_favorites?.+")))
             .andExpect(method(HttpMethod.GET))
+            .andExpect(queryParam("username_for", "t28hub"))
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
@@ -54,10 +58,22 @@ internal class UserTemplateTest : AbstractSlideShareApiTest() {
     }
 
     @Test
+    fun `getUserFavorites should throw ApiException if username is empty`() {
+        // Act
+        val exception = assertThrows<ApiException> {
+            userOperations.getUserFavorites("")
+        }
+
+        // Assert
+        assertEquals(exception.providerId, "SlideShare")
+    }
+
+    @Test
     fun `getUserContacts should return a collection of contact information`() {
         // Arrange
         mockServer.expect(requestTo(matchesPattern("^https://www.slideshare.net/api/2/get_user_contacts?.+")))
             .andExpect(method(HttpMethod.GET))
+            .andExpect(queryParam("username_for", "t28hub"))
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
@@ -73,6 +89,17 @@ internal class UserTemplateTest : AbstractSlideShareApiTest() {
         assertEquals(contacts[0].username, "jreffell")
         assertEquals(contacts[0].numSlideshows, 5)
         assertEquals(contacts[0].numComments, 1)
+    }
+
+    @Test
+    fun `getUserContacts should throw ApiException if username is empty`() {
+        // Act
+        val exception = assertThrows<ApiException> {
+            userOperations.getUserContacts("")
+        }
+
+        // Assert
+        assertEquals(exception.providerId, "SlideShare")
     }
 
     @Test

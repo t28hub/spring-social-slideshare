@@ -80,26 +80,24 @@ internal class SlideShareErrorHandler(private val xmlMapper: XmlMapper) : Defaul
 
         val message = error.message
         when (message.id) {
-            MISSING_TITLE,
-            MISSING_FILE_FOR_UPLOAD,
             BLANK_TITLE,
+            INCORRECT_PARAMETERS,
+            MISSING_FILE_FOR_UPLOAD,
+            MISSING_TITLE,
+            NO_API_KEY_PROVIDED,
             NO_TAG_PROVIDED,
             REQUIRED_PARAMETER_MISSING,
-            SEARCH_QUERY_CANNOT_BE_BLANK,
-            INCORRECT_PARAMETERS -> {
+            SEARCH_QUERY_CANNOT_BE_BLANK -> {
                 throw ApiException(PROVIDER_ID, message.text)
             }
-            SLIDESHOW_NOT_FOUND,
-            USER_NOT_FOUND,
             GROUP_NOT_FOUND,
-            TAG_NOT_FOUND -> {
+            SLIDESHOW_NOT_FOUND,
+            TAG_NOT_FOUND,
+            USER_NOT_FOUND -> {
                 throw ResourceNotFoundException(PROVIDER_ID, message.text)
             }
-            NO_API_KEY_PROVIDED -> {
-                throw NotAuthorizedException(PROVIDER_ID, message.text)
-            }
-            INVALID_APPLICATION_ID,
-            FAILED_API_VALIDATION -> {
+            FAILED_API_VALIDATION,
+            INVALID_APPLICATION_ID -> {
                 throw InvalidAuthorizationException(PROVIDER_ID, message.text)
             }
             FAILED_USER_AUTHENTICATION,
