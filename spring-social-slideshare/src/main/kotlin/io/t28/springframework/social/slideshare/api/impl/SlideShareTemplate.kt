@@ -20,6 +20,7 @@ import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.SlideshowOperations
 import io.t28.springframework.social.slideshare.api.UserOperations
 import io.t28.springframework.social.slideshare.api.impl.xml.ObjectMapperHolder
+import org.springframework.http.client.ClientHttpRequestInterceptor
 import org.springframework.http.converter.HttpMessageConverter
 import org.springframework.http.converter.StringHttpMessageConverter
 import org.springframework.http.converter.xml.MappingJackson2XmlHttpMessageConverter
@@ -80,10 +81,10 @@ class SlideShareTemplate(
     private fun createRestTemplate(): RestTemplate {
         return RestTemplate(getMessageConverters()).apply {
             requestFactory = ClientHttpRequestFactorySelector.bufferRequests(ClientHttpRequestFactorySelector.getRequestFactory())
-            interceptors.add(ValidationInterceptor(apiKey, sharedSecret, Clock.systemDefaultZone()))
-            credentials?.let {
-                interceptors.add(AuthenticationInterceptor(it))
-            }
+            interceptors = mutableListOf<ClientHttpRequestInterceptor>().apply {
+                add(ValidationInterceptor(apiKey, sharedSecret, Clock.systemDefaultZone()))
+                credentials?.let { add(AuthenticationInterceptor(it)) }
+            }.toList()
             errorHandler = SlideShareErrorHandler(ObjectMapperHolder.xmlMapper())
         }
     }
