@@ -46,7 +46,8 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
             .andRespond(
                 withSuccess()
                     .contentType(APPLICATION_XML)
-                    .body("get_slideshow.xml".readResource()))
+                    .body("get_slideshow.xml".readResource())
+            )
 
         // Act
         val options = GetSlideshowOptions(excludeTags = false, detailed = true)
