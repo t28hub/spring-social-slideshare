@@ -15,17 +15,27 @@
  */
 package io.t28.springframework.social.slideshare.api.impl
 
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue
+import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
+import org.junit.jupiter.api.TestInstance
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 internal class SlideShareTemplateTest {
+    private lateinit var slideShare: SlideShareTemplate
+    private lateinit var unauthorizedSlideShare: SlideShareTemplate
+
+    @BeforeAll
+    fun setup() {
+        val credentials = Credentials("username", "password")
+        slideShare = SlideShareTemplate(apiKey = API_KEY, sharedSecret = SHARED_SECRET, credentials = credentials)
+        unauthorizedSlideShare = SlideShareTemplate(apiKey = API_KEY, sharedSecret = SHARED_SECRET)
+    }
+
     @Test
     fun `isAuthorized should return true if credentials exists`() {
-        // Arrange
-        val credentials = Credentials("username", "password")
-        val slideShare = SlideShareTemplate(apiKey = API_KEY, sharedSecret = SHARED_SECRET, credentials = credentials)
-
         // Act
         val isAuthorized = slideShare.isAuthorized
 
@@ -35,14 +45,33 @@ internal class SlideShareTemplateTest {
 
     @Test
     fun `isAuthorized should return false if credentials does not exist`() {
-        // Arrange
-        val slideShare = SlideShareTemplate(apiKey = API_KEY, sharedSecret = SHARED_SECRET)
-
         // Act
-        val isAuthorized = slideShare.isAuthorized
+        val isAuthorized = unauthorizedSlideShare.isAuthorized
 
         // Assert
         assertFalse(isAuthorized)
+    }
+
+    @Test
+    fun `restTemplate should add AuthenticationInterceptor if credential exists`() {
+        // Act
+        val restTemplate = slideShare.restTemplate()
+
+        // Assert
+        assertEquals(restTemplate.messageConverters.size, 2)
+        assertEquals(restTemplate.interceptors.size, 2)
+        assertTrue(restTemplate.errorHandler is SlideShareErrorHandler)
+    }
+
+    @Test
+    fun `restTemplate should not add AuthenticationInterceptor if credential does not exist`() {
+        // Act
+        val restTemplate = unauthorizedSlideShare.restTemplate()
+
+        // Assert
+        assertEquals(restTemplate.messageConverters.size, 2)
+        assertEquals(restTemplate.interceptors.size, 1)
+        assertTrue(restTemplate.errorHandler is SlideShareErrorHandler)
     }
 
     companion object {
