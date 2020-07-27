@@ -23,7 +23,7 @@ import com.fasterxml.jackson.databind.JsonDeserializer
 import io.t28.springframework.social.slideshare.api.Slideshow
 
 /**
- * Deserializer to convert empty related slideshow ID list
+ * Deserializer to convert empty related slideshow ID list.
  */
 internal object RelatedSlideshowIdListDeserializer : JsonDeserializer<List<Slideshow.RelatedSlideshowId>>() {
     override fun deserialize(parser: JsonParser, context: DeserializationContext): List<Slideshow.RelatedSlideshowId> {

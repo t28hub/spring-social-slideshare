@@ -21,11 +21,11 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
 import io.t28.springframework.social.slideshare.api.Tag
 
 /**
- * Annotated mixin to add annotations to [Tag]
+ * Annotated mixin to add annotations to [Tag].
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JacksonXmlRootElement(localName = "Tag")
-interface TagMixin {
+internal interface TagMixin {
     @get:JacksonXmlProperty(localName = "Count", isAttribute = true)
     val count: Int
 

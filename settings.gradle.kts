@@ -13,6 +13,13 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven ("https://dl.bintray.com/kotlin/kotlin-eap")
+    }
+}
+
 rootProject.name = "spring-social-slideshare"
 include("spring-social-slideshare")
 include("spring-social-samples")

@@ -20,10 +20,10 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import io.t28.springframework.social.slideshare.api.UpdateResults
 
 /**
- * Annotated mixin to add annotations to [UpdateResults]
+ * Annotated mixin to add annotations to [UpdateResults].
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-interface UpdateResultsMixin {
+internal interface UpdateResultsMixin {
     @get:JacksonXmlProperty(localName = "SlideShowID")
     val id: String
 }

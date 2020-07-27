@@ -32,8 +32,6 @@ import org.springframework.web.client.getForObject
 /**
  * Implementation class for [SlideshowOperations]
  *
- * @constructor
- *
  * @param restTemplate A [RestTemplate] instance.
  * @param isAuthorized Whether or not it is authorized.
  */

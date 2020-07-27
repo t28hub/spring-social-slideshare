@@ -16,9 +16,7 @@
 package io.t28.springframework.social.slideshare.api
 
 /**
- * Slideshow update results
- *
- * @constructor
+ * Slideshow update results.
  *
  * @param id The updated slideshow ID.
  */

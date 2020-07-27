@@ -23,11 +23,11 @@ import io.t28.springframework.social.slideshare.api.Slideshow
 import java.util.Date
 
 /**
- * Annotated mixin to add annotations to [Slideshow]
+ * Annotated mixin to add annotations to [Slideshow].
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JacksonXmlRootElement(localName = "Slideshow")
-interface SlideshowMixin {
+internal interface SlideshowMixin {
     @get:JacksonXmlProperty(localName = "ID")
     val id: String
 
@@ -117,6 +117,9 @@ interface SlideshowMixin {
 
     @get:JacksonXmlProperty(localName = "NumComments")
     val numComments: Int?
+
+    @get:JacksonXmlProperty(localName = "NumFavorites")
+    val numFavorites: Int?
 
     @get:JacksonXmlProperty(localName = "NumSlides")
     val numSlides: Int?

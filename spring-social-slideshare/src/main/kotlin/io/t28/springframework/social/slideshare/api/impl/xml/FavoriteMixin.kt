@@ -22,11 +22,11 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
 import io.t28.springframework.social.slideshare.api.Favorite
 
 /**
- * Annotated mixin to add annotations to [Favorite]
+ * Annotated mixin to add annotations to [Favorite].
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JacksonXmlRootElement(localName = "favorite")
-interface FavoriteMixin {
+internal interface FavoriteMixin {
     @get:JacksonXmlProperty(localName = "slideshow_id")
     val slideshowId: String
 

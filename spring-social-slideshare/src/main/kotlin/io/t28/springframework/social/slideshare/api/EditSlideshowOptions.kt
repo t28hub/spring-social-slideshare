@@ -16,9 +16,9 @@
 package io.t28.springframework.social.slideshare.api
 
 /**
- * Optional parameters for editing slideshows
+ * Optional parameters for editing slideshows.
  *
- * @constructor
+ * - [SlideshowOperations.editSlideshow]
  *
  * @param title The slideshow title.
  * @param description The slideshow description.
@@ -27,8 +27,6 @@ package io.t28.springframework.social.slideshare.api
  * @param generateSecretUrl Whether or not to generate a secret URL.
  * @param allowEmbed Whether or not to allow embedding the slideshow.
  * @param shareWithContacts Whether or not the contacts on SlideShare can view the slideshow.
- *
- * - [SlideshowOperations.editSlideshow]
  */
 data class EditSlideshowOptions(
     val title: String? = null,

@@ -16,14 +16,22 @@
 package io.t28.springframework.social.slideshare.api
 
 /**
- * Slideshow search results
+ * Slideshow search results.
+ *
+ * @param meta The search results metadata.
+ * @param slideshows The matched slideshows.
  */
 data class SearchResults(
     val meta: Meta,
     val slideshows: List<Slideshow>
 ) {
     /**
-     * Search result metadata
+     * Search results metadata.
+     *
+     * @param query The search query.
+     * @param resultOffset The offset of search results.
+     * @param numResults Number of returned results.
+     * @param totalResults Number of matched results.
      */
     data class Meta(
         val query: String,

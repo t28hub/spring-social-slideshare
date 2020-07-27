@@ -19,9 +19,8 @@ import org.springframework.social.MissingAuthorizationException
 import org.springframework.web.util.UriComponentsBuilder
 
 /**
- * Abstract superclass for implementation of SlideShare operations
+ * Abstract superclass for implementation of SlideShare operations.
  *
- * @constructor
  * @param isAuthorized Whether or not it is authorized.
  */
 abstract class AbstractSlideShareOperations(private val isAuthorized: Boolean) {

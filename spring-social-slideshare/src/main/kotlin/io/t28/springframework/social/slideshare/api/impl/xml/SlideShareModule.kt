@@ -15,6 +15,7 @@
  */
 package io.t28.springframework.social.slideshare.api.impl.xml
 
+import com.fasterxml.jackson.databind.Module
 import com.fasterxml.jackson.databind.module.SimpleModule
 import io.t28.springframework.social.slideshare.api.Contact
 import io.t28.springframework.social.slideshare.api.Favorite
@@ -59,10 +60,10 @@ class SlideShareModule : SimpleModule("SlideShareModule") {
 
     companion object {
         /**
-         * Extension function for [SetupContext.setMixInAnnotations].
+         * Extension function for [Module.SetupContext.setMixInAnnotations].
          *
-         * @param TARGET the type of target class or interface
-         * @param MIXIN the type of mixin class or interface
+         * @param TARGET the type of target class or interface.
+         * @param MIXIN the type of mixin class or interface.
          */
         internal inline fun <reified TARGET, reified MIXIN> SetupContext.setMixInAnnotations() {
             setMixInAnnotations(TARGET::class.java, MIXIN::class.java)

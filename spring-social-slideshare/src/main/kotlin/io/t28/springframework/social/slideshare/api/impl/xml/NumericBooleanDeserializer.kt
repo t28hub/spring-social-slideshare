@@ -21,7 +21,7 @@ import com.fasterxml.jackson.databind.DeserializationContext
 import com.fasterxml.jackson.databind.JsonDeserializer
 
 /**
- * Deserializer to convert numeric type to boolean type
+ * Deserializer to convert numeric type to boolean type.
  */
 internal object NumericBooleanDeserializer : JsonDeserializer<Boolean>() {
     override fun deserialize(parser: JsonParser, context: DeserializationContext): Boolean {

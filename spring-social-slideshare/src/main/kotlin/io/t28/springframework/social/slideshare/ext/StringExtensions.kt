@@ -23,20 +23,20 @@ private val UPPER_DIGITS = arrayOf(
 )
 
 /**
- * Return SHA-1 cryptographic hash of the string
+ * Return SHA-1 cryptographic hash of the string.
  *
- * @return the hashed string
+ * @return the hashed string.
  */
 fun String.sha1(): String {
     return hash("SHA-1")
 }
 
 /**
- * Return cryptographic hash of the string by using a specified algorithm
+ * Return cryptographic hash of the string by using a specified algorithm.
  *
- * @param algorithm the name of the hash algorithm
- * @return the name of the hash algorithm
- * @throws NoSuchAlgorithmException if the specified hash algorithm is not supported
+ * @param algorithm the name of the hash algorithm.
+ * @return the name of the hash algorithm.
+ * @throws NoSuchAlgorithmException if the specified hash algorithm is not supported.
  */
 @Throws(NoSuchAlgorithmException::class)
 internal fun String.hash(algorithm: String): String {

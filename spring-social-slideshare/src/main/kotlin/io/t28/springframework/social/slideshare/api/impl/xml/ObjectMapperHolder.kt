@@ -23,7 +23,7 @@ import com.fasterxml.jackson.module.kotlin.KotlinModule
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder
 
 /**
- * Instance holder to use single instance of [ObjectMapper]
+ * Instance holder to use single instance of [ObjectMapper].
  */
 object ObjectMapperHolder {
     // https://github.com/FasterXML/jackson-module-kotlin/issues/138#issuecomment-405087827

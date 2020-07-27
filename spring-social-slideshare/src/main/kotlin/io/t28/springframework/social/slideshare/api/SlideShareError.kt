@@ -17,16 +17,15 @@ package io.t28.springframework.social.slideshare.api
 
 /**
  * SlideShare API Error.
- * [API Error Codes](https://www.slideshare.net/developers/documentation#error_codes)
  *
- * @constructor
+ * - [API Error Codes](https://www.slideshare.net/developers/documentation#error_codes)
+ *
  * @param message The error message.
  */
 class SlideShareError(val message: Message) {
     /**
      * API error message.
      *
-     * @constructor
      * @param id The error type.
      * @param text The error message text.
      */
@@ -35,7 +34,6 @@ class SlideShareError(val message: Message) {
     /**
      * The type of API error.
      *
-     * @constructor
      * @param code The error code.
      */
     enum class ErrorType(val code: Int) {
