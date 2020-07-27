@@ -42,7 +42,6 @@ import org.springframework.http.client.ClientHttpResponse
 import org.springframework.social.ApiException
 import org.springframework.social.InsufficientPermissionException
 import org.springframework.social.InvalidAuthorizationException
-import org.springframework.social.NotAuthorizedException
 import org.springframework.social.OperationNotPermittedException
 import org.springframework.social.RateLimitExceededException
 import org.springframework.social.ResourceNotFoundException
