@@ -15,6 +15,11 @@
  */
 package io.t28.springframework.social
 
+import io.swagger.annotations.Api
+import io.swagger.annotations.ApiOperation
+import io.swagger.annotations.ApiParam
+import io.swagger.annotations.ApiResponse
+import io.swagger.annotations.ApiResponses
 import io.t28.springframework.social.slideshare.api.SlideShare
 import org.springframework.http.MediaType.APPLICATION_JSON_VALUE
 import org.springframework.http.ResponseEntity
@@ -24,17 +29,46 @@ import org.springframework.web.bind.annotation.PutMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
+@Api(tags = ["Favorites"])
 @RestController
 @RequestMapping("/favorites", produces = [APPLICATION_JSON_VALUE])
 class FavoritesController(private val slideShare: SlideShare) {
+    @ApiOperation(
+        value = "Favorite a slide",
+        notes = "Authorization required"
+    )
+    @ApiResponses(
+        ApiResponse(code = 204, message = "Request has succeeded"),
+        ApiResponse(code = 400, message = "Bad request"),
+        ApiResponse(code = 401, message = "Unauthorized"),
+        ApiResponse(code = 404, message = "Slide not found"),
+        ApiResponse(code = 500, message = "Internal server error")
+    )
     @PutMapping("/{id}")
-    fun favorite(@PathVariable id: String): ResponseEntity<Void> {
+    fun favorite(
+        @ApiParam("The slide ID", required = true)
+        @PathVariable id: String
+    ): ResponseEntity<Void> {
         slideShare.favoriteOperations().addFavorite(id)
         return ResponseEntity.noContent().build()
     }
 
+    @ApiOperation(
+        value = "Check if a slide is favorited",
+        notes = "Authorization required"
+    )
+    @ApiResponses(
+        ApiResponse(code = 204, message = "The slide is favorited"),
+        ApiResponse(code = 400, message = "Bad request"),
+        ApiResponse(code = 401, message = "Unauthorized"),
+        ApiResponse(code = 404, message = "The slide is not favorited"),
+        ApiResponse(code = 500, message = "Internal server error")
+    )
     @GetMapping("/{id}")
-    fun checkFavorite(@PathVariable id: String): ResponseEntity<Void> {
+    fun check(
+        @ApiParam("The slide ID", required = true)
+        @PathVariable id: String
+    ): ResponseEntity<Void> {
         val state = slideShare.favoriteOperations().checkFavorite(id)
         return if (state.favorited) {
             ResponseEntity.ok().build()
