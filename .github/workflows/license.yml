@@ -1,0 +1,29 @@
+name: Check the licenses of gradle dependencies
+
+on:
+  push:
+    branches:
+      - master
+      - release/*
+  pull_request:
+    paths:
+      - '*.gradle'
+      - '*.gradle.kts'
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+      - name: Install fossa-cli
+        run: "curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | bash"
+      - name: Analyze dependencies
+        run: fossa analyze --config config/fossa.yml --branch "$GITHUB_REF"
+        env:
+          FOSSA_API_KEY: ${{ secrets.FOSSA_API_KEY }}
+      - name: Test dependencies
+        run: fossa test --config config/fossa.yml --branch "$GITHUB_REF"
+        env:
+          FOSSA_API_KEY: ${{ secrets.FOSSA_API_KEY }}

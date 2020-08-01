@@ -1,0 +1,15 @@
+version: 2
+cli:
+  server: https://app.fossa.com
+  fetcher: custom
+  project: spring-social-slideshare
+analyze:
+  modules:
+  - name: spring-social-slideshare
+    type: gradle
+    target: ':'
+    path: .
+    options:
+      online: true
+      timeout: '10m'
+      all-submodules: true
