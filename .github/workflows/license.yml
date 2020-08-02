@@ -11,9 +11,9 @@ on:
       - '*.gradle.kts'
 
 jobs:
-  check:
+  license:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2
