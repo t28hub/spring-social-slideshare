@@ -33,6 +33,7 @@ dependencies {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
+    testImplementation("org.pitest:pitest-junit5-plugin:0.12")
 }
 
 tasks {
