@@ -1,4 +1,4 @@
-name: Check the licenses of gradle dependencies
+name: lisence scan
 
 on:
   push:

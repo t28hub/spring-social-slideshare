@@ -1,4 +1,4 @@
-name: Build spring-social-slideshare project
+name: build
 
 on:
   push:
