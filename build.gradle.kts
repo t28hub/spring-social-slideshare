@@ -23,6 +23,7 @@ plugins {
     id("io.spring.dependency-management") version "1.0.9.RELEASE"
     id("org.jlleitschuh.gradle.ktlint") version "9.3.0"
     id("io.gitlab.arturbosch.detekt") version "1.10.0"
+    id("info.solidsoft.pitest") version "1.5.1"
 }
 
 allprojects {
@@ -40,6 +41,7 @@ subprojects {
     apply(plugin = "io.spring.dependency-management")
     apply(plugin = "org.jlleitschuh.gradle.ktlint")
     apply(plugin = "io.gitlab.arturbosch.detekt")
+    apply(plugin = "info.solidsoft.pitest")
 
     group = "io.t28.springframework.social"
     version = "1.0.0-SNAPSHOT"
@@ -80,5 +82,13 @@ subprojects {
 
     jacoco {
         toolVersion = "0.8.5"
+    }
+
+    pitest {
+        threads.set(Runtime.getRuntime().availableProcessors())
+        testPlugin.set("junit5")
+        avoidCallsTo.set(setOf("kotlin.jvm.internal.Intrinsics"))
+        outputFormats.set(setOf("HTML"))
+        timestampedReports.set(false)
     }
 }
