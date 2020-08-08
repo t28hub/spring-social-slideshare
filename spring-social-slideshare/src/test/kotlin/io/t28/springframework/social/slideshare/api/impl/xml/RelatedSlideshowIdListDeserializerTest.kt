@@ -13,17 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package io.t28.springframework.social.slideshare.api.impl.xml
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.module.kotlin.readValue
+import com.google.common.truth.Truth.assertThat
 import io.t28.springframework.social.slideshare.api.Slideshow
 import org.intellij.lang.annotations.Language
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -58,10 +56,10 @@ internal class RelatedSlideshowIdListDeserializerTest {
         val deserialized = mapper.readValue<Xml>(content)
 
         // Assert
-        assertEquals(deserialized.relatedSlideshows.size, 3)
-        assertEquals(deserialized.relatedSlideshows[0].id, "100000")
-        assertEquals(deserialized.relatedSlideshows[1].id, "100001")
-        assertEquals(deserialized.relatedSlideshows[2].id, "100002")
+        assertThat(deserialized.relatedSlideshows).hasSize(3)
+        assertThat(deserialized.relatedSlideshows[0].id).isEqualTo("100000")
+        assertThat(deserialized.relatedSlideshows[1].id).isEqualTo("100001")
+        assertThat(deserialized.relatedSlideshows[2].id).isEqualTo("100002")
     }
 
     @Test
@@ -79,7 +77,7 @@ internal class RelatedSlideshowIdListDeserializerTest {
         val deserialized = mapper.readValue<Xml>(content)
 
         // Assert
-        assertTrue(deserialized.relatedSlideshows.isEmpty())
+        assertThat(deserialized.relatedSlideshows).isEmpty()
     }
 
     @Test
@@ -96,7 +94,7 @@ internal class RelatedSlideshowIdListDeserializerTest {
         val deserialized = mapper.readValue<Xml>(content)
 
         // Assert
-        assertTrue(deserialized.relatedSlideshows.isEmpty())
+        assertThat(deserialized.relatedSlideshows).isEmpty()
     }
 
     data class Xml(var relatedSlideshows: List<Slideshow.RelatedSlideshowId> = emptyList())

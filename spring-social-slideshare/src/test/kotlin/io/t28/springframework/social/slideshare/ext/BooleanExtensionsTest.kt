@@ -15,7 +15,7 @@
  */
 package io.t28.springframework.social.slideshare.ext
 
-import org.junit.jupiter.api.Assertions.assertEquals
+import com.google.common.truth.Truth.assertThat
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 
@@ -29,7 +29,7 @@ internal class BooleanExtensionsTest {
             val actual = true.`as`(positive = 1, negative = 0)
 
             // Assert
-            assertEquals(actual, 1)
+            assertThat(actual).isEqualTo(1)
         }
 
         @Test
@@ -38,7 +38,7 @@ internal class BooleanExtensionsTest {
             val actual = false.`as`(positive = 1, negative = 0)
 
             // Assert
-            assertEquals(actual, 0)
+            assertThat(actual).isEqualTo(0)
         }
     }
 
@@ -50,7 +50,7 @@ internal class BooleanExtensionsTest {
             val actual = true.`as`(positive = "YES", negative = "NO")
 
             // Assert
-            assertEquals(actual, "YES")
+            assertThat(actual).isEqualTo("YES")
         }
 
         @Test
@@ -59,7 +59,7 @@ internal class BooleanExtensionsTest {
             val actual = false.`as`(positive = "YES", negative = "NO")
 
             // Assert
-            assertEquals(actual, "NO")
+            assertThat(actual).isEqualTo("NO")
         }
     }
 }

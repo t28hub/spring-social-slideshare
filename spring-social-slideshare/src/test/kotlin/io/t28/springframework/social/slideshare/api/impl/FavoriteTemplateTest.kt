@@ -13,14 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package io.t28.springframework.social.slideshare.api.impl
 
 import io.t28.springframework.social.slideshare.api.FavoriteOperations
+import io.t28.springframework.social.slideshare.truth.assertThat
 import org.hamcrest.Matchers.matchesPattern
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertFalse
-import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import org.springframework.http.HttpMethod.GET
@@ -51,18 +48,21 @@ internal class FavoriteTemplateTest : AbstractSlideShareApiTest() {
         val results = favoriteOperations.addFavorite("49627175")
 
         // Assert
-        assertEquals(results.id, "49627175")
+        assertThat(results).hasId("49627175")
     }
 
     @Test
-    fun `addFavorite should throw ApiExceptio if slideshow ID is empty`() {
+    fun `addFavorite should throw ApiException if slideshow ID is empty`() {
         // Act
         val exception = assertThrows<ApiException> {
             favoriteOperations.addFavorite("")
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            hasMessageThat().isEqualTo("Slideshow ID must be non-empty string")
+        }
     }
 
     @Test
@@ -81,9 +81,11 @@ internal class FavoriteTemplateTest : AbstractSlideShareApiTest() {
         val state = favoriteOperations.checkFavorite("49627175")
 
         // Assert
-        assertEquals(state.id, "49627175")
-        assertEquals(state.user, "60146491")
-        assertTrue(state.favorited)
+        assertThat(state).apply {
+            hasId("49627175")
+            hasUser("60146491")
+            isFavorited()
+        }
     }
 
     @Test
@@ -102,19 +104,24 @@ internal class FavoriteTemplateTest : AbstractSlideShareApiTest() {
         val state = favoriteOperations.checkFavorite("49627178")
 
         // Assert
-        assertEquals(state.id, "49627178")
-        assertEquals(state.user, "60146491")
-        assertFalse(state.favorited)
+        assertThat(state).apply {
+            hasId("49627178")
+            hasUser("60146491")
+            isNotFavorited()
+        }
     }
 
     @Test
-    fun `checkFavorite should throw ApiExceptio if slideshow ID is empty`() {
+    fun `checkFavorite should throw ApiException if slideshow ID is empty`() {
         // Act
         val exception = assertThrows<ApiException> {
             favoriteOperations.checkFavorite("")
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            hasMessageThat().isEqualTo("Slideshow ID must be non-empty string")
+        }
     }
 }

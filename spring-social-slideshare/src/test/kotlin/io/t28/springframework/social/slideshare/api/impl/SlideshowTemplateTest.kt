@@ -20,9 +20,10 @@ import io.t28.springframework.social.slideshare.api.EditSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
 import io.t28.springframework.social.slideshare.api.SearchSlideshowsOptions
+import io.t28.springframework.social.slideshare.api.Slideshow
 import io.t28.springframework.social.slideshare.api.SlideshowOperations
+import io.t28.springframework.social.slideshare.truth.assertThat
 import org.hamcrest.Matchers.matchesPattern
-import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import org.springframework.http.HttpMethod.GET
@@ -32,6 +33,8 @@ import org.springframework.test.web.client.match.MockRestRequestMatchers.method
 import org.springframework.test.web.client.match.MockRestRequestMatchers.queryParam
 import org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo
 import org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess
+import java.text.SimpleDateFormat
+import java.util.TimeZone
 
 internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
     private val slideshowOperations: SlideshowOperations
@@ -54,8 +57,7 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         val slideshow = slideshowOperations.getSlideshow(id = "179842138", url = null, options = options)
 
         // Assert
-        assertEquals(slideshow.id, "179842138")
-        assertEquals(slideshow.title, "Be A Great Product Leader (Amplify, Oct 2019)")
+        assertSlideshow(slideshow)
     }
 
     @Test
@@ -75,8 +77,7 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         val slideshow = slideshowOperations.getSlideshow(id = null, url = "https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019", options = options)
 
         // Assert
-        assertEquals(slideshow.url, "https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019")
-        assertEquals(slideshow.title, "Be A Great Product Leader (Amplify, Oct 2019)")
+        assertSlideshow(slideshow)
     }
 
     @Test
@@ -87,7 +88,10 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            hasMessageThat().isEqualTo("Either ID or URL must be required")
+        }
     }
 
     @Test
@@ -98,7 +102,10 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            hasMessageThat().isEqualTo("Either ID or URL must be required")
+        }
     }
 
     @Test
@@ -118,8 +125,13 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         val slideshow = slideshowOperations.getSlideshowById(id = "179842138", options = options)
 
         // Assert
-        assertEquals(slideshow.id, "179842138")
-        assertEquals(slideshow.title, "Be A Great Product Leader (Amplify, Oct 2019)")
+        assertThat(slideshow).apply {
+            hasId("179842138")
+            hasUrl("https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019")
+            hasTitle("Be A Great Product Leader (Amplify, Oct 2019)")
+            description().contains("Be A Great Product Leader")
+            status().isConverted()
+        }
     }
 
     @Test
@@ -139,8 +151,13 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         val slideshow = slideshowOperations.getSlideshowByUrl(url = "https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019", options = options)
 
         // Assert
-        assertEquals(slideshow.url, "https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019")
-        assertEquals(slideshow.title, "Be A Great Product Leader (Amplify, Oct 2019)")
+        assertThat(slideshow).apply {
+            hasId("179842138")
+            hasUrl("https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019")
+            hasTitle("Be A Great Product Leader (Amplify, Oct 2019)")
+            description().contains("Be A Great Product Leader")
+            status().isConverted()
+        }
     }
 
     @Test
@@ -160,9 +177,16 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         val slideshows = slideshowOperations.getSlideshowsByTag("kotlin", options)
 
         // Assert
-        assertEquals(slideshows.name, "kotlin")
-        assertEquals(slideshows.count, 2408)
-        assertEquals(slideshows.slideshows.size, 10)
+        assertThat(slideshows).apply {
+            hasName("kotlin")
+            hasCount(2408)
+            hasSlideshowsThat().hasSize(10)
+            hasSlideshowAt(0).apply {
+                hasId("237062843")
+                hasUrl("https://www.slideshare.net/Rapidvaluesolutions/selenium-automation-with-kotlin")
+                hasTitle("Selenium Automation with Kotlin")
+            }
+        }
     }
 
     @Test
@@ -173,7 +197,10 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            hasMessageThat().isEqualTo("Tag name must be non-empty string")
+        }
     }
 
     @Test
@@ -193,9 +220,16 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         val slideshows = slideshowOperations.getSlideshowsByUser("GoogleCloudPlatformJP", options)
 
         // Assert
-        assertEquals(slideshows.name, "GoogleCloudPlatformJP")
-        assertEquals(slideshows.count, 162)
-        assertEquals(slideshows.slideshows.size, 10)
+        assertThat(slideshows).apply {
+            hasName("GoogleCloudPlatformJP")
+            hasCount(162)
+            hasSlideshowsThat().hasSize(10)
+            hasSlideshowAt(0).apply {
+                hasId("236199628")
+                hasUrl("https://www.slideshare.net/GoogleCloudPlatformJP/cloud-onair-cloud-run-firestore-2020625")
+                hasTitle("[Cloud OnAir] Cloud Run &amp; Firestore で、実践アジャイル開発 2020年6月25日 放送")
+            }
+        }
     }
 
     @Test
@@ -206,7 +240,10 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            hasMessageThat().isEqualTo("User name must be non-empty string")
+        }
     }
 
     @Test
@@ -230,11 +267,20 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         val results = slideshowOperations.searchSlideshows("kotlin", options)
 
         // Assert
-        assertEquals(results.meta.query, "kotlin")
-        assertEquals(results.meta.resultOffset, null)
-        assertEquals(results.meta.numResults, 18)
-        assertEquals(results.meta.totalResults, 4268)
-        assertEquals(results.slideshows.size, 18)
+        assertThat(results).apply {
+            hasMetaThat().apply {
+                hasQuery("kotlin")
+                hasNumResults(18)
+                hasTotalResults(4268)
+                hasResultOffset(null)
+            }
+            hasSlideshowsThat().hasSize(18)
+            hasSlideshowAt(0).apply {
+                hasId("120024751")
+                hasUrl("https://www.slideshare.net/elizarov/kotlin-coroutines-in-practice-kotlinconf-2018")
+                hasTitle("Kotlin Coroutines in Practice @ KotlinConf 2018")
+            }
+        }
     }
 
     @Test
@@ -245,7 +291,10 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            hasMessageThat().isEqualTo("Query string must be non-empty string")
+        }
     }
 
     @Test
@@ -268,7 +317,7 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         val edited = slideshowOperations.editSlideshow("32795564", options)
 
         // Assert
-        assertEquals(edited.id, "32795564")
+        assertThat(edited).hasId("32795564")
     }
 
     @Test
@@ -283,7 +332,10 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            hasMessageThat().isEqualTo("ID must be non-empty string")
+        }
     }
 
     @Test
@@ -302,7 +354,7 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         val deleted = slideshowOperations.deleteSlideshow("32795564")
 
         // Assert
-        assertEquals(deleted.id, "32795564")
+        assertThat(deleted).hasId("32795564")
     }
 
     @Test
@@ -313,6 +365,56 @@ internal class SlideshowTemplateTest : AbstractSlideShareApiTest() {
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            hasMessageThat().isEqualTo("ID must be non-empty string")
+        }
+    }
+
+    private fun assertSlideshow(actual: Slideshow) {
+        assertThat(actual).apply {
+            hasId("179842138")
+            hasUrl("https://www.slideshare.net/adamnash/be-a-great-product-leader-amplify-oct-2019")
+            hasTitle("Be A Great Product Leader (Amplify, Oct 2019)")
+            description().contains("Be A Great Product Leader")
+            status().isConverted()
+            hasUserId("5502746")
+            hasUsername("adamnash")
+            hasThumbnailSize("[170,130]")
+            hasThumbnailUrl("//cdn.slidesharecdn.com/ss_thumbnails/beagreatproductleader-amplifyoct2019v5-191007205738-thumbnail.jpg?cb=1580173593")
+            hasThumbnailSmallUrl("//cdn.slidesharecdn.com/ss_thumbnails/beagreatproductleader-amplifyoct2019v5-191007205738-thumbnail-2.jpg?cb=1580173593")
+            hasThumbnailXLargeUrl("//cdn.slidesharecdn.com/ss_thumbnails/beagreatproductleader-amplifyoct2019v5-191007205738-thumbnail-3.jpg?cb=1580173593")
+            hasThumbnailXXLargeUrl("//cdn.slidesharecdn.com/ss_thumbnails/beagreatproductleader-amplifyoct2019v5-191007205738-thumbnail-4.jpg?cb=1580173593")
+            embed().isNotEmpty()
+            val dateFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss z").apply {
+                timeZone = TimeZone.getTimeZone("UTC")
+            }
+            hasCreated(dateFormat.parse("2019-10-07 20:57:38 UTC"))
+            hasUpdated(dateFormat.parse("2020-01-28 01:06:33 UTC"))
+            hasLanguage("en")
+            format().isPdf()
+            download().isAvailable()
+            download().isNotUnavailable()
+            hasDownloadUrl(null)
+            hasSecretKey("7dIwzX8sWUvlab")
+            hasSlideshowEmbedUrl("https://www.slideshare.net/slideshow/embed_code/key/7dIwzX8sWUvlab")
+            hasSlideshowType(Slideshow.SlideshowType.PRESENTATION)
+            isNotInContest()
+            hasPptLocation("beagreatproductleader-amplifyoct2019v5-191007205738")
+            hasStrippedTitle("be-a-great-product-leader-amplify-oct-2019")
+            tags().hasSize(3)
+            hasNumDownloads(0)
+            hasNumViews(414174)
+            hasNumComments(399)
+            hasNumFavorites(766)
+            hasNumSlides(22)
+            relatedSlideshows().isEmpty()
+            hasPrivacyLevel(Slideshow.PrivacyLevel.PUBLIC)
+            isFlagVisible()
+            isNotShowOnSs()
+            isNotSecretUrl()
+            isNotAllowEmbed()
+            isNotShareWithContacts()
+        }
     }
 }

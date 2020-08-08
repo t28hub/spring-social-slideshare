@@ -15,11 +15,10 @@
  */
 package io.t28.springframework.social.slideshare.api.impl
 
+import com.google.common.truth.Truth.assertThat
 import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.impl.xml.ObjectMapperHolder
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertFalse
-import org.junit.jupiter.api.Assertions.assertTrue
+import io.t28.springframework.social.slideshare.truth.assertThat
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -65,7 +64,7 @@ internal class SlideShareErrorHandlerTest {
         val hasError = errorHandler.hasError(response)
 
         // Assert
-        assertTrue(hasError)
+        assertThat(hasError).isTrue()
     }
 
     @Test
@@ -77,7 +76,7 @@ internal class SlideShareErrorHandlerTest {
         val hasError = errorHandler.hasError(response)
 
         // Assert
-        assertTrue(hasError)
+        assertThat(hasError).isTrue()
     }
 
     @Test
@@ -89,7 +88,7 @@ internal class SlideShareErrorHandlerTest {
         val hasError = errorHandler.hasError(response)
 
         // Assert
-        assertFalse(hasError)
+        assertThat(hasError).isFalse()
     }
 
     @ParameterizedTest(name = "handleError should throw {1} if response is {0}")
@@ -104,8 +103,10 @@ internal class SlideShareErrorHandlerTest {
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
-        assertEquals(exception::class, expectedClass)
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            isInstanceOf(expectedClass.java)
+        }
     }
 
     @Test
@@ -119,7 +120,9 @@ internal class SlideShareErrorHandlerTest {
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+        }
     }
 
     private fun resource(path: String): Resource {

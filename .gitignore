@@ -24,6 +24,7 @@ out/
 gradle-app.setting
 !gradle-wrapper.jar
 .gradletasknamecache
+local.properties
 
 ### Linux
 *~

@@ -15,7 +15,7 @@
  */
 package io.t28.springframework.social.slideshare.ext
 
-import org.junit.jupiter.api.Assertions.assertEquals
+import com.google.common.truth.Truth.assertThat
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import java.security.NoSuchAlgorithmException
@@ -27,8 +27,10 @@ internal class StringExtensionsTest {
         val sha1 = "abc".sha1()
 
         // Assert
-        assertEquals(sha1.length, 40)
-        assertEquals(sha1, "A9993E364706816ABA3E25717850C26C9CD0D89D")
+        assertThat(sha1).apply {
+            hasLength(40)
+            isEqualTo("A9993E364706816ABA3E25717850C26C9CD0D89D")
+        }
     }
 
     @Test
@@ -37,8 +39,10 @@ internal class StringExtensionsTest {
         val hash = "abc".hash("MD5")
 
         // Assert
-        assertEquals(hash.length, 32)
-        assertEquals(hash, "900150983CD24FB0D6963F7D28E17F72")
+        assertThat(hash).apply {
+            hasLength(32)
+            isEqualTo("900150983CD24FB0D6963F7D28E17F72")
+        }
     }
 
     @Test

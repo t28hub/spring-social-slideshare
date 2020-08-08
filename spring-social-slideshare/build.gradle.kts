@@ -16,6 +16,7 @@
 plugins {
     `java-library`
     kotlin("jvm")
+    kotlin("kapt")
     kotlin("plugin.spring")
     id("org.jetbrains.dokka") version "0.10.1"
 }
@@ -32,6 +33,9 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
+    testImplementation("com.google.truth:truth:1.0.1")
+    testImplementation("io.t28.auto:auto-truth-annotations:0.0.2-SNAPSHOT")
+    kaptTest("io.t28.auto:auto-truth-processor:0.0.2-SNAPSHOT")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
     testImplementation("org.pitest:pitest-junit5-plugin:0.12")
 }
