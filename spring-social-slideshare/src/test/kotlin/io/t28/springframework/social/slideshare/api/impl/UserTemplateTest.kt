@@ -16,10 +16,11 @@
 
 package io.t28.springframework.social.slideshare.api.impl
 
+import com.google.common.truth.Truth.assertThat
 import io.t28.springframework.social.slideshare.api.GetUserContactsOptions
 import io.t28.springframework.social.slideshare.api.UserOperations
+import io.t28.springframework.social.slideshare.truth.assertThat
 import org.hamcrest.Matchers.matchesPattern
-import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.assertThrows
 import org.springframework.http.HttpMethod
@@ -50,11 +51,23 @@ internal class UserTemplateTest : AbstractSlideShareApiTest() {
         val favorites = userOperations.getUserFavorites("t28hub")
 
         // Assert
-        assertEquals(favorites.size, 11)
-        assertEquals(favorites[0].slideshowId, "49627175")
-        assertEquals(favorites[0].tags.size, 0)
-        assertEquals(favorites[10].slideshowId, "39065162")
-        assertEquals(favorites[10].tags.size, 8)
+        assertThat(favorites).hasSize(11)
+        assertThat(favorites[0]).apply {
+            hasSlideshowId("49627175")
+            tags().isEmpty()
+        }
+        assertThat(favorites[10]).apply {
+            hasSlideshowId("39065162")
+            tags().hasSize(8)
+            hasTagAt(0).isEqualTo("Deep Learning")
+            hasTagAt(1).isEqualTo("Machine Learning")
+            hasTagAt(2).isEqualTo("Natural Language Processing")
+            hasTagAt(3).isEqualTo("Data Mining")
+            hasTagAt(4).isEqualTo("NLP")
+            hasTagAt(5).isEqualTo("ML")
+            hasTagAt(6).isEqualTo("DM")
+            hasTagAt(7).isEqualTo("DL")
+        }
     }
 
     @Test
@@ -65,7 +78,10 @@ internal class UserTemplateTest : AbstractSlideShareApiTest() {
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            hasMessageThat().isEqualTo("User name must be non-empty string")
+        }
     }
 
     @Test
@@ -85,10 +101,17 @@ internal class UserTemplateTest : AbstractSlideShareApiTest() {
         val contacts = userOperations.getUserContacts("t28hub", options)
 
         // Assert
-        assertEquals(contacts.size, 10)
-        assertEquals(contacts[0].username, "jreffell")
-        assertEquals(contacts[0].numSlideshows, 5)
-        assertEquals(contacts[0].numComments, 1)
+        assertThat(contacts).hasSize(10)
+        assertThat(contacts[0]).apply {
+            hasUsername("jreffell")
+            hasNumSlideshows(5)
+            hasNumComments(1)
+        }
+        assertThat(contacts[9]).apply {
+            hasUsername("mraible")
+            hasNumSlideshows(219)
+            hasNumComments(13)
+        }
     }
 
     @Test
@@ -99,7 +122,10 @@ internal class UserTemplateTest : AbstractSlideShareApiTest() {
         }
 
         // Assert
-        assertEquals(exception.providerId, "SlideShare")
+        assertThat(exception).apply {
+            hasProviderId("SlideShare")
+            hasMessageThat().isEqualTo("User name must be non-empty string")
+        }
     }
 
     @Test
@@ -117,8 +143,14 @@ internal class UserTemplateTest : AbstractSlideShareApiTest() {
         val tags = userOperations.getUserTags()
 
         // Assert
-        assertEquals(tags.size, 3)
-        assertEquals(tags[0].name, "kotlin")
-        assertEquals(tags[0].count, 5)
+        assertThat(tags).hasSize(3)
+        assertThat(tags[0]).apply {
+            hasName("kotlin")
+            hasCount(5)
+        }
+        assertThat(tags[2]).apply {
+            hasName("spring boot")
+            hasCount(2)
+        }
     }
 }

@@ -15,9 +15,7 @@
  */
 package io.t28.springframework.social.slideshare.api.impl
 
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertFalse
-import org.junit.jupiter.api.Assertions.assertTrue
+import com.google.common.truth.Truth.assertThat
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -40,7 +38,7 @@ internal class SlideShareTemplateTest {
         val isAuthorized = slideShare.isAuthorized
 
         // Assert
-        assertTrue(isAuthorized)
+        assertThat(isAuthorized).isTrue()
     }
 
     @Test
@@ -49,7 +47,7 @@ internal class SlideShareTemplateTest {
         val isAuthorized = unauthorizedSlideShare.isAuthorized
 
         // Assert
-        assertFalse(isAuthorized)
+        assertThat(isAuthorized).isFalse()
     }
 
     @Test
@@ -58,9 +56,9 @@ internal class SlideShareTemplateTest {
         val restTemplate = slideShare.restTemplate()
 
         // Assert
-        assertEquals(restTemplate.messageConverters.size, 2)
-        assertEquals(restTemplate.interceptors.size, 2)
-        assertTrue(restTemplate.errorHandler is SlideShareErrorHandler)
+        assertThat(restTemplate.messageConverters).hasSize(2)
+        assertThat(restTemplate.interceptors).hasSize(2)
+        assertThat(restTemplate.errorHandler).isInstanceOf(SlideShareErrorHandler::class.java)
     }
 
     @Test
@@ -69,9 +67,9 @@ internal class SlideShareTemplateTest {
         val restTemplate = unauthorizedSlideShare.restTemplate()
 
         // Assert
-        assertEquals(restTemplate.messageConverters.size, 2)
-        assertEquals(restTemplate.interceptors.size, 1)
-        assertTrue(restTemplate.errorHandler is SlideShareErrorHandler)
+        assertThat(restTemplate.messageConverters).hasSize(2)
+        assertThat(restTemplate.interceptors).hasSize(1)
+        assertThat(restTemplate.errorHandler).isInstanceOf(SlideShareErrorHandler::class.java)
     }
 
     companion object {

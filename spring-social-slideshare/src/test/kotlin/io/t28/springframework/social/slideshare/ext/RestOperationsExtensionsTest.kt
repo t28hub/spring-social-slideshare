@@ -15,10 +15,9 @@
  */
 package io.t28.springframework.social.slideshare.ext
 
+import com.google.common.truth.Truth.assertThat
 import org.hamcrest.Matchers.matchesPattern
 import org.intellij.lang.annotations.Language
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
@@ -69,10 +68,10 @@ internal class RestOperationsExtensionsTest {
         val tags = restOperations.getForListObject<String>("https://www.example.com/")
 
         // Assert
-        assertEquals(tags.size, 3)
-        assertEquals(tags[0], "Alice")
-        assertEquals(tags[1], "Bob")
-        assertEquals(tags[2], "Charlie")
+        assertThat(tags).hasSize(3)
+        assertThat(tags[0]).isEqualTo("Alice")
+        assertThat(tags[1]).isEqualTo("Bob")
+        assertThat(tags[2]).isEqualTo("Charlie")
     }
 
     @Test
@@ -95,6 +94,6 @@ internal class RestOperationsExtensionsTest {
         val tags = restOperations.getForListObject<String>("https://www.example.com/")
 
         // Assert
-        assertTrue(tags.isEmpty())
+        assertThat(tags).isEmpty()
     }
 }

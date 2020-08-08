@@ -14,11 +14,14 @@
  * limitations under the License.
  */
 import org.jlleitschuh.gradle.ktlint.reporter.ReporterType
+import java.lang.System.getenv
+import java.util.Properties
 
 plugins {
     java
     jacoco
     kotlin("jvm") version "1.3.72" apply false
+    kotlin("kapt") version "1.3.72" apply false
     kotlin("plugin.spring") version "1.3.72" apply false
     id("io.spring.dependency-management") version "1.0.9.RELEASE"
     id("org.jlleitschuh.gradle.ktlint") version "9.3.0"
@@ -26,11 +29,29 @@ plugins {
     id("info.solidsoft.pitest") version "1.5.1"
 }
 
+val properties = Properties().apply {
+    val file = rootProject.file("local.properties")
+    if (file.exists()) {
+        file.inputStream().use { load(it) }
+    }
+}
+
+fun getProperty(key: String, defaultValue: String?): String? {
+    return properties.getProperty(key, defaultValue)
+}
+
 allprojects {
     repositories {
         mavenCentral()
         jcenter()
         maven("https://dl.bintray.com/kotlin/kotlin-eap")
+        maven {
+            url = uri("https://maven.pkg.github.com/t28hub/auto-truth")
+            credentials {
+                username = getProperty("GITHUB_ACTOR", getenv("GITHUB_ACTOR"))
+                password = getProperty("GITHUB_TOKEN", getenv("GITHUB_TOKEN"))
+            }
+        }
     }
 }
 

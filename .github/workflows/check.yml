@@ -27,6 +27,8 @@ jobs:
           restore-keys: gradle-${{ runner.os }}
       - name: Run all checks
         run: ./gradlew check jacocoTestReport --stacktrace
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload the build reports of 'spring-social-slideshare'
         uses: actions/upload-artifact@v2
         with:

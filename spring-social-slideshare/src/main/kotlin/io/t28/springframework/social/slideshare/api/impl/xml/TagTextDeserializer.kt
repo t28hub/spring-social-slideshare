@@ -32,10 +32,12 @@ internal object TagTextDeserializer : JsonDeserializer<List<String>>() {
         }
 
         val text = parser.valueAsString
-        return text.split(DELIMITER).filter { tag ->
-            // The split method will return a List containing an empty string if the text is empty.
-            tag.isNotEmpty()
-        }
+        return text.split(DELIMITER)
+            .map(String::trim)
+            .filter { tag ->
+                // The split method will return a List containing an empty string if the text is empty.
+                tag.isNotEmpty()
+            }
     }
 
     override fun getNullValue(context: DeserializationContext): List<String> {

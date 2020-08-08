@@ -27,9 +27,10 @@ jobs:
           restore-keys: gradle-${{ runner.os }}
       - name: Build 'spring-social-slideshare' module
         run: ./gradlew :spring-social-slideshare:build --stacktrace
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Build 'spring-social-samples' module
         run: ./gradlew :spring-social-samples:build --stacktrace
-
       - name: Upload the build reports of 'spring-social-slideshare'
         uses: actions/upload-artifact@v2
         with:

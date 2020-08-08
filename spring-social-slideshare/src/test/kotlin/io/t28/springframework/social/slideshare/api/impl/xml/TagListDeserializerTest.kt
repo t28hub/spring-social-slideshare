@@ -13,16 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package io.t28.springframework.social.slideshare.api.impl.xml
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.module.kotlin.readValue
+import com.google.common.truth.Truth.assertThat
 import io.t28.springframework.social.slideshare.api.Slideshow
 import org.intellij.lang.annotations.Language
-import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -57,10 +56,10 @@ internal class TagListDeserializerTest {
         val deserialized = mapper.readValue<Xml>(content)
 
         // Assert
-        assertEquals(deserialized.tags.size, 3)
-        assertEquals(deserialized.tags[0].name, "jvm")
-        assertEquals(deserialized.tags[1].name, "java")
-        assertEquals(deserialized.tags[2].name, "kotlin")
+        assertThat(deserialized.tags).hasSize(3)
+        assertThat(deserialized.tags[0].name).isEqualTo("jvm")
+        assertThat(deserialized.tags[1].name).isEqualTo("java")
+        assertThat(deserialized.tags[2].name).isEqualTo("kotlin")
     }
 
     @Test
@@ -78,7 +77,7 @@ internal class TagListDeserializerTest {
         val deserialized = mapper.readValue<Xml>(content)
 
         // Assert
-        assertEquals(deserialized.tags.size, 0)
+        assertThat(deserialized.tags).isEmpty()
     }
 
     @Test
@@ -93,7 +92,7 @@ internal class TagListDeserializerTest {
         val deserialized = mapper.readValue<Xml>(content)
 
         // Assert
-        assertEquals(deserialized.tags.size, 0)
+        assertThat(deserialized.tags).isEmpty()
     }
 
     data class Xml(val tags: List<Slideshow.Tag>)

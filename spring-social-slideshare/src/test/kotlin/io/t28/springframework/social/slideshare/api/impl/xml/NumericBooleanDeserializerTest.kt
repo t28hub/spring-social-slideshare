@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package io.t28.springframework.social.slideshare.api.impl.xml
 
 import com.fasterxml.jackson.databind.JsonMappingException
@@ -21,8 +20,8 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.module.kotlin.readValue
+import io.t28.auto.truth.AutoSubject
 import org.intellij.lang.annotations.Language
-import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -54,7 +53,7 @@ internal class NumericBooleanDeserializerTest {
         val deserialized = mapper.readValue<Xml>(content)
 
         // Assert
-        assertEquals(deserialized.supported, false)
+        assertThat(deserialized).isNotSupported()
     }
 
     @Test
@@ -72,7 +71,7 @@ internal class NumericBooleanDeserializerTest {
         val deserialized = mapper.readValue<Xml>(content)
 
         // Assert
-        assertEquals(deserialized.supported, true)
+        assertThat(deserialized).isSupported()
     }
 
     @Test
@@ -111,6 +110,8 @@ internal class NumericBooleanDeserializerTest {
         }
     }
 
+    fun assertThat(actual: Xml) = AutoXmlSubject.assertThat(actual)
+
     data class Xml(val supported: Boolean)
 
     @Suppress("unused")
@@ -119,4 +120,8 @@ internal class NumericBooleanDeserializerTest {
         @get:JsonDeserialize(using = NumericBooleanDeserializer::class)
         val supported: Boolean
     }
+
+    @Suppress("unused")
+    @AutoSubject(Xml::class)
+    object XmlSubject
 }

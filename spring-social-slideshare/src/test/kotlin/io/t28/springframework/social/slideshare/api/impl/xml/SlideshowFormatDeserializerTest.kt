@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package io.t28.springframework.social.slideshare.api.impl.xml
 
 import com.fasterxml.jackson.databind.JsonMappingException
@@ -21,9 +20,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty
 import com.fasterxml.jackson.module.kotlin.readValue
+import com.google.common.truth.Truth.assertThat
 import io.t28.springframework.social.slideshare.api.Slideshow
 import org.intellij.lang.annotations.Language
-import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.BeforeAll
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.TestInstance
@@ -61,7 +60,7 @@ internal class SlideshowFormatDeserializerTest {
         val parsed = mapper.readValue<Xml>(content)
 
         // Assert
-        assertEquals(parsed.format, expected)
+        assertThat(parsed.format).isEqualTo(expected)
     }
 
     @Test
