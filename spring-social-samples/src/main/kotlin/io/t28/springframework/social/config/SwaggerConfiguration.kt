@@ -13,8 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.t28.springframework.social
+package io.t28.springframework.social.config
 
+import io.t28.springframework.social.controller.FavoritesController
+import io.t28.springframework.social.controller.SearchController
+import io.t28.springframework.social.controller.SlidesController
+import io.t28.springframework.social.controller.UsersController
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.ComponentScan
 import org.springframework.context.annotation.Configuration

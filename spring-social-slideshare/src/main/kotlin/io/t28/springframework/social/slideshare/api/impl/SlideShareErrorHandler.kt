@@ -18,6 +18,7 @@ package io.t28.springframework.social.slideshare.api.impl
 import com.fasterxml.jackson.core.JsonProcessingException
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import com.fasterxml.jackson.module.kotlin.readValue
+import io.t28.springframework.social.slideshare.api.InvalidParameterException
 import io.t28.springframework.social.slideshare.api.SlideShareError
 import io.t28.springframework.social.slideshare.api.SlideShareError.ErrorType.ACCOUNT_EXCEEDED_DAILY_LIMIT
 import io.t28.springframework.social.slideshare.api.SlideShareError.ErrorType.BLANK_TITLE
@@ -39,7 +40,6 @@ import io.t28.springframework.social.slideshare.api.SlideShareError.ErrorType.US
 import io.t28.springframework.social.slideshare.api.SlideShareError.ErrorType.YOUR_ACCOUNT_HAS_BEEN_BLOCKED
 import io.t28.springframework.social.slideshare.api.impl.AbstractSlideShareOperations.Companion.PROVIDER_ID
 import org.springframework.http.client.ClientHttpResponse
-import org.springframework.social.ApiException
 import org.springframework.social.InsufficientPermissionException
 import org.springframework.social.InvalidAuthorizationException
 import org.springframework.social.OperationNotPermittedException
@@ -86,7 +86,7 @@ internal class SlideShareErrorHandler(private val xmlMapper: XmlMapper) : Defaul
             NO_TAG_PROVIDED,
             REQUIRED_PARAMETER_MISSING,
             SEARCH_QUERY_CANNOT_BE_BLANK -> {
-                throw ApiException(PROVIDER_ID, message.text)
+                throw InvalidParameterException(PROVIDER_ID, message.text)
             }
             GROUP_NOT_FOUND,
             SLIDESHOW_NOT_FOUND,
@@ -95,10 +95,10 @@ internal class SlideShareErrorHandler(private val xmlMapper: XmlMapper) : Defaul
                 throw ResourceNotFoundException(PROVIDER_ID, message.text)
             }
             FAILED_API_VALIDATION,
+            FAILED_USER_AUTHENTICATION,
             INVALID_APPLICATION_ID -> {
                 throw InvalidAuthorizationException(PROVIDER_ID, message.text)
             }
-            FAILED_USER_AUTHENTICATION,
             YOUR_ACCOUNT_HAS_BEEN_BLOCKED -> {
                 throw OperationNotPermittedException(PROVIDER_ID, message.text)
             }
