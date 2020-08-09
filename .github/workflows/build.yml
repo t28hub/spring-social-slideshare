@@ -29,6 +29,11 @@ jobs:
         run: ./gradlew :spring-social-slideshare:build --stacktrace
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Analyze code quality
+        run: ./gradlew :spring-social-slideshare:sonarqube --stacktrace
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_ACCESS_TOKEN }}
       - name: Build 'spring-social-samples' module
         run: ./gradlew :spring-social-samples:build --stacktrace
       - name: Upload the build reports of 'spring-social-slideshare'
