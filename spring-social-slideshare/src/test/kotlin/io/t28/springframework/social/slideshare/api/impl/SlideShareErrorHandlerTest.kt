@@ -16,6 +16,7 @@
 package io.t28.springframework.social.slideshare.api.impl
 
 import com.google.common.truth.Truth.assertThat
+import io.t28.springframework.social.slideshare.api.InvalidParameterException
 import io.t28.springframework.social.slideshare.api.SlideShare
 import io.t28.springframework.social.slideshare.api.impl.xml.ObjectMapperHolder
 import io.t28.springframework.social.slideshare.truth.assertThat
@@ -135,14 +136,14 @@ internal class SlideShareErrorHandlerTest {
         fun provideErrors(): Stream<Arguments> {
             return Stream.of(
                 // ApiException
-                arguments("error_blank_title.xml", ApiException::class),
-                arguments("error_incorrect_parameters.xml", ApiException::class),
-                arguments("error_missing_file_for_upload.xml", ApiException::class),
-                arguments("error_missing_title.xml", ApiException::class),
-                arguments("error_no_api_key_provided.xml", ApiException::class),
-                arguments("error_no_tag_provided.xml", ApiException::class),
-                arguments("error_required_parameter_missing.xml", ApiException::class),
-                arguments("error_search_query_cannot_be_blank.xml", ApiException::class),
+                arguments("error_blank_title.xml", InvalidParameterException::class),
+                arguments("error_incorrect_parameters.xml", InvalidParameterException::class),
+                arguments("error_missing_file_for_upload.xml", InvalidParameterException::class),
+                arguments("error_missing_title.xml", InvalidParameterException::class),
+                arguments("error_no_api_key_provided.xml", InvalidParameterException::class),
+                arguments("error_no_tag_provided.xml", InvalidParameterException::class),
+                arguments("error_required_parameter_missing.xml", InvalidParameterException::class),
+                arguments("error_search_query_cannot_be_blank.xml", InvalidParameterException::class),
                 // ResourceNotFoundException
                 arguments("error_group_not_found.xml", ResourceNotFoundException::class),
                 arguments("error_slideshow_not_found.xml", ResourceNotFoundException::class),
@@ -150,9 +151,9 @@ internal class SlideShareErrorHandlerTest {
                 arguments("error_user_not_found.xml", ResourceNotFoundException::class),
                 // InvalidAuthorizationException
                 arguments("error_failed_api_validation.xml", InvalidAuthorizationException::class),
+                arguments("error_failed_user_authentication.xml", InvalidAuthorizationException::class),
                 arguments("error_invalid_application_id.xml", InvalidAuthorizationException::class),
                 // OperationNotPermittedException
-                arguments("error_failed_user_authentication.xml", OperationNotPermittedException::class),
                 arguments("error_your_account_has_been_blocked.xml", OperationNotPermittedException::class),
                 // InsufficientPermissionException
                 arguments("error_insufficient_permissions.xml", InsufficientPermissionException::class),

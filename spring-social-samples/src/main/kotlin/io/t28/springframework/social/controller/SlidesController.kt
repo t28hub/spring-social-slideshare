@@ -13,15 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.t28.springframework.social
+package io.t28.springframework.social.controller
 
 import io.swagger.annotations.Api
-import io.swagger.annotations.ApiModel
-import io.swagger.annotations.ApiModelProperty
 import io.swagger.annotations.ApiOperation
 import io.swagger.annotations.ApiParam
 import io.swagger.annotations.ApiResponse
 import io.swagger.annotations.ApiResponses
+import io.t28.springframework.social.entity.UpdateSlideRequest
 import io.t28.springframework.social.slideshare.api.EditSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowOptions
 import io.t28.springframework.social.slideshare.api.GetSlideshowsOptions
@@ -40,7 +39,7 @@ import org.springframework.web.bind.annotation.RestController
 
 @Api(tags = ["Slides"])
 @RestController
-@RequestMapping("/slides", consumes = [APPLICATION_JSON_VALUE], produces = [APPLICATION_JSON_VALUE])
+@RequestMapping("/slides")
 class SlidesController(private val slideShare: SlideShare) {
     @ApiOperation(
         value = "Get a slide",
@@ -54,7 +53,7 @@ class SlidesController(private val slideShare: SlideShare) {
         ApiResponse(code = 404, message = "Slide not found"),
         ApiResponse(code = 500, message = "Internal server error")
     )
-    @GetMapping("/{id}")
+    @GetMapping("/{id}", produces = [APPLICATION_JSON_VALUE])
     fun get(
         @ApiParam("The slide ID", required = true)
         @PathVariable id: String,
@@ -84,7 +83,7 @@ class SlidesController(private val slideShare: SlideShare) {
         ApiResponse(code = 404, message = "Slide not found"),
         ApiResponse(code = 500, message = "Internal server error")
     )
-    @PatchMapping("/{id}")
+    @PatchMapping("/{id}", consumes = [APPLICATION_JSON_VALUE], produces = [APPLICATION_JSON_VALUE])
     fun update(
         @ApiParam("The slide ID", required = true)
         @PathVariable id: String,
@@ -131,7 +130,7 @@ class SlidesController(private val slideShare: SlideShare) {
         ApiResponse(code = 404, message = "User not found"),
         ApiResponse(code = 500, message = "Internal server error")
     )
-    @GetMapping("/tags/{tag}")
+    @GetMapping("/tags/{tag}", produces = [APPLICATION_JSON_VALUE])
     fun getByTag(
         @ApiParam("The tag name", required = true)
         @PathVariable tag: String,
@@ -150,22 +149,4 @@ class SlidesController(private val slideShare: SlideShare) {
         return slideShare.slideshowOperations()
             .getSlideshowsByTag(tag, options)
     }
-
-    @ApiModel("Slide update request")
-    data class UpdateSlideRequest(
-        @ApiModelProperty("New title of the slide")
-        val title: String? = null,
-        @ApiModelProperty("New description of the slide")
-        val description: String? = null,
-        @ApiModelProperty("New tags of the slide")
-        val tags: List<String>? = null,
-        @ApiModelProperty("Whether to set private or not")
-        val private: Boolean? = null,
-        @ApiModelProperty("Whether to generate a secret URL")
-        val generateSecretUrl: Boolean? = null,
-        @ApiModelProperty("Whether to allow embed")
-        val allowEmbed: Boolean? = null,
-        @ApiModelProperty("Whether to share the slide to contacts if private")
-        val shareWithContacts: Boolean? = null
-    )
 }
