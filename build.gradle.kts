@@ -27,6 +27,7 @@ plugins {
     id("org.jlleitschuh.gradle.ktlint") version "9.3.0"
     id("io.gitlab.arturbosch.detekt") version "1.10.0"
     id("info.solidsoft.pitest") version "1.5.1"
+    id("org.sonarqube") version "3.0"
 }
 
 val properties = Properties().apply {
@@ -63,6 +64,7 @@ subprojects {
     apply(plugin = "org.jlleitschuh.gradle.ktlint")
     apply(plugin = "io.gitlab.arturbosch.detekt")
     apply(plugin = "info.solidsoft.pitest")
+    apply(plugin = "org.sonarqube")
 
     group = "io.t28.springframework.social"
     version = "1.0.0-SNAPSHOT"
@@ -111,5 +113,17 @@ subprojects {
         avoidCallsTo.set(setOf("kotlin.jvm.internal.Intrinsics"))
         outputFormats.set(setOf("HTML"))
         timestampedReports.set(false)
+    }
+
+    val sonarAccessToken: String by project
+    sonarqube {
+        properties {
+            property("sonar.organization", "t28hub")
+            property("sonar.host.url", "https://sonarcloud.io")
+
+            property("sonar.projectKey", "io.t28.springframework.social.slideshare")
+            property("sonar.projectName", "spring-social-slideshare")
+            property("sonar.jacoco.reportPaths", "build/jacoco/test.exec")
+        }
     }
 }
