@@ -23,7 +23,3 @@ jobs:
         run: fossa analyze --config config/fossa.yml --branch "$GITHUB_REF"
         env:
           FOSSA_API_KEY: ${{ secrets.FOSSA_API_KEY }}
-      - name: Test dependencies
-        run: fossa test --config config/fossa.yml --branch "$GITHUB_REF"
-        env:
-          FOSSA_API_KEY: ${{ secrets.FOSSA_API_KEY }}
