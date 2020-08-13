@@ -38,7 +38,7 @@ import java.time.Clock
 class SlideShareTemplate(
     private val apiKey: String,
     private val sharedSecret: String,
-    private val credentials: Credentials? = null
+    internal val credentials: Credentials? = null
 ) : SlideShare {
     private val restTemplate by lazy {
         createRestTemplate()

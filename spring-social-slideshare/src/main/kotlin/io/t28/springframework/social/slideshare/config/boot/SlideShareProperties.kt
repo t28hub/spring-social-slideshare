@@ -13,11 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.t28.springframework.social.config
+package io.t28.springframework.social.slideshare.config.boot
 
+import io.t28.springframework.social.slideshare.api.impl.Credentials
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.boot.context.properties.ConstructorBinding
 
+/**
+ * Properties for SlideShare
+ *
+ * @param apiKey The API key provided by SlideShare.
+ * @param sharedSecret The shared secret provided by SlideShare.
+ * @param username The SlideShare username.
+ * @param password The SlideShare password.
+ */
 @ConstructorBinding
 @ConfigurationProperties(prefix = "spring.social.slideshare")
 data class SlideShareProperties(
@@ -25,4 +34,13 @@ data class SlideShareProperties(
     val sharedSecret: String,
     val username: String? = null,
     val password: String? = null
-)
+) {
+    internal val credentials: Credentials?
+        get() {
+            return if (username != null && password != null) {
+                Credentials(username = username, password = password)
+            } else {
+                null
+            }
+        }
+}

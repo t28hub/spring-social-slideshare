@@ -24,6 +24,7 @@ import io.t28.springframework.social.slideshare.api.SearchResults
 import io.t28.springframework.social.slideshare.api.SearchSlideshowsOptions
 import io.t28.springframework.social.slideshare.api.SlideShare
 import org.springframework.http.MediaType.APPLICATION_JSON_VALUE
+import org.springframework.social.connect.ConnectionRepository
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RequestParam
@@ -32,7 +33,7 @@ import org.springframework.web.bind.annotation.RestController
 @Api(tags = ["Search"])
 @RestController
 @RequestMapping("/search", produces = [APPLICATION_JSON_VALUE])
-class SearchController(private val slideShare: SlideShare) {
+class SearchController(private val slideShare: SlideShare, private val connectionRepository: ConnectionRepository) {
     @Suppress("LongParameterList")
     @ApiOperation(
         value = "Search slides",
