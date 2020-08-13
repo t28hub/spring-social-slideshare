@@ -1,0 +1,36 @@
+{
+  "groups": [
+    {
+      "name": "spring.social.slideshare",
+      "type": "org.springframework.boot.autoconfigure.web.ServerProperties",
+      "description": "Properties for SlideShare API",
+      "sourceType": "io.t28.springframework.social.slideshare.config.boot.SlideShareProperties",
+    }
+  ],
+  "properties": [
+    {
+      "name": "spring.social.slideshare.apiKey",
+      "type": "java.lang.String",
+      "description": "The API key provided by SlideShare",
+      "sourceType": "io.t28.springframework.social.slideshare.config.boot.SlideShareProperties"
+    },
+    {
+      "name": "spring.social.slideshare.sharedSecret",
+      "type": "java.lang.String",
+      "description": "The shared secret provided by SlideShare",
+      "sourceType": "io.t28.springframework.social.slideshare.config.boot.SlideShareProperties"
+    },
+    {
+      "name": "spring.social.slideshare.username",
+      "type": "java.lang.String",
+      "description": "The SlideShare username",
+      "sourceType": "io.t28.springframework.social.slideshare.config.boot.SlideShareProperties"
+    },
+    {
+      "name": "spring.social.slideshare.password",
+      "type": "java.lang.String",
+      "description": "The SlideShare password",
+      "sourceType": "io.t28.springframework.social.slideshare.config.boot.SlideShareProperties"
+    }
+  ]
+}

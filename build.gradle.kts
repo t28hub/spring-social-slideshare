@@ -46,6 +46,7 @@ allprojects {
         mavenCentral()
         jcenter()
         maven("https://dl.bintray.com/kotlin/kotlin-eap")
+        maven("https://repo.spring.io/libs-snapshot")
         maven {
             url = uri("https://maven.pkg.github.com/t28hub/auto-truth")
             credentials {

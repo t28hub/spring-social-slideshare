@@ -24,8 +24,12 @@ plugins {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.springframework.boot:spring-boot-starter-web")
-    annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
-    api("org.springframework.social:spring-social-core:1.1.6.RELEASE")
+    implementation("org.springframework.boot:spring-boot-configuration-processor")
+
+    api("org.springframework.social:spring-social-core:2.0.0.BUILD-SNAPSHOT")
+    implementation("org.springframework.social:spring-social-config:2.0.0.BUILD-SNAPSHOT")
+    implementation("org.springframework.social:spring-social-autoconfigure:2.0.0.BUILD-SNAPSHOT")
+
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.11.1")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.11.1")
 
@@ -36,6 +40,7 @@ dependencies {
     testImplementation("com.google.truth:truth:1.0.1")
     testImplementation("io.t28.auto:auto-truth-annotations:0.0.3-SNAPSHOT")
     kaptTest("io.t28.auto:auto-truth-processor:0.0.3-SNAPSHOT")
+    testImplementation("org.mockito:mockito-inline:3.4.6")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
     testImplementation("org.pitest:pitest-junit5-plugin:0.12")
 }
@@ -69,6 +74,10 @@ tasks {
         configuration {
             perPackageOption {
                 prefix = "io.t28.springframework.social.slideshare.api.impl.xml"
+                suppress = true
+            }
+            perPackageOption {
+                prefix = "io.t28.springframework.social.slideshare.connect"
                 suppress = true
             }
             perPackageOption {

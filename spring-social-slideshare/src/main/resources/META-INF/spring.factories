@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+io.t28.springframework.social.slideshare.config.boot.SlideShareAutoConfiguration
