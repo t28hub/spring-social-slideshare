@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import java.lang.System.getenv
 
 plugins {
     `java-library`
@@ -71,16 +70,16 @@ tasks {
         }
     }
 
-    val getProperty: (key: String, defaultValue: String?) -> String? by project
     sonarqube {
         properties {
-            property("sonar.login", getProperty("SONAR_TOKEN", getenv("SONAR_TOKEN")) as Any)
             property("sonar.organization", "t28hub")
             property("sonar.host.url", "https://sonarcloud.io")
-            property("sonar.projectKey", "io.t28.springframework.social.slideshare")
+            property("sonar.projectKey", "t28hub_spring-social-slideshare")
             property("sonar.projectName", "spring-social-slideshare")
+            property("sonar.inclusions", "src/main/kotlin/**,src/main/resources/**")
+            property("sonar.exclusions", "src/test/kotlin/**,src/test/resources/**")
             property("sonar.kotlin.detekt.reportPaths", "$buildDir/reports/detekt/detekt.xml")
-            property("sonar.coverage.jacoco.xmlReportPaths", "$buildDir/jacoco/test.exec")
+            property("sonar.coverage.jacoco.xmlReportPaths", "$buildDir/reports/jacoco/jacoco.xml")
         }
     }
 
