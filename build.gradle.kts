@@ -40,12 +40,6 @@ fun getProperty(key: String, defaultValue: String?): String? {
     return properties.getProperty(key, defaultValue)
 }
 
-val getPropertyInternal: (key: String, defaultValue: String?) -> String? = ::getProperty
-
-val getProperty by extra {
-    getPropertyInternal
-}
-
 allprojects {
     repositories {
         mavenCentral()
