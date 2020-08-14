@@ -13,11 +13,14 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import java.lang.System.getenv
+
 plugins {
     `java-library`
     kotlin("jvm")
     kotlin("kapt")
     kotlin("plugin.spring")
+    id("org.sonarqube") version "3.0"
     id("org.jetbrains.dokka") version "0.10.1"
 }
 
@@ -65,6 +68,19 @@ tasks {
             xml.destination = file("$buildDir/reports/jacoco/jacoco.xml")
             html.isEnabled = true
             html.destination = file("$buildDir/reports/jacoco")
+        }
+    }
+
+    val getProperty: (key: String, defaultValue: String?) -> String? by project
+    sonarqube {
+        properties {
+            property("sonar.login", getProperty("SONAR_TOKEN", getenv("SONAR_TOKEN")) as Any)
+            property("sonar.organization", "t28hub")
+            property("sonar.host.url", "https://sonarcloud.io")
+            property("sonar.projectKey", "io.t28.springframework.social.slideshare")
+            property("sonar.projectName", "spring-social-slideshare")
+            property("sonar.kotlin.detekt.reportPaths", "$buildDir/reports/detekt/detekt.xml")
+            property("sonar.coverage.jacoco.xmlReportPaths", "$buildDir/jacoco/test.exec")
         }
     }
 
