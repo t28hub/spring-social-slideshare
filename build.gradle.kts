@@ -40,6 +40,8 @@ fun getProperty(key: String, defaultValue: String?): String? {
     return properties.getProperty(key, defaultValue)
 }
 
+val githubUsername = getProperty("GITHUB_ACTOR", getenv("GITHUB_ACTOR"))
+val githubPassword = getProperty("GITHUB_TOKEN", getenv("GITHUB_TOKEN"))
 allprojects {
     repositories {
         mavenCentral()
@@ -49,8 +51,8 @@ allprojects {
         maven {
             url = uri("https://maven.pkg.github.com/t28hub/auto-truth")
             credentials {
-                username = getProperty("GITHUB_ACTOR", getenv("GITHUB_ACTOR"))
-                password = getProperty("GITHUB_TOKEN", getenv("GITHUB_TOKEN"))
+                username = githubUsername
+                password = githubPassword
             }
         }
     }
@@ -112,5 +114,20 @@ subprojects {
         avoidCallsTo.set(setOf("kotlin.jvm.internal.Intrinsics"))
         outputFormats.set(setOf("HTML"))
         timestampedReports.set(false)
+    }
+
+    plugins.withId("maven-publish") {
+        configure<PublishingExtension> {
+            repositories {
+                maven {
+                    name = project.name
+                    url = uri("https://maven.pkg.github.com/t28hub/spring-social-slideshare")
+                    credentials {
+                        username = githubUsername
+                        password = githubPassword
+                    }
+                }
+            }
+        }
     }
 }

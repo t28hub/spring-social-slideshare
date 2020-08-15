@@ -16,6 +16,7 @@
 
 plugins {
     `java-library`
+    `maven-publish`
     kotlin("jvm")
     kotlin("kapt")
     kotlin("plugin.spring")
@@ -70,19 +71,6 @@ tasks {
         }
     }
 
-    sonarqube {
-        properties {
-            property("sonar.organization", "t28hub")
-            property("sonar.host.url", "https://sonarcloud.io")
-            property("sonar.projectKey", "t28hub_spring-social-slideshare")
-            property("sonar.projectName", "spring-social-slideshare")
-            property("sonar.inclusions", "src/main/kotlin/**,src/main/resources/**")
-            property("sonar.exclusions", "src/test/kotlin/**,src/test/resources/**")
-            property("sonar.kotlin.detekt.reportPaths", "$buildDir/reports/detekt/detekt.xml")
-            property("sonar.coverage.jacoco.xmlReportPaths", "$buildDir/reports/jacoco/jacoco.xml")
-        }
-    }
-
     dokka {
         outputFormat = "javadoc"
         outputDirectory = "$buildDir/javadoc"
@@ -99,6 +87,44 @@ tasks {
                 prefix = "io.t28.springframework.social.slideshare.ext"
                 suppress = true
             }
+        }
+    }
+
+    create<Jar>("sourcesJar") {
+        from(sourceSets.main.get().allSource)
+        archiveClassifier.set("sources")
+    }
+
+    create<Jar>("javadocJar") {
+        dependsOn(dokka)
+        from(dokka)
+        archiveClassifier.set("javadoc")
+    }
+}
+
+sonarqube {
+    properties {
+        property("sonar.organization", "t28hub")
+        property("sonar.host.url", "https://sonarcloud.io")
+        property("sonar.projectKey", "t28hub_spring-social-slideshare")
+        property("sonar.projectName", "spring-social-slideshare")
+        property("sonar.inclusions", "src/main/kotlin/**,src/main/resources/**")
+        property("sonar.exclusions", "src/test/kotlin/**,src/test/resources/**")
+        property("sonar.kotlin.detekt.reportPaths", "$buildDir/reports/detekt/detekt.xml")
+        property("sonar.coverage.jacoco.xmlReportPaths", "$buildDir/reports/jacoco/jacoco.xml")
+    }
+}
+
+publishing {
+    publications {
+        register<MavenPublication>("gpr") {
+            groupId = "${project.group}"
+            artifactId = "spring-social-slideshare"
+            version = "${project.version}"
+
+            from(components["java"])
+            artifact(tasks["sourcesJar"])
+            artifact(tasks["javadocJar"])
         }
     }
 }
