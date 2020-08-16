@@ -19,7 +19,6 @@ This library supports all operations officially provided by SlideShare.
   * [Retrieving tags by authenticated user](#retrieving-tags-by-authenticated-user)
   * [Checking whether a slideshow is favorited](#checking-whether-a-slideshow-is-favorited)
   * [Other examples](#other-examples)
-* [Notes](#notes)
 * [License](#license)
 
 ## Installation
@@ -52,17 +51,29 @@ dependencies {
 The Spring Social SlideShare offers integration with SlideShare API through the `SlideShare` interface and its implementation, `SlideShareTemplate`.  
 See the [official documentation](https://www.slideshare.net/developers) to retrieve the API key and the shared secret.  
 ```kotlin
+val credentials = Credentials(
+    username = "The username of SlideShare",
+    password = "The password of SlideShare"
+)
 val slideShare = SlideShareTemplate(
     apiKey = "The API key provided by SlideShare", // Required
     sharedSecret = "The shared secret provided by SlideShare", // Required
-    username = "The username of SlideShare", // Optional
-    password = "The password of SlideShare" // Optional
+    credentials = credentials // Optional
 )
 ```
 Once instantiating a SlideShare class, you can perform the following operations:
 * [`SlideshowOperations`](https://github.com/t28hub/spring-social-slideshare/blob/master/spring-social-slideshare/src/main/kotlin/io/t28/springframework/social/slideshare/api/SlideshowOperations.kt)
 * [`UserOperations`](https://github.com/t28hub/spring-social-slideshare/blob/master/spring-social-slideshare/src/main/kotlin/io/t28/springframework/social/slideshare/api/UserOperations.kt)
 * [`FavoriteOperations`](https://github.com/t28hub/spring-social-slideshare/blob/master/spring-social-slideshare/src/main/kotlin/io/t28/springframework/social/slideshare/api/FavoriteOperations.kt)
+
+Note that the SlideShare API puts your credentials (username and password) to query string as follows:
+```
+https://www.slideshare.net/api/2/get_slideshow?slideshow_id=1234567890&username=YOUR_USERNAME&password=YOUR_PASSWORD
+```
+This is described in the official documentation as follows:
+> Requests that request private data from users, or that act on their behalf, must include the following parameters:
+> * username: set this to the username of the account whose data is being requested.
+> * password: set this to the password of the account whose data is being requested.
 
 ### Auto Configure
 The Spring Social SlideShare also supports auto configuration.  
@@ -79,6 +90,7 @@ Supported properties are as following:
 ### Retrieving a slideshow information
 This program retrieves a detailed slideshow information by `https://www.slideshare.net/tatsuyamaki39/unit-testinandroid`.
 ```kotlin
+val slideShare = SlideShareTemplate("YOUR_API_KEY", "YOUR_SHARED_SECRET")
 val url = "https://www.slideshare.net/tatsuyamaki39/unit-testinandroid"
 val options = GetSlideshowOptions(
     excludeTags = true,
@@ -102,14 +114,16 @@ slideShare.slideshowOperations().searchSlideshows("kotlin", options)
 ### Retrieving tags by authenticated user
 This program retrieves tags by an authenticated user.
 ```kotlin
-val slideShare = SlideShareTemplate("YOUR_API_KEY", "YOUR_SHARED_SECRET", "YOUR_USERNAME", "YOUR_PASSWORD")
+val credentials = Credentials("YOUR_USERNAME", "YOUR_PASSWORD")
+val slideShare = SlideShareTemplate("YOUR_API_KEY", "YOUR_SHARED_SECRET", credentials)
 slideShare.userOperations().getUserTags()
 ```
 
 ### Checking whether a slideshow is favorited
 This program checks whether an authenticated user has already favorited a slideshow with the ID `49627175`.
 ```kotlin
-val slideShare = SlideShareTemplate("YOUR_API_KEY", "YOUR_SHARED_SECRET", "YOUR_USERNAME", "YOUR_PASSWORD")
+val credentials = Credentials("YOUR_USERNAME", "YOUR_PASSWORD")
+val slideShare = SlideShareTemplate("YOUR_API_KEY", "YOUR_SHARED_SECRET", credentials)
 slideShare.favoriteOperations().checkFavorite("49627175")
 ```
 
@@ -136,16 +150,6 @@ $ curl localhost:8080
 5. Test Spring Social SlideShare
   * The application provides documentations using Swagger.
   * You can access the documentations at `http://localhost:8080/swagger-ui/` from your browser.
-
-## Notes
-Note that the SlideShare API puts your credentials (username and password) to query string as follows:
-```
-https://www.slideshare.net/api/2/get_slideshow?slideshow_id=1234567890&username=YOUR_USERNAME&password=YOUR_PASSWORD
-```
-This is described in the official documentation as follows:
-> Requests that request private data from users, or that act on their behalf, must include the following parameters:
-> * username: set this to the username of the account whose data is being requested.
-> * password: set this to the password of the account whose data is being requested.
 
 ## License
 [![FOSSA Status](https://app.fossa.com/api/projects/custom%2B14538%2Fspring-social-slideshare.svg?type=large)](https://app.fossa.com/projects/custom%2B14538%2Fspring-social-slideshare?ref=badge_large)
