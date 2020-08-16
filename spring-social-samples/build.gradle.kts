@@ -20,10 +20,10 @@ plugins {
 }
 
 dependencies {
-    implementation(project(":spring-social-slideshare"))
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("io.springfox:springfox-boot-starter:3.0.0")
+    implementation(project(":spring-social-slideshare"))
 }
 
 tasks {

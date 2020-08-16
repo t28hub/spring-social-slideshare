@@ -25,26 +25,41 @@ plugins {
 }
 
 dependencies {
+    // Kotlin
     implementation(kotlin("stdlib-jdk8"))
+
+    // Spring Boot
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("org.springframework.boot:spring-boot-configuration-processor")
 
-    api("org.springframework.social:spring-social-core:2.0.0.BUILD-SNAPSHOT")
-    implementation("org.springframework.social:spring-social-config:2.0.0.BUILD-SNAPSHOT")
-    implementation("org.springframework.social:spring-social-autoconfigure:2.0.0.BUILD-SNAPSHOT")
+    // Spring Social
+    val springSocialVersion = "2.0.0.BUILD-SNAPSHOT"
+    api("org.springframework.social:spring-social-core:$springSocialVersion")
+    implementation("org.springframework.social:spring-social-config:$springSocialVersion")
+    implementation("org.springframework.social:spring-social-autoconfigure:$springSocialVersion")
 
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.11.1")
-    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.11.1")
+    // Jackson
+    val jacksonVersion = "2.11.1"
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:$jacksonVersion")
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml:$jacksonVersion")
 
+    // Testing frameworks
     testImplementation("org.junit.jupiter:junit-jupiter:5.6.2")
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
+
+    // Truth
     testImplementation("com.google.truth:truth:1.0.1")
-    testImplementation("io.t28.auto:auto-truth-annotations:0.0.3-SNAPSHOT")
-    kaptTest("io.t28.auto:auto-truth-processor:0.0.3-SNAPSHOT")
+    val autoTruthVersion = "0.0.3-SNAPSHOT"
+    testImplementation("io.t28.auto:auto-truth-annotations:$autoTruthVersion")
+    kaptTest("io.t28.auto:auto-truth-processor:$autoTruthVersion")
+
+    // Mockito
     testImplementation("org.mockito:mockito-inline:3.4.6")
     testImplementation("com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0")
+
+    // Others
     testImplementation("org.pitest:pitest-junit5-plugin:0.12")
 }
 
